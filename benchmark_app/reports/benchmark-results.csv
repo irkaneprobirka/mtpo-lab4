@@ -1,0 +1,4 @@
+dataset,size,run,framework,exitCode,timeMs,peakRssMb,peakCpuPercent
+author-small,6,1,Jest,0,1628.922,42.145,9.2
+author-small,6,1,Vitest,0,2038.617,42.266,13.9
+author-small,6,1,Mocha,0,880.035,36.688,26.5

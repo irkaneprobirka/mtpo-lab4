@@ -1,6 +1,6 @@
-\chapter{Листинги BDD-сценариев и реализации шагов}\label{appendix-tests-code}
+\chapter{Входные и эталонные файлы}\label{appendix-data}
 
-\section*{features/palindrome\_analysis.feature}
+\section*{data/author\_example.json}
 \lstinputlisting[
   basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
   numberstyle=\fontsize{9pt}{11pt}\selectfont,
@@ -8,9 +8,9 @@
   stepnumber=1,
   breaklines=true,
   breakatwhitespace=false
-]{palindrome_app/features/palindrome_analysis.feature}
+]{benchmark_app/data/author_example.json}
 
-\section*{features/json\_io.feature}
+\section*{data/reference\_input.json}
 \lstinputlisting[
   basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
   numberstyle=\fontsize{9pt}{11pt}\selectfont,
@@ -18,9 +18,9 @@
   stepnumber=1,
   breaklines=true,
   breakatwhitespace=false
-]{palindrome_app/features/json_io.feature}
+]{benchmark_app/data/reference_input.json}
 
-\section*{features/performance\_comparison.feature}
+\section*{data/reference\_output.json}
 \lstinputlisting[
   basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
   numberstyle=\fontsize{9pt}{11pt}\selectfont,
@@ -28,26 +28,4 @@
   stepnumber=1,
   breaklines=true,
   breakatwhitespace=false
-]{palindrome_app/features/performance_comparison.feature}
-
-\section*{features/support/world.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{9pt}{11pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{palindrome_app/features/support/world.js}
-
-\section*{features/step\_definitions/palindromeSteps.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{9pt}{11pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{palindrome_app/features/step_definitions/palindromeSteps.js}
+]{benchmark_app/data/reference_output.json}

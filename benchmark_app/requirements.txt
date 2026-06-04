@@ -1,0 +1,11 @@
+Node.js >= 20
+npm >= 10
+
+Install JavaScript dependencies:
+npm install
+
+Run reference verification:
+npm run verify
+
+Run benchmark:
+npm run benchmark -- --input data/author_example.json --runs 3
