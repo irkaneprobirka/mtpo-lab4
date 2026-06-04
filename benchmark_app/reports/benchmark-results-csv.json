@@ -1,0 +1,101 @@
+[
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Jest",
+    "run": 1,
+    "exitCode": 0,
+    "timeMs": 42583.726,
+    "peakMemoryMb": 104.094,
+    "peakCpuPercent": 53.1
+  },
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Jest",
+    "run": 2,
+    "exitCode": 0,
+    "timeMs": 10754.265,
+    "peakMemoryMb": 87.238,
+    "peakCpuPercent": 26.7
+  },
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Jest",
+    "run": 3,
+    "exitCode": 0,
+    "timeMs": 8326.436,
+    "peakMemoryMb": 86.738,
+    "peakCpuPercent": 23.4
+  },
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Vitest",
+    "run": 1,
+    "exitCode": 0,
+    "timeMs": 14242.386,
+    "peakMemoryMb": 370.348,
+    "peakCpuPercent": 144.68
+  },
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Vitest",
+    "run": 2,
+    "exitCode": 0,
+    "timeMs": 18152.439,
+    "peakMemoryMb": 371.977,
+    "peakCpuPercent": 326.5
+  },
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Vitest",
+    "run": 3,
+    "exitCode": 0,
+    "timeMs": 12388.12,
+    "peakMemoryMb": 369.313,
+    "peakCpuPercent": 631.3
+  },
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Mocha",
+    "run": 1,
+    "exitCode": 0,
+    "timeMs": 3559.561,
+    "peakMemoryMb": 58.395,
+    "peakCpuPercent": 14.1
+  },
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Mocha",
+    "run": 2,
+    "exitCode": 0,
+    "timeMs": 3425.523,
+    "peakMemoryMb": 57.242,
+    "peakCpuPercent": 0
+  },
+  {
+    "dataset": "author-example.csv",
+    "source": "csv",
+    "size": 15,
+    "framework": "Mocha",
+    "run": 3,
+    "exitCode": 0,
+    "timeMs": 3648.982,
+    "peakMemoryMb": 57.105,
+    "peakCpuPercent": 0
+  }
+]

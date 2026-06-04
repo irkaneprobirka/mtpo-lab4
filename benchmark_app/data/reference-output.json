@@ -1,0 +1,11 @@
+{
+  "count": 5,
+  "min": 1,
+  "max": 9,
+  "sum": 25,
+  "mean": 5,
+  "median": 5,
+  "p90": 8.2,
+  "uniqueCount": 5,
+  "primeCount": 3
+}

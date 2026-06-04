@@ -1,0 +1,10 @@
+dataset,source,size,framework,run,exitCode,timeMs,peakMemoryMb,peakCpuPercent
+author-json-medium,json,5000,Jest,1,0,42549.21,107.688,42.3
+author-json-medium,json,5000,Jest,2,0,10640.29,90.781,29.6
+author-json-medium,json,5000,Jest,3,0,9012.244,88.469,36
+author-json-medium,json,5000,Vitest,1,0,15925.925,372.242,136.86
+author-json-medium,json,5000,Vitest,2,0,16273.677,369.422,435.9
+author-json-medium,json,5000,Vitest,3,0,16583.286,377.277,75
+author-json-medium,json,5000,Mocha,1,0,3606.863,59.336,3
+author-json-medium,json,5000,Mocha,2,0,4288.234,57.34,6.2
+author-json-medium,json,5000,Mocha,3,0,2880.754,56.332,4.7
