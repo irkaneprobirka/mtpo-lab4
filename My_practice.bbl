@@ -1,0 +1,306 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{north-bdd}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=26230a2ace0cde36664849662ebf7d53}{%
+           family={North},
+           familyi={N\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{26230a2ace0cde36664849662ebf7d53}
+      \strng{fullhash}{26230a2ace0cde36664849662ebf7d53}
+      \strng{fullhashraw}{26230a2ace0cde36664849662ebf7d53}
+      \strng{bibnamehash}{26230a2ace0cde36664849662ebf7d53}
+      \strng{authorbibnamehash}{26230a2ace0cde36664849662ebf7d53}
+      \strng{authornamehash}{26230a2ace0cde36664849662ebf7d53}
+      \strng{authorfullhash}{26230a2ace0cde36664849662ebf7d53}
+      \strng{authorfullhashraw}{26230a2ace0cde36664849662ebf7d53}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Introducing BDD}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dannorth.net/introducing-bdd/
+      \endverb
+      \verb{url}
+      \verb https://dannorth.net/introducing-bdd/
+      \endverb
+    \endentry
+    \entry{cucumber-js}{online}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Cucumber.js Documentation}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/cucumber/cucumber-js
+      \endverb
+      \verb{url}
+      \verb https://github.com/cucumber/cucumber-js
+      \endverb
+    \endentry
+    \entry{node-perf-hooks}{online}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Node.js Performance Measurement APIs}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nodejs.org/api/perf_hooks.html
+      \endverb
+      \verb{url}
+      \verb https://nodejs.org/api/perf_hooks.html
+      \endverb
+    \endentry
+    \entry{manacher1975}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7e0972123ffa0aebf47f8fa3797457d5}{%
+           family={Manacher},
+           familyi={M\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e0972123ffa0aebf47f8fa3797457d5}
+      \strng{fullhash}{7e0972123ffa0aebf47f8fa3797457d5}
+      \strng{fullhashraw}{7e0972123ffa0aebf47f8fa3797457d5}
+      \strng{bibnamehash}{7e0972123ffa0aebf47f8fa3797457d5}
+      \strng{authorbibnamehash}{7e0972123ffa0aebf47f8fa3797457d5}
+      \strng{authornamehash}{7e0972123ffa0aebf47f8fa3797457d5}
+      \strng{authorfullhash}{7e0972123ffa0aebf47f8fa3797457d5}
+      \strng{authorfullhashraw}{7e0972123ffa0aebf47f8fa3797457d5}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{22}
+      \field{journaltitle}{Journal of the ACM}
+      \field{langid}{english}
+      \field{title}{A New Linear-Time ``On-Line'' Algorithm for Finding the Smallest Initial Palindrome of a String}
+      \field{year}{1975}
+      \true{nocite}
+      \field{number}{3}
+      \range{number}{1}
+      \field{pages}{346\bibrangedash 351}
+      \range{pages}{6}
+      \field{volume}{22}
+      \range{volume}{1}
+    \endentry
+    \entry{gusfield1997}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=68de6b5b0039868e480ad77af042b983}{%
+           family={Gusfield},
+           familyi={G\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{68de6b5b0039868e480ad77af042b983}
+      \strng{fullhash}{68de6b5b0039868e480ad77af042b983}
+      \strng{fullhashraw}{68de6b5b0039868e480ad77af042b983}
+      \strng{bibnamehash}{68de6b5b0039868e480ad77af042b983}
+      \strng{authorbibnamehash}{68de6b5b0039868e480ad77af042b983}
+      \strng{authornamehash}{68de6b5b0039868e480ad77af042b983}
+      \strng{authorfullhash}{68de6b5b0039868e480ad77af042b983}
+      \strng{authorfullhashraw}{68de6b5b0039868e480ad77af042b983}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Algorithms on Strings, Trees, and Sequences}
+      \field{year}{1997}
+      \true{nocite}
+    \endentry
+    \entry{cucumber-gherkin}{online}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Gherkin Reference}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://cucumber.io/docs/gherkin/reference/
+      \endverb
+      \verb{url}
+      \verb https://cucumber.io/docs/gherkin/reference/
+      \endverb
+    \endentry
+    \entry{cucumber-docs}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Cucumber Documentation}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://cucumber.io/docs/
+      \endverb
+      \verb{url}
+      \verb https://cucumber.io/docs/
+      \endverb
+    \endentry
+    \entry{rspec-book}{book}{useauthor=false}{}
+      \name{author}{6}{}{%
+        {{hash=787c982ee8f4583c5a429a6aba0d9a42}{%
+           family={Chelimsky},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=29831857f5c1ef183bf455f5fc06ae76}{%
+           family={Astels},
+           familyi={A\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=388e5c223caa1fd95e5578cb045ed934}{%
+           family={Dennis},
+           familyi={D\bibinitperiod},
+           given={Zach},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6f673a961f6bba9c42a6de821c4e62b2}{%
+           family={Hellesoy},
+           familyi={H\bibinitperiod},
+           given={Aslak},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7068a4318cdf72c1ea24c91569d46cd1}{%
+           family={Helmkamp},
+           familyi={H\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=26230a2ace0cde36664849662ebf7d53}{%
+           family={North},
+           familyi={N\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pragmatic Bookshelf}%
+      }
+      \strng{authorbibnamehash}{8af90c8f56b8edd5f941e9e8c06033e6}
+      \strng{authornamehash}{8af90c8f56b8edd5f941e9e8c06033e6}
+      \strng{authorfullhash}{956dccbc3b17021683b64ba46e168250}
+      \strng{authorfullhashraw}{956dccbc3b17021683b64ba46e168250}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{The RSpec Book: Behaviour Driven Development with RSpec, Cucumber, and Friends}
+      \field{year}{2010}
+      \true{nocite}
+    \endentry
+    \entry{gmurman2003}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2ec903caa321891c1bee2ea8f268af16}{%
+           family={Гмурман},
+           familyi={Г\bibinitperiod},
+           given={В.\bibnamedelimi Е.},
+           giveni={В\bibinitperiod\bibinitdelim Е\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {Высшая школа}%
+      }
+      \strng{namehash}{2ec903caa321891c1bee2ea8f268af16}
+      \strng{fullhash}{2ec903caa321891c1bee2ea8f268af16}
+      \strng{fullhashraw}{2ec903caa321891c1bee2ea8f268af16}
+      \strng{bibnamehash}{2ec903caa321891c1bee2ea8f268af16}
+      \strng{authorbibnamehash}{2ec903caa321891c1bee2ea8f268af16}
+      \strng{authornamehash}{2ec903caa321891c1bee2ea8f268af16}
+      \strng{authorfullhash}{2ec903caa321891c1bee2ea8f268af16}
+      \strng{authorfullhashraw}{2ec903caa321891c1bee2ea8f268af16}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9-е изд.}
+      \field{langid}{russian}
+      \field{pagetotal}{479}
+      \field{title}{Теория вероятностей и математическая статистика: учебное пособие для вузов}
+      \field{year}{2003}
+      \true{nocite}
+    \endentry
+    \entry{jest-docs}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Jest Documentation}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://jestjs.io/docs/getting-started
+      \endverb
+      \verb{url}
+      \verb https://jestjs.io/docs/getting-started
+      \endverb
+    \endentry
+    \entry{cp-algorithms-palindromes}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Manacher's Algorithm --- Finding all sub-palindromes in O(n)}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://cp-algorithms.com/string/manacher.html
+      \endverb
+      \verb{url}
+      \verb https://cp-algorithms.com/string/manacher.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

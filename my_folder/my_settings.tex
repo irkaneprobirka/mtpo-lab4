@@ -1,0 +1,43 @@
+%%%% Настройки автора
+%%
+%%   Пожалуйста, ознакомьтесь с функционалом шаблона из [1,2], а также с пакетами, подключенными в ch_preamble.
+%%
+
+\addbibresource{my_folder/my_biblio.bib}
+\ExecuteBibliographyOptions{defernumbers=false,sorting=none}
+
+\hypersetup{
+pdfstartview={FitBH}
+}
+
+\let\ordinal\relax
+\usepackage{datetime}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={const, let, var, function, return, if, else, for, while, break, continue, switch, case, default, try, catch, finally, throw, new, class, extends, import, from, export, async, await, true, false, null, undefined},
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+\DeclareMathAlphabet{\mathbbmsl}{U}{bbm}{m}{sl}
+\newcommand{\cont}[1][K]{\ensuremath{\mathbbmsl{#1}}}
+\newcommand{\fcaarrow}[1]{%
+	{}^{\scriptscriptstyle\bm{#1}}
+}
+\newcommand{\uA}{\fcaarrow{{\uparrow\mkern-12mu}}}
+\newcommand{\dA}{\fcaarrow{\downarrow\mkern-2mu}}
+\newcommand{\ud}{\fcaarrow{\uparrow\mkern-12mu}\fcaarrow{\downarrow\mkern-2mu}}
+\newcommand{\du}{\fcaarrow{\downarrow\mkern-2mu}\fcaarrow{\uparrow\mkern-12mu}}
+\newcommand\eqdef{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\tiny def}}}{=}}}
+
+\theoremstyle{myplain}
+\newtheorem{m-new-env-first}{Название\_окружения}[chapter]
+
+\theoremstyle{mydefinition}
+\newtheorem{m-new-env-second}{Название\_окружения}[chapter]

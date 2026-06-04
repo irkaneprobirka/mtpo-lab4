@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'My_practice.blg'
+[206] biber-MSWIN64:342> INFO - === 
+[290] Biber.pm:421> INFO - Reading 'My_practice.bcf'
+[409] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[420] Biber.pm:4487> INFO - Processing section 0
+[443] Biber.pm:4678> INFO - Looking for bibtex file 'my_folder/my_biblio.bib' for section 0
+[502] bibtex.pm:1713> INFO - LaTeX decoding ...
+[521] bibtex.pm:1519> INFO - Found BibTeX data source 'my_folder/my_biblio.bib'
+[599] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[599] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[599] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'ru-RU'
+[599] Biber.pm:4313> INFO - No sort tailoring available for locale 'ru-RU'
+[643] bbl.pm:676> INFO - Writing 'My_practice.bbl' with encoding 'UTF-8'
+[646] bbl.pm:779> INFO - Output to My_practice.bbl

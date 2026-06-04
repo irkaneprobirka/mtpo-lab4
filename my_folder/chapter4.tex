@@ -1,0 +1,77 @@
+\chapter{Реализация BDD-инфраструктуры} \label{ch4}
+
+В данной главе описана практическая реализация BDD-тестов в проекте Node.js и связь Gherkin-сценариев с кодом приложения.
+
+\section{Структура BDD-файлов} \label{ch4:sec1}
+
+В приложение добавлен каталог \texttt{features}. Его структура приведена в \taref{tab:bdd-files}.
+
+\noindent
+\begingroup
+\centering
+\small
+\begin{longtable}[c]{|p{6.1cm}|p{8.9cm}|}
+    \caption{Структура BDD-инфраструктуры}
+    \label{tab:bdd-files}
+    \\
+    \hline
+    Файл & Назначение \\ \hline
+    \endfirsthead
+    \hline
+    Файл & Назначение \\ \hline
+    \endhead
+    \hline
+    \texttt{features/palindrome\_analysis.feature} & Сценарии анализа строки, проверки результата и пользовательского отчёта \\ \hline
+    \texttt{features/json\_io.feature} & Сценарии загрузки строки из JSON и сохранения результата \\ \hline
+    \texttt{features/performance\_comparison.feature} & Нагрузочное сравнение Манакера и расширения от центра \\ \hline
+    \texttt{features/support/world.js} & Контекст сценария: входная строка, результат, ошибка, временная директория \\ \hline
+    \texttt{features/step\_definitions/palindromeSteps.js} & Реализация шагов Gherkin на JavaScript \\ \hline
+\end{longtable}
+\normalsize
+\endgroup
+
+\section{World-контекст сценариев} \label{ch4:sec2}
+
+Для хранения состояния между шагами используется Cucumber World. В нём сохраняются:
+\begin{itemize}
+    \item текущая входная строка;
+    \item результат алгоритма Манакера;
+    \item результат эталонного алгоритма;
+    \item последняя ошибка загрузки;
+    \item текстовый отчёт;
+    \item временная директория для JSON-файлов.
+\end{itemize}
+
+Такой подход позволяет отделить сценарии друг от друга и не загрязнять рабочие файлы проекта временными результатами тестов.
+
+\section{Step Definitions} \label{ch4:sec3}
+
+Файл \texttt{palindromeSteps.js} связывает русскоязычные шаги Gherkin с кодом приложения. Например, шаг
+\begin{center}
+\texttt{Если пользователь анализирует строку "abacaba" алгоритмом Манакера}
+\end{center}
+вызывает функцию \texttt{analyzeString(input)} из \texttt{src/services/palindromeService.js}. Затем шаги \texttt{То} и \texttt{И} проверяют поля \texttt{longestPalindrome}, \texttt{palindromeCount} и совпадение с \texttt{centerExpansion}.
+
+Для JSON-сценариев шаги создают временный файл, вызывают \texttt{readInputFromFile}, затем сохраняют результат через \texttt{writeResultToFile}. Для нагрузочных сценариев используется \texttt{measureAlgorithms}, который измеряет оба алгоритма на одной и той же строке.
+
+\section{Связь BDD с существующими unit-тестами} \label{ch4:sec4}
+
+В проекте уже присутствуют unit-тесты Jest для низкоуровневых деталей: массивов нечётных и чётных радиусов, восстановления максимального палиндрома, JSON-ввода и форматирования отчёта. BDD-сценарии добавлены поверх них и используют те же модули приложения. Это важно по двум причинам:
+\begin{enumerate}
+    \item BDD не дублирует внутренние unit-тесты построчно, а проверяет поведение на уровне пользователя;
+    \item если unit-тесты проходят, но BDD-сценарий падает, значит нарушена интеграция модулей или пользовательский сценарий.
+\end{enumerate}
+
+\section{Команды запуска} \label{ch4:sec5}
+
+В \texttt{package.json} добавлены команды:
+\begin{itemize}
+    \item \texttt{npm run bdd} --- запуск Gherkin-сценариев Cucumber.js;
+    \item \texttt{npm run datasets} --- генерация JSON-датасетов;
+    \item \texttt{npm run perf} --- запуск эксперимента производительности;
+    \item \texttt{npm test} --- запуск существующих unit-тестов Jest.
+\end{itemize}
+
+\section{Выводы} \label{ch4:conclusion}
+
+BDD-инфраструктура встроена в существующее приложение без изменения его основной архитектуры. Gherkin-файлы описывают требования, Step Definitions вызывают реальные модули проекта, а World-контекст обеспечивает изоляцию сценариев. В результате BDD-тесты становятся исполняемым описанием поведения приложения.

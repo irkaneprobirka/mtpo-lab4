@@ -1,0 +1,49 @@
+\changetocdepth {2}
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{Введение}{3}{chapter*.4}%
+\contentsline {chapter}{\chapternumberline {1}BDD-тестирование}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Основы методологии BDD и язык Gherkin}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Выбор BDD-фреймворка}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Описание тестовых случаев и BDD-сценариев}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Сводная таблица тестового покрытия}{7}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Выводы}{7}{section.1.4}%
+\contentsline {chapter}{\chapternumberline {2}Описание экспериментов}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Условия проведения экспериментов}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Алгоритмы генерации наборов данных}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Предварительный эксперимент по определению границ производительности}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Наборы данных}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Профилирование}{12}{section.2.5}%
+\contentsline {chapter}{\chapternumberline {3}Анализ результатов экспериментов}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Сводные таблицы времени выполнения}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Графики зависимостей времени выполнения от размерности}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Анализ выявленных закономерностей}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Сравнительная таблица применимости алгоритмов}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Выводы}{15}{section.3.5}%
+\contentsline {chapter}{Заключение}{16}{chapter*.7}%
+\contentsline {chapter}{Список использованных источников}{18}{chapter*.9}%
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {russian}{}\relax 
+\changetocdepth {0}
+\contentsline {chapter}{Приложение{} 1 Листинги кода классов предварительного эксперимента}{19}{chapter*.11}%
+\changetocdepth {0}
+\contentsline {chapter}{Приложение{} 2 Листинги BDD-сценариев и реализации шагов}{20}{chapter*.17}%
