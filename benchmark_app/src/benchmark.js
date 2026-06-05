@@ -3,8 +3,7 @@ const path = require('node:path');
 const { performance } = require('node:perf_hooks');
 const { spawn } = require('node:child_process');
 const pidusage = require('pidusage');
-const { loadDataset } = require('./data-loader');
-const { analyzeSample } = require('./sample-analysis');
+const { runManacherSuite } = require('./run-suite');
 
 const FRAMEWORKS = [
   { name: 'Jest', args: ['node_modules/jest/bin/jest.js', 'tests/jest', '--runInBand'] },
@@ -14,34 +13,31 @@ const FRAMEWORKS = [
 
 function parseArgs(argv) {
   const args = {
-    input: 'data/author-example.json',
+    input: 'data/author-palindromes.json',
     expected: null,
-    runs: 1,
+    runs: 3,
     verify: false
   };
   for (let i = 2; i < argv.length; i += 1) {
     if (argv[i] === '--input') args.input = argv[++i];
-    if (argv[i] === '--expected') args.expected = argv[++i];
-    if (argv[i] === '--runs') args.runs = Number(argv[++i]);
-    if (argv[i] === '--verify') args.verify = true;
+    else if (argv[i] === '--expected') args.expected = argv[++i];
+    else if (argv[i] === '--runs') args.runs = Number(argv[++i]);
+    else if (argv[i] === '--verify') args.verify = true;
   }
   return args;
 }
 
-function closeEnough(actual, expected) {
-  return JSON.stringify(actual) === JSON.stringify(expected);
-}
-
-function writeReports(dataset, results) {
+function writeReports(dataset, rows) {
   fs.mkdirSync('reports', { recursive: true });
-  const baseName = `benchmark-results-${dataset.source}`;
-  fs.writeFileSync(path.join('reports', `${baseName}.json`), JSON.stringify(results, null, 2));
+  const base = `benchmark-results-${dataset.format}`;
+  fs.writeFileSync(path.join('reports', `${base}.json`), JSON.stringify(rows, null, 2));
 
-  const header = 'dataset,source,size,framework,run,exitCode,timeMs,peakMemoryMb,peakCpuPercent';
-  const rows = results.map((row) => [
+  const header = 'dataset,format,cases,totalInputLength,framework,run,exitCode,timeMs,peakMemoryMb,peakCpuPercent';
+  const csvRows = rows.map((row) => [
     row.dataset,
-    row.source,
-    row.size,
+    row.format,
+    row.cases,
+    row.totalInputLength,
     row.framework,
     row.run,
     row.exitCode,
@@ -49,35 +45,31 @@ function writeReports(dataset, results) {
     row.peakMemoryMb,
     row.peakCpuPercent
   ].join(','));
-  fs.writeFileSync(path.join('reports', `${baseName}.csv`), [header, ...rows].join('\n'));
+  fs.writeFileSync(path.join('reports', `${base}.csv`), [header, ...csvRows].join('\n'));
 }
 
-async function runFramework(framework, dataset, run) {
+async function runFramework(framework, dataset, inputFile, run) {
   const started = performance.now();
   let peakMemoryMb = 0;
   let peakCpuPercent = 0;
 
   return new Promise((resolve) => {
-    const child = spawn(
-      process.execPath,
-      framework.args,
-      {
-        stdio: 'ignore',
-        env: {
-          ...process.env,
-          TEST_INPUT_FILE: path.resolve(dataset.filePath),
-          TEST_REPEAT_COUNT: '25'
-        }
+    const child = spawn(process.execPath, framework.args, {
+      stdio: 'ignore',
+      env: {
+        ...process.env,
+        TEST_INPUT_FILE: path.resolve(inputFile),
+        TEST_REPEAT_COUNT: '15'
       }
-    );
+    });
 
     const sampler = setInterval(async () => {
       try {
-        const stat = await pidusage(child.pid);
-        peakMemoryMb = Math.max(peakMemoryMb, stat.memory / 1024 / 1024);
-        peakCpuPercent = Math.max(peakCpuPercent, stat.cpu);
+        const stats = await pidusage(child.pid);
+        peakMemoryMb = Math.max(peakMemoryMb, stats.memory / 1024 / 1024);
+        peakCpuPercent = Math.max(peakCpuPercent, stats.cpu);
       } catch {
-        // The process may exit between interval ticks; the close handler records the run.
+        // The process may have already exited between two samples.
       }
     }, 50);
 
@@ -86,12 +78,14 @@ async function runFramework(framework, dataset, run) {
       try {
         await pidusage.clear(child.pid);
       } catch {
-        // pidusage cache cleanup is best-effort.
+        // Cache cleanup is best-effort.
       }
+
       resolve({
         dataset: dataset.name,
-        source: dataset.source,
-        size: dataset.size,
+        format: dataset.format,
+        cases: dataset.cases.length,
+        totalInputLength: dataset.cases.reduce((sum, item) => sum + item.input.length, 0),
         framework: framework.name,
         run,
         exitCode,
@@ -105,27 +99,30 @@ async function runFramework(framework, dataset, run) {
 
 async function main() {
   const args = parseArgs(process.argv);
-  const dataset = loadDataset(args.input);
-  dataset.filePath = args.input;
+  const { dataset, results } = runManacherSuite(args.input, 1);
 
   if (args.verify) {
     const expected = JSON.parse(fs.readFileSync(args.expected, 'utf8'));
-    const actual = analyzeSample(dataset.values);
-    if (!closeEnough(actual, expected)) {
+    const actual = results.map((item) => ({
+      name: item.name,
+      longest: item.longest,
+      count: item.count
+    }));
+    if (JSON.stringify(actual) !== JSON.stringify(expected)) {
       throw new Error('Reference verification failed');
     }
     console.log('Reference verification passed');
     return;
   }
 
-  const results = [];
+  const rows = [];
   for (const framework of FRAMEWORKS) {
     for (let run = 1; run <= args.runs; run += 1) {
-      results.push(await runFramework(framework, dataset, run));
+      rows.push(await runFramework(framework, dataset, args.input, run));
     }
   }
-  writeReports(dataset, results);
-  console.table(results);
+  writeReports(dataset, rows);
+  console.table(rows);
 }
 
 main().catch((error) => {

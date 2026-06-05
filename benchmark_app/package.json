@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "verify": "node src/benchmark.js --verify --input data/reference-input.json --expected data/reference-output.json",
-    "benchmark": "node src/benchmark.js --input data/author-example.json --runs 3",
-    "benchmark:csv": "node src/benchmark.js --input data/author-example.csv --runs 3",
+    "verify": "node src/benchmark.js --verify --input data/reference-palindromes.json --expected data/reference-output.json",
+    "demo": "node src/demo.js",
+    "benchmark": "node src/benchmark.js --input data/author-palindromes.json --runs 5",
+    "benchmark:csv": "node src/benchmark.js --input data/author-palindromes.csv --runs 5",
     "test:jest": "jest tests/jest --runInBand",
     "test:vitest": "vitest run tests/vitest --pool=threads",
     "test:mocha": "mocha tests/mocha/**/*.test.js"

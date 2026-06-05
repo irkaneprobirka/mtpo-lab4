@@ -1,32 +1,32 @@
-\chapter{Проверка соответствия требованиям} \label{ch5}
+\chapter{Соответствие требованиям задания} \label{ch5}
 
-\section{Требования к раздаточному материалу} \label{ch5:report}
+\section{Обязательные элементы отчета} \label{ch5:report}
 
 \noindent
 \begingroup
 \centering
 \small
-\begin{longtable}[c]{|p{6.5cm}|p{8.5cm}|}
-    \caption{Соответствие отчета обязательным элементам}
+\begin{longtable}[c]{|p{6cm}|p{9cm}|}
+    \caption{Проверка требований к отчету}
     \label{tab:report-requirements}
     \\
     \hline
-    Требование & Реализация в работе \\ \hline
+    Требование & Где выполнено \\ \hline
     \endfirsthead
     \hline
-    Требование & Реализация в работе \\ \hline
+    Требование & Где выполнено \\ \hline
     \endhead
     \hline
-    Тема относится к автоматизации или теории тестирования & Исследуется автоматизированный запуск модульных тестов в Jest, Vitest и Mocha. \\ \hline
-    Использование принципа IMRAD & Введение, методы, результаты, обсуждение и заключение выделены структурно. \\ \hline
-    Математическая постановка проблемы & Раздел~\ref{ch1:math}. \\ \hline
+    Относится к автоматизации тестирования & Сравниваются фреймворки автоматизированного модульного тестирования. \\ \hline
+    IMRAD & Введение, методы, результаты, обсуждение и заключение выделены явно. \\ \hline
+    Математическая постановка & Раздел~\ref{ch1:math}. \\ \hline
     Иллюстративный пример & Раздел~\ref{ch1:example}. \\ \hline
-    Псевдокод алгоритма в окружении \texttt{algorithm} & Раздел~\ref{ch1:algorithm}, алгоритм~\ref{alg:benchmark}. \\ \hline
-    Пошаговое выполнение алгоритма на данных & Раздел~\ref{ch1:steps}. \\ \hline
-    Описание разработанного программного обеспечения & Глава~\ref{ch2}. \\ \hline
-    Подробное описание средств и подходов тестирования & Разделы~\ref{ch1:frameworks}, \ref{ch2:testing}. \\ \hline
-    Инструкция по установке и запуску & Раздел~\ref{ch2:run}. \\ \hline
-    Автоматически сгенерированный список источников из bib-файла & Используется \texttt{my\_folder/my\_biblio.bib}; список выводится командой \texttt{\textbackslash printbibliography}. \\ \hline
+    Псевдокод в окружении \texttt{algorithm} & Алгоритм~\ref{alg:benchmark}. \\ \hline
+    Пошаговое выполнение & Раздел~\ref{ch1:steps}. \\ \hline
+    Описание разработанного ПО & Глава~\ref{ch2}. \\ \hline
+    Описание средств тестирования & Разделы~\ref{ch1:math}, \ref{ch2:testing}. \\ \hline
+    Инструкция установки и запуска & Раздел~\ref{ch2:run}. \\ \hline
+    Список источников из bib-файла & Файл \texttt{my\_folder/my\_biblio.bib}. \\ \hline
 \end{longtable}
 \normalsize
 \endgroup
@@ -37,8 +37,8 @@
 \begingroup
 \centering
 \small
-\begin{longtable}[c]{|p{6.5cm}|p{8.5cm}|}
-    \caption{Соответствие программы требованиям задания}
+\begin{longtable}[c]{|p{6cm}|p{9cm}|}
+    \caption{Проверка требований к приложению}
     \label{tab:software-requirements}
     \\
     \hline
@@ -48,25 +48,14 @@
     Требование & Реализация \\ \hline
     \endhead
     \hline
-    Комментирование кода & В коде добавлены комментарии к детерминированному расширению данных, сэмплированию процесса и очистке кеша pidusage. \\ \hline
-    Компактность кода и проекта & Основная логика находится в трех файлах каталога \texttt{src}. \\ \hline
-    Быстрое разворачивание и компиляция при code review & Достаточно выполнить \texttt{npm install}, затем \texttt{npm run verify}. \\ \hline
-    Наличие \texttt{requirements.txt} & Файл находится в корне \texttt{benchmark\_app}. \\ \hline
-    Входные данные переменной величины & JSON-поле \texttt{size} задает итоговую длину выборки. \\ \hline
-    Импорт CSV или JSON & Реализована загрузка обоих форматов. \\ \hline
-    Эталонный входной файл и эталонный выход & \texttt{reference-input.json} и \texttt{reference-output.json}. \\ \hline
-    Авторский иллюстративный пример & \texttt{author-example.json} и \texttt{author-example.csv}. \\ \hline
+    Комментарии в коде & Комментарии добавлены в местах генерации строк и сэмплирования PID. \\ \hline
+    Компактность проекта & Основная логика размещена в пяти файлах каталога \texttt{src}. \\ \hline
+    Быстрое разворачивание & Используются команды \texttt{npm install}, \texttt{npm run verify}. \\ \hline
+    \texttt{requirements.txt} & Файл добавлен в корень приложения. \\ \hline
+    Входные данные переменной величины & Поддерживаются поля \texttt{pattern} и \texttt{length}. \\ \hline
+    Импорт CSV или JSON & Реализованы оба формата. \\ \hline
+    Эталонный вход и выход & \texttt{reference-palindromes.json}, \texttt{reference-output.json}. \\ \hline
+    Авторский пример & \texttt{author-palindromes.json}, \texttt{author-palindromes.csv}. \\ \hline
 \end{longtable}
 \normalsize
 \endgroup
-
-\section{Файлы результатов} \label{ch5:reports}
-
-После запуска эксперимента формируются четыре файла:
-\begin{enumerate}
-    \item \texttt{reports/benchmark-results-json.json};
-    \item \texttt{reports/benchmark-results-json.csv};
-    \item \texttt{reports/benchmark-results-csv.json};
-    \item \texttt{reports/benchmark-results-csv.csv}.
-\end{enumerate}
-JSON-файлы подходят для машинной обработки, CSV-файлы можно открыть в электронных таблицах.

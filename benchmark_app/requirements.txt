@@ -7,6 +7,9 @@ npm install
 Run reference verification:
 npm run verify
 
+Run author illustrative example:
+npm run demo
+
 Run JSON benchmark:
 npm run benchmark
 

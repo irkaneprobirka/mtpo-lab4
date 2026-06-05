@@ -1,114 +1,98 @@
-\chapter{Описание разработанного программного обеспечения} \label{ch2}
+\chapter{Разработанное программное обеспечение} \label{ch2}
 
-\section{Структура проекта} \label{ch2:structure}
+\section{Структура приложения} \label{ch2:structure}
 
-Программное средство размещено в каталоге \texttt{benchmark\_app}. Проект сделан компактным: он не требует базы данных, сервера или браузера, а все измерения выполняются локально в Node.js.
+Для эксперимента разработано приложение \texttt{benchmark\_app}. Оно содержит реализацию алгоритма Манакера, загрузчик входных данных, тесты для трех фреймворков и программу измерения ресурсов.
 
 \noindent
 \begingroup
 \centering
 \small
 \begin{longtable}[c]{|p{5cm}|p{10cm}|}
-    \caption{Структура проекта}
+    \caption{Структура приложения}
     \label{tab:project-structure}
     \\
     \hline
-    Файл или каталог & Назначение \\ \hline
+    Файл & Назначение \\ \hline
     \endfirsthead
     \hline
-    Файл или каталог & Назначение \\ \hline
+    Файл & Назначение \\ \hline
     \endhead
     \hline
-    \texttt{package.json} & npm-скрипты и зависимости Jest, Vitest, Mocha, pidusage. \\ \hline
-    \texttt{requirements.txt} & Краткие требования к окружению и команды запуска. \\ \hline
-    \texttt{src/data-loader.js} & Импорт данных из JSON и CSV, детерминированное расширение JSON-массива до заданного размера. \\ \hline
-    \texttt{src/sample-analysis.js} & Чистая функция анализа числовой выборки. \\ \hline
-    \texttt{src/benchmark.js} & Запуск фреймворков, сэмплирование PID, сохранение отчетов. \\ \hline
-    \texttt{tests/jest} & Модульный тест для Jest. \\ \hline
-    \texttt{tests/vitest} & Модульный тест для Vitest. \\ \hline
-    \texttt{tests/mocha} & Модульный тест для Mocha. \\ \hline
+    \texttt{src/manacher.js} & Реализация алгоритма Манакера и преобразования строки. \\ \hline
+    \texttt{src/data-loader.js} & Импорт строк из JSON и CSV, генерация строк переменной длины по шаблону. \\ \hline
+    \texttt{src/run-suite.js} & Общий запуск набора проверок алгоритма Манакера. \\ \hline
+    \texttt{src/benchmark.js} & Запуск Jest, Vitest и Mocha дочерними процессами, сбор времени, памяти и CPU. \\ \hline
+    \texttt{src/demo.js} & Быстрый авторский демонстрационный запуск. \\ \hline
+    \texttt{tests/jest/manacher.test.js} & Тест алгоритма для Jest. \\ \hline
+    \texttt{tests/vitest/manacher.test.js} & Тест алгоритма для Vitest. \\ \hline
+    \texttt{tests/mocha/manacher.test.js} & Тест алгоритма для Mocha. \\ \hline
     \texttt{data} & Эталонные и авторские входные файлы. \\ \hline
     \texttt{reports} & Автоматически сформированные результаты эксперимента. \\ \hline
 \end{longtable}
 \normalsize
 \endgroup
 
-\section{Импорт данных JSON и CSV} \label{ch2:input}
+\section{Входные данные переменной величины} \label{ch2:input}
 
-Проект поддерживает два формата входа. JSON-файл содержит имя набора, требуемый размер и начальные значения:
+JSON-файл содержит массив объектов \texttt{cases}. Каждый объект может задавать либо готовую строку \texttt{input}, либо шаблон \texttt{pattern} и длину \texttt{length}. Это позволяет хранить компактный файл и генерировать строки длиной в тысячи символов.
+
 \begin{lstlisting}[breaklines=true]
 {
-  "name": "author-json-medium",
-  "size": 5000,
-  "values": [42, 7, 19, 7, 3, 11, 29, 5, 101, 17]
+  "name": "author-palindromes-json",
+  "cases": [
+    { "name": "uniform-5000", "pattern": "a", "length": 5000 },
+    { "name": "alternating-5000", "pattern": "ab", "length": 5000 }
+  ]
 }
 \end{lstlisting}
 
-Если поле \texttt{size} больше длины массива \texttt{values}, недостающие элементы создаются детерминированно. Это позволяет проверить входы переменного размера без хранения больших файлов.
+CSV-файл содержит поля \texttt{name}, \texttt{pattern}, \texttt{length}, \texttt{expectedLongest}. Такой формат используется как альтернативный способ импорта данных.
 
-CSV-файл содержит колонку \texttt{value}:
-\begin{lstlisting}[breaklines=true]
-value
-42
-7
-19
-\end{lstlisting}
+\section{Эталонный и авторский примеры} \label{ch2:data}
 
-JSON используется как основной формат масштабируемого эксперимента, а CSV добавлен как альтернативный импорт для проверки требования задания.
+Эталонный файл \texttt{reference-palindromes.json} содержит строку \texttt{abacaba}, используемую в описании алгоритма Манакера на сайте CP-Algorithms~\cite{cp-algorithms-manacher}. Для нее ожидается самый длинный палиндром \texttt{abacaba} и 12 палиндромных подстрок. Также добавлены строки \texttt{abba} и \texttt{abcdef}.
 
-\section{Эталонные и авторские данные} \label{ch2:data}
+Авторский пример находится в \texttt{author-palindromes.json} и \texttt{author-palindromes.csv}. Он включает односимвольную строку длиной 5000, чередующуюся строку, зеркальную строку \texttt{levelracecarlevel} и повторение шаблона \texttt{abacaba}.
 
-В проекте подготовлены три вида данных:
+\section{Средства и подходы тестирования} \label{ch2:testing}
+
+Все три фреймворка запускают один и тот же набор проверок. Отличается только синтаксис тестового раннера:
 \begin{enumerate}
-    \item \texttt{reference-input.json} --- малый эталонный вход;
-    \item \texttt{reference-output.json} --- ожидаемый результат для эталонного входа;
-    \item \texttt{author-example.json} и \texttt{author-example.csv} --- авторские входные файлы для запуска эксперимента.
+    \item Jest использует функцию \texttt{test} и утверждения \texttt{expect};
+    \item Vitest использует совместимый стиль \texttt{test}/\texttt{expect};
+    \item Mocha использует \texttt{describe}/\texttt{it} и стандартный модуль \texttt{node:assert/strict}.
 \end{enumerate}
 
-Эталонный файл нужен для быстрой проверки корректности вычислительной части. Авторские файлы нужны для основной демонстрации сравнения фреймворков.
-
-\section{Средства и методы тестирования} \label{ch2:testing}
-
-Во всех трех фреймворках тестируется один и тот же модуль \texttt{sample-analysis.js}. Тесты устроены одинаково:
-\begin{enumerate}
-    \item прочитать путь к входному файлу из переменной окружения \texttt{TEST\_INPUT\_FILE};
-    \item загрузить данные через общий модуль \texttt{data-loader.js};
-    \item выполнить анализ выборки несколько раз;
-    \item проверить базовые инварианты результата.
-\end{enumerate}
-
-Повтор анализа задается переменной \texttt{TEST\_REPEAT\_COUNT}. В бенчмарке установлено значение \texttt{25}. Это сделано для того, чтобы тест выполнялся не мгновенно, а с измеримой нагрузкой на CPU.
-
-В Jest и Vitest используется функция \texttt{expect}. В Mocha используется стандартный модуль \texttt{node:assert/strict}. Такое решение снижает число дополнительных зависимостей и делает сравнение ближе к сравнению раннеров, а не библиотек утверждений.
+Путь к входному файлу передается через переменную окружения \texttt{TEST\_INPUT\_FILE}. Для увеличения нагрузки бенчмарк задает \texttt{TEST\_REPEAT\_COUNT=15}, то есть каждый фреймворк многократно прогоняет один и тот же набор строк.
 
 \section{Инструкция по установке и запуску} \label{ch2:run}
 
-Установка зависимостей:
+Установка:
 \begin{lstlisting}[breaklines=true]
 cd benchmark_app
 npm install
 \end{lstlisting}
 
-Проверка эталонного файла:
+Проверка эталона:
 \begin{lstlisting}[breaklines=true]
 npm run verify
 \end{lstlisting}
 
-Запуск отдельных фреймворков:
+Демонстрационный запуск:
+\begin{lstlisting}[breaklines=true]
+npm run demo
+\end{lstlisting}
+
+Отдельный запуск тестов:
 \begin{lstlisting}[breaklines=true]
 npm run test:jest
 npm run test:vitest
 npm run test:mocha
 \end{lstlisting}
 
-Запуск полного бенчмарка на JSON:
+Полное сравнение:
 \begin{lstlisting}[breaklines=true]
 npm run benchmark
-\end{lstlisting}
-
-Запуск полного бенчмарка на CSV:
-\begin{lstlisting}[breaklines=true]
 npm run benchmark:csv
 \end{lstlisting}
-
-После запуска формируются файлы \texttt{reports/benchmark-results-json.json}, \texttt{reports/benchmark-results-json.csv}, \texttt{reports/benchmark-results-csv.json} и \texttt{reports/benchmark-results-csv.csv}.

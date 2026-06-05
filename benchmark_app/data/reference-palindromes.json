@@ -1,0 +1,24 @@
+{
+  "name": "reference-palindromes",
+  "cases": [
+    {
+      "name": "cp-algorithms-example",
+      "input": "abacaba",
+      "expectedLongest": "abacaba",
+      "expectedCount": 12,
+      "source": "https://cp-algorithms.com/string/manacher.html"
+    },
+    {
+      "name": "even-palindrome",
+      "input": "abba",
+      "expectedLongest": "abba",
+      "expectedCount": 6
+    },
+    {
+      "name": "no-long-palindrome",
+      "input": "abcdef",
+      "expectedLongest": "a",
+      "expectedCount": 6
+    }
+  ]
+}
