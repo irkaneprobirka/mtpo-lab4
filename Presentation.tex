@@ -1,0 +1,314 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+
+\definecolor{spbblue}{RGB}{0,74,135}
+\definecolor{jestcolor}{RGB}{89,116,162}
+\definecolor{vitestcolor}{RGB}{88,166,92}
+\definecolor{mochacolor}{RGB}{146,104,64}
+\setbeamercolor{structure}{fg=spbblue}
+
+\title[Сравнение JS test frameworks]{Сравнительный анализ фреймворков модульного тестирования для JavaScript}
+\subtitle{Jest, Vitest и Mocha на задаче тестирования алгоритма Манакера}
+\author{И.Р.\,Фёдорова}
+\institute{СПбПУ, Высшая школа программной инженерии}
+\date{2026}
+
+\newcommand{\barvalue}[5]{%
+  \fill[#5] (#1,0) rectangle ++(0.45,#2);
+  \node[rotate=45,anchor=east,font=\scriptsize] at (#1+0.23,-0.15) {#3};
+  \node[font=\scriptsize] at (#1+0.23,#2+0.25) {#4};
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Актуальность}
+  \begin{itemize}
+    \item Unit-тесты запускаются часто: локально, перед commit, в CI/CD.
+    \item Выбор фреймворка влияет не только на синтаксис тестов, но и на ресурсы.
+    \item Для CI важны три метрики:
+      \begin{itemize}
+        \item время выполнения;
+        \item пиковое потребление ОЗУ;
+        \item пиковая загрузка CPU.
+      \end{itemize}
+    \item Сравнение выполнено на одной алгоритмической задаче: алгоритм Манакера.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Цель и задачи}
+  \textbf{Цель:} сравнить Jest, Vitest и Mocha по времени, памяти и CPU при запуске одинаковых модульных тестов.
+
+  \vspace{0.4cm}
+  \textbf{Задачи:}
+  \begin{enumerate}
+    \item реализовать алгоритм Манакера на JavaScript;
+    \item подготовить JSON- и CSV-входы переменной длины;
+    \item написать одинаковые тесты для трех фреймворков;
+    \item разработать benchmark-скрипт для сбора метрик;
+    \item выполнить серию запусков и сравнить результаты.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Почему алгоритм Манакера}
+  \begin{block}{Назначение}
+    Алгоритм Манакера находит палиндромные подстроки в строке за линейное время $O(n)$.
+  \end{block}
+
+  \begin{itemize}
+    \item Достаточно содержательный алгоритм для тестирования.
+    \item Есть понятные эталонные строки: \texttt{abacaba}, \texttt{abba}, \texttt{abcdef}.
+    \item Размер входа легко масштабируется через длину строки.
+    \item Алгоритм одинаков для всех фреймворков, поэтому сравнивается инфраструктура тестирования.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Идея алгоритма Манакера}
+  \begin{columns}[T]
+    \begin{column}{0.52\textwidth}
+      \begin{enumerate}
+        \item Между символами вставляется разделитель \texttt{\#}.
+        \item Добавляются сторожевые символы.
+        \item Для каждой позиции считается радиус палиндрома.
+        \item Используется зеркальная позиция относительно текущего центра.
+        \item Поддерживается правая граница самого правого палиндрома.
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.43\textwidth}
+      \begin{block}{Пример}
+        \[
+          abba \rightarrow \verb|^#a#b#b#a#$|
+        \]
+        Максимальный палиндром: \texttt{abba}.
+      \end{block}
+      \begin{block}{Сложность}
+        \[
+          T(n)=O(n), \quad M(n)=O(n)
+        \]
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Формальная постановка сравнения}
+  Множество фреймворков:
+  \[
+    F=\{\text{Jest},\text{Vitest},\text{Mocha}\}.
+  \]
+
+  Для каждого запуска измеряются:
+  \[
+    \tau_f(D) \text{ --- время выполнения, мс;}
+  \]
+  \[
+    m_f(D) \text{ --- пиковая память, МБ;}
+  \]
+  \[
+    c_f(D) \text{ --- пиковая загрузка CPU, \%.}
+  \]
+
+  \vspace{0.2cm}
+  Для каждого фреймворка выполнено $R=5$ запусков. Для сводного сравнения используется нормированный показатель:
+  \[
+    Score(f)=\frac{1}{3}\left(
+    \frac{\overline{\tau}_f}{\max \overline{\tau}}+
+    \frac{\overline{m}_f}{\max \overline{m}}+
+    \frac{\overline{c}_f}{\max \overline{c}}
+    \right).
+  \]
+\end{frame}
+
+\begin{frame}{Архитектура приложения}
+  \begin{center}
+    \begin{tikzpicture}[
+      node distance=1.15cm,
+      box/.style={draw, rounded corners=2pt, align=center, minimum width=2.7cm, minimum height=0.85cm},
+      arrow/.style={-{Stealth[length=2mm]}, thick}
+    ]
+      \node[box] (data) {JSON / CSV\\строки};
+      \node[box, right=of data] (loader) {data-loader.js};
+      \node[box, right=of loader] (manacher) {manacher.js};
+      \node[box, below=of manacher] (tests) {Jest / Vitest / Mocha\\tests};
+      \node[box, left=of tests] (bench) {benchmark.js\\pidusage};
+      \node[box, left=of bench] (reports) {CSV / JSON\\results};
+
+      \draw[arrow] (data) -- (loader);
+      \draw[arrow] (loader) -- (manacher);
+      \draw[arrow] (manacher) -- (tests);
+      \draw[arrow] (tests) -- (bench);
+      \draw[arrow] (bench) -- (reports);
+    \end{tikzpicture}
+  \end{center}
+
+  \vspace{0.2cm}
+  Benchmark запускает каждый фреймворк отдельным дочерним процессом и собирает метрики по PID.
+\end{frame}
+
+\begin{frame}{Сравниваемые фреймворки}
+  \begin{table}
+    \small
+    \begin{tabular}{p{2.5cm}p{3cm}p{3cm}p{3cm}}
+      \toprule
+      Признак & Jest & Vitest & Mocha \\
+      \midrule
+      Подход & Полный фреймворк & Vite-ориентированный раннер & Минималистичный раннер \\
+      Assertions & Встроенный \texttt{expect} & Встроенный \texttt{expect} & \texttt{assert} или внешняя библиотека \\
+      Mocking & Встроен & Встроен & Обычно отдельно \\
+      Snapshot & Встроен & Поддерживается & Не ядро фреймворка \\
+      Сильная сторона & Экосистема & Vite/ESM & Низкие накладные расходы \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\begin{frame}{Условия эксперимента}
+  \begin{itemize}
+    \item Два набора данных:
+      \begin{itemize}
+        \item JSON: 4 строки, суммарная длина 17017 символов;
+        \item CSV: 4 строки, суммарная длина 8507 символов.
+      \end{itemize}
+    \item Для каждого фреймворка: 5 запусков.
+    \item Каждый тестовый раннер запускается отдельным Node.js-процессом.
+    \item Метрики:
+      \begin{itemize}
+        \item \texttt{timeMs};
+        \item \texttt{peakMemoryMb};
+        \item \texttt{peakCpuPercent}.
+      \end{itemize}
+    \item Все запуски завершились с кодом \texttt{0}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Результаты: JSON-набор}
+  \begin{table}
+    \small
+    \begin{tabular}{lrrrr}
+      \toprule
+      Фреймворк & Avg Time, мс & Med RAM, МБ & Avg CPU, \% & Score \\
+      \midrule
+      Jest & 16114.415 & 94.652 & 37.840 & 0.359 \\
+      Vitest & 21326.206 & 375.496 & 498.780 & 1.000 \\
+      Mocha & 4626.802 & 61.984 & 11.260 & 0.132 \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+
+  \vspace{0.2cm}
+  На JSON-наборе Mocha показал минимальное время и минимальное потребление памяти.
+\end{frame}
+
+\begin{frame}{График времени: JSON}
+  \begin{center}
+    \begin{tikzpicture}[x=1.7cm,y=0.00023cm]
+      \draw[->] (0,0) -- (5.8,0) node[right]{фреймворк};
+      \draw[->] (0,0) -- (0,23000) node[above]{мс};
+      \foreach \y in {5000,10000,15000,20000} {
+        \draw (-0.05,\y) -- (0.05,\y) node[left,font=\scriptsize]{\y};
+      }
+      \barvalue{1}{16114}{Jest}{16114}{jestcolor}
+      \barvalue{2.5}{21326}{Vitest}{21326}{vitestcolor}
+      \barvalue{4}{4627}{Mocha}{4627}{mochacolor}
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Результаты: CSV-набор}
+  \begin{table}
+    \small
+    \begin{tabular}{lrrrr}
+      \toprule
+      Фреймворк & Avg Time, мс & Med RAM, МБ & Avg CPU, \% & Score \\
+      \midrule
+      Jest & 15235.721 & 91.262 & 72.520 & 0.384 \\
+      Vitest & 19338.502 & 373.449 & 597.500 & 1.000 \\
+      Mocha & 5599.576 & 57.422 & 13.740 & 0.156 \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+
+  \vspace{0.2cm}
+  На CSV-наборе тенденция сохранилась: Mocha легче, Jest посередине, Vitest дороже по ресурсам.
+\end{frame}
+
+\begin{frame}{График памяти: CSV}
+  \begin{center}
+    \begin{tikzpicture}[x=1.7cm,y=0.011cm]
+      \draw[->] (0,0) -- (5.8,0) node[right]{фреймворк};
+      \draw[->] (0,0) -- (0,410) node[above]{МБ};
+      \foreach \y in {100,200,300,400} {
+        \draw (-0.05,\y) -- (0.05,\y) node[left,font=\scriptsize]{\y};
+      }
+      \barvalue{1}{91.262}{Jest}{91.3}{jestcolor}
+      \barvalue{2.5}{373.449}{Vitest}{373.4}{vitestcolor}
+      \barvalue{4}{57.422}{Mocha}{57.4}{mochacolor}
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Интерпретация результатов}
+  \begin{itemize}
+    \item Mocha оказался самым легким, потому что запускает минимальную инфраструктуру.
+    \item Jest поднимает более насыщенную среду: \texttt{expect}, mocks, snapshots, конфигурация.
+    \item Vitest связан с Vite и worker-моделью; это полезно в Vite-проектах, но на малом алгоритмическом тесте дает высокий overhead.
+    \item Алгоритм Манакера одинаков для всех трех случаев, значит различия в основном вызваны раннерами.
+    \item CPU-метрика шумная: значения могут превышать 100\%, так как учитываются несколько логических ядер.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Практические рекомендации}
+  \begin{table}
+    \small
+    \begin{tabular}{p{4.2cm}p{3cm}p{5cm}}
+      \toprule
+      Сценарий & Выбор & Причина \\
+      \midrule
+      Чистая алгоритмическая библиотека & Mocha & Низкие накладные расходы \\
+      Большой проект с mocks/snapshots & Jest & Богатая встроенная экосистема \\
+      Проект на Vite/ESM & Vitest & Интеграция с Vite и похожий API на Jest \\
+      CI с ограниченной памятью & Проверять локально & Ресурсный профиль зависит от проекта \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\begin{frame}{Выводы}
+  \begin{enumerate}
+    \item Реализовано приложение для сравнения Jest, Vitest и Mocha на тестах алгоритма Манакера.
+    \item Поддержаны JSON и CSV входные данные переменной величины.
+    \item По экспериментальным данным Mocha оказался самым быстрым и легким в данной задаче.
+    \item Jest занял промежуточную позицию, но дает богатую тестовую экосистему.
+    \item Vitest показал высокие накладные расходы в этой конфигурации, но остается сильным выбором для Vite-проектов.
+    \item Главный результат --- воспроизводимая методика сравнения на конкретном проекте.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Источники}
+  \small
+  \begin{enumerate}
+    \item Manacher G. A New Linear-Time On-Line Algorithm for Finding the Smallest Initial Palindrome of a String. Journal of the ACM, 1975.
+    \item Jest Documentation: \texttt{https://jestjs.io/docs/getting-started}
+    \item Vitest Documentation: \texttt{https://vitest.dev/guide/}
+    \item Mocha Documentation: \texttt{https://mochajs.org/}
+    \item CP-Algorithms: Manacher's Algorithm.
+    \item Node.js Documentation: \texttt{child\_process}, \texttt{perf\_hooks}, \texttt{assert}.
+    \item pidusage package: process CPU and memory usage by PID.
+  \end{enumerate}
+\end{frame}
+
+\end{document}
