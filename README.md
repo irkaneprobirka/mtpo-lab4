@@ -1,96 +1,88 @@
-﻿# Добро пожаловать на страницу шаблона SPbPU-student-thesis-template!
+# Приложение и сравнение тестовых фреймворков
 
+## Быстрый запуск
 
-Данная страница предназначена для авторов выпускных квалификационных работ Санкт-Петербургского политехническо университета Петра Великого, а также для их научных руководителей и консультантов. 
+Откройте терминал в папке `benchmark_app`. Один раз установите зависимости:
 
-NEW: к шаблону подключен титульный лист отчета по практике (My_practice.tex)!
+```powershell
+npm ci
+```
 
+Все основные действия выполняются через npm:
 
-# Краткое введение
+| Команда | Что делает |
+|---|---|
+| `npm run start` | Запрашивает строку и показывает ответ |
+| `npm run demo` | Обрабатывает готовый пример JSON |
+| `npm run test` | Запускает все 99 тестов в каждом из трёх фреймворков |
+| `npm run benchmark` | Сравнивает время, CPU и память: 63 измерения |
+| `npm run results` | Показывает таблицу последней завершённой серии |
 
-По-русски
+Для программы и тестов нужен Node.js 22 или новее. Для замеров дополнительно нужен установленный Python 3.10 или новее. **Вручную запускать Python, создавать окружение или устанавливать psutil не нужно:** npm-команда подготовит их при первом обращении. Для первоначальной установки psutil потребуется интернет. Готовое окружение используется повторно.
 
-1. Прочитайте Author_guide_SPbPU-student-thesis.pdf (устарели) и My_thesis.pdf.
-2. Скачайте или клонируйте папку шаблона используя зелёную кнопку.
-3. Установите дистрибутив LaTeX и редактор, например, TeX Live и TeXStudio соответственно.
-4. Компилируйте My_thesis.tex (текст ВКР) или My_task.tex (задание на ВКР отдельным файом).  
-5. Добавляйте контент только в файлы папки my_folder.  
+## Своя строка или JSON
 
+```powershell
+npm run start -- "abba"
+npm run start -- --file data/example.json
+```
 
-Задавайте вопросы на странице https://github.com/ParkhomenkoV/SPbPU-student-thesis-template/issues
+Единственный формат файла:
 
-Будем благодарны лайкам и репостам о данном шаблоне в социальных сетях
-https://vk.com/latex_polytech
-https://www.fb.com/groups/latex.polytech
+```json
+{"strings": ["abba", "топот", ""]}
+```
 
+Для abba результат — abba, длина 4, число вхождений 6. Пустая строка допустима, пустой массив запрещён. Пробелы и регистр сохраняются. При равной длине выбирается самый левый палиндром. Длина считается в кодовых точках Unicode. Ошибка входа даёт русское сообщение и код выхода 1.
 
-In English
+## Дополнительные команды
 
-1. Read Author_guide_SPbPU-student-thesis.pdf (not updated) and My_thesis.pdf.
-2. Download or clone template folder using the green button.
-3. Install LaTeX distributive and IDE, e.g. TeX Live and TeXStudio, respectively.
-4. Compile My_thesis.tex (thesis' text) or My_task.tex (thesis' task as the separate file) .
-5. Add content only in files of my_folder.   
+```powershell
+npm run test:jest
+npm run test:mocha
+npm run test:vitest
+npm run test:quality
+npm run benchmark:quick
+npm run verify
+npm run generate -- 200 2000 20000
+```
 
-Ask questions on the web-page https://github.com/ParkhomenkoV/SPbPU-student-thesis-template/issues
+`test:quality` проверяет обнаружение трёх намеренных ошибок во временных копиях. `benchmark:quick` выполняет три измерения на одном размере для демонстрации; этого недостаточно для итогового сравнительного анализа. `verify` сверяет отдельный эталон. `generate` создаёт восемь строк каждого указанного размера.
 
-We will be gratefull for likes and forwards about this template in social nets:
-https://vk.com/latex_polytech
-https://www.fb.com/groups/latex.polytech
+Передать дополнительные параметры измерителю также можно через npm:
 
-## Составители SPbPU-student-thesis-template
+```powershell
+npm run benchmark -- --input data/size-200.json --runs 7
+```
 
-### Code editors of SPbPU-student-thesis-template
+## Как устроен код
 
-Vladimir Parkhomenko
+Основное приложение — три небольших файла:
 
+```text
+src/manacher.js    — вычисление результата
+src/json-input.js  — чтение и проверка JSON
+src/cli.js         — ввод и вывод в консоли
+```
 
-### Content editors of SPbPU-student-thesis-template
+Тесты разделены по тому, что проверяют: `algorithm.cjs`, `json.cjs`, `cli.cjs`, `workload.cjs`. Один общий каталог подключается к Jest, Mocha и Vitest короткими адаптерами. Так не нужно поддерживать три копии одних и тех же проверок. Во всех используются одинаковые утверждения `node:assert/strict`.
 
-Vladimir Parkhomenko,
-Pavel Drobincev,
-Alexander Schukin
+Служебная часть отделена от приложения: `benchmark.py` измеряет ресурсы, `check_mutations.py` проверяет контрольные ошибки, `scripts/python.js` автоматически готовит их запуск, `scripts/results.js` показывает таблицу. Эти файлы не участвуют в поиске палиндромов. Все команды собраны в `package.json`.
 
+## Тесты и сравнение
 
+В каждом фреймворке 99 тестов: 47 для алгоритма, 25 для JSON и файлов, 18 для консоли, один эталонный и восемь нагрузочных. Девять тестов перебора проверяют 511 коротких двоичных строк независимым алгоритмом. Восемь консольных проверок запускают настоящий процесс. Все три контрольных дефекта обнаружены каждым фреймворком.
 
-### Составители Russian-Phd-LaTeX-Dissertation-Template
+Полная серия: три размера 100/1000/10000, три фреймворка и семь повторов — 63 измерения. Девять прогревов исключены. В каждом запуске выполняются все 99 тестов. Закройте лишние тяжёлые приложения и не запускайте другие тесты одновременно с измерением.
 
-Andrey Akinshin. 
-Some other persons see, please, in Acknolegement.
+Измеряются полное время запуска, CPU-время дерева процессов и наблюдаемый пик суммы RSS. Короткие процессы и пики между опросами могут быть пропущены. CPU является нижней оценкой; RSS не равен только JS-куче. Выводы относятся к конкретной машине, версиям и настройкам.
 
-Некоторые стилевые файлы проекта SPbPU-student-thesis-template адаптированы из файлов шаблона русскоязычных авторефератов и диссертаций Андрея Акиньшина:
+Новые серии сохраняются в `reports/run-ДАТА-ВРЕМЯ`. `npm run results` выбирает последнюю завершённую серию, в том числе короткую, если её запускали последней. Число повторов видно в таблице. Внутри серии сохранены `raw.json`, `summary.json`, `metadata.json`, `tests.json` и журналы `logs`.
 
-https://github.com/AndreyAkinshin/Russian-Phd-LaTeX-Dissertation-Template
+## Материалы для защиты
 
+В корне проекта: `My_practice.pdf` — отчёт по исходному шаблону СПбПУ; `Presentation.pdf` — 13 слайдов; `report/speech.md` — сценарий защиты с npm-командами. `submission.zip` содержит полный комплект, `benchmark-code.zip` — программу и измерения. Документы уже собраны, устанавливать LaTeX для их просмотра не нужно.
 
-## Acknowledgement
+Для разработчика документов: `build.ps1` собирает отчёт через pdfLaTeX и Biber, презентацию через XeLaTeX. Источники отчёта лежат в `my_folder`, шаблон — в `template_settings`. Таблицы и графики создаёт `report/render_results.py`; для них предназначен `report/requirements.txt`. Эти средства нужны только для изменения документов, а не для работы с приложением.
 
-
-Составители шаблона и документов SPbPU-student-thesis-template выражают благодарность Андрею Акиншину, а также
-
-- Юлии Мартыновой за оригинальный вариант шаблона,
-- dustalov, Lenchik, tonkonogov за значительный вклад и обсуждения,
-- storkvist, kshmirko, ZoomRmc, tonytonov, Thibak, eximius8, Nizky за полезные правки и замечания,
-- Олегу Одоманову за помощь в настроке пакета biblatex-gost,
-- Людмиле Шлыковой за помощь в составлении примера-комикса для авторов, оформляющих в Word,
-- Igor Matveev, Natalia Mukhanova, Ludmila Pankova, Ольге Загороднюк, Vladimir Itsycson за ценные замечания по подготовке рекомендаций,
-- Игорю Бровцину за помощь в формировании титульника отчета по практике,
-- другим участникам LaTeX сообщества, принимавшим и принимающим участие в разработке Russian-Phd-LaTeX-Dissertation-Template и SPbPU-student-thesis-template.
-
-Template editors are grateful to
-
-- Werner, Heiko Oberdiek, Ulrich Diez and Piet van Oostrum for help with counters and other topics;
-- daleif, egreg and Ulrike Fischer for help with memoir class and other topics;
-- maintainers of all packages, which are used in the project.
- 
-
-## Licence
-
-CC BY 4.0
-
-All modifications made with Russian-Phd-LaTeX-Dissertation-Template are shown in files of SPbPU-BCI-template.
-
-
-Документы проекта SPbPU-student-thesis-template не являются официальными документами SPbPU, но соответствуют требованиям, предъявляемым к ВКР. 
-
-30 May 2020
+Исходный шаблон: https://github.com/ParkhomenkoV/SPbPU-student-thesis-template (CC BY 4.0). Автор: Фёдорова Ирина Романовна, группа з5130903/40002; руководитель В. А. Пархоменко.

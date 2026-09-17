@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-09-16T15:19:32.663172+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "logical_cpus": 12,
+  "physical_cpus": 8,
+  "ram_gib": 15.652839660644531,
+  "python": "3.12.14",
+  "psutil": "7.0.0",
+  "node": "v24.20.0",
+  "versions": {
+    "jest": "30.0.5",
+    "mocha": "11.7.1",
+    "vitest": "3.2.4",
+    "csv-parse": "6.1.0"
+  },
+  "options": {
+    "input": [
+      "data/size-1000.csv"
+    ],
+    "runs": 7,
+    "repeats": 10,
+    "interval_ms": 10,
+    "timeout": 120,
+    "seed": 2026,
+    "node": "C:\\Program Files\\nodejs\\node.EXE",
+    "output": "reports/2026-09-16-csv"
+  },
+  "commands": {
+    "Jest": [
+      "node_modules/jest/bin/jest.js",
+      "--runInBand",
+      "--ci"
+    ],
+    "Mocha": [
+      "node_modules/mocha/bin/mocha.js",
+      "tests/mocha/*.test.js"
+    ],
+    "Vitest": [
+      "node_modules/vitest/vitest.mjs",
+      "run"
+    ]
+  },
+  "workload": "\u041e\u0434\u0438\u043d \u043f\u0430\u043a\u0435\u0442\u043d\u044b\u0439 \u0442\u0435\u0441\u0442; BENCHMARK_MODE=1; \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u043a\u043e\u043d\u0441\u043e\u043b\u0438 \u0438\u0441\u043a\u043b\u044e\u0447\u0435\u043d\u044b",
+  "source_sha256": {
+    "src\\benchmark.js": "116140ee51d1e5309888a2d6847b8991e133206f72b58b9274f0133753faeff4",
+    "src\\cli.js": "d5915ead7390ab9d749eca64d595f949184649d111684e3196e13d32d864eb59",
+    "src\\data-loader.js": "5fd155396eb2dc0f129391f49f0886f3135592ec7249dc788944a12edb474a9e",
+    "src\\demo.js": "4bd24c316dbbfa456a52e446ba8fa76b8c2c08c61544fa7c95c2e4971146e4f1",
+    "src\\manacher.js": "f600a99dce7996739028711330f53097a441e3f8114d4e01288a631e415c2a18",
+    "src\\run-suite.js": "ca401f6c91d67da55cbc3234feca2f9b1bcce6e1900cb6086038a478ca295cdf",
+    "tests\\correctness.cjs": "99edc70b129774e8cd434c0b9eb4a2b2ea0f1f00a8731ec0b9f22e2341c5413f",
+    "tests\\jest\\manacher.test.js": "63c53ce872de2638992d5c43a36db1e7b09a1822e93ab6bb4ef91e25088e53d7",
+    "tests\\mocha\\manacher.test.js": "4482a142d3ce86db6d8a2d106dc1adc3fb2e84713dc70973ff336f8c9883f2de",
+    "tests\\shared.cjs": "57b76cc2432ba86e9f15a1d79e46f21c801f0b4a824fd2290eccc11155943796",
+    "tests\\vitest\\manacher.test.js": "cc93d364c58ba176b728cab3f2a110507f4a621dddacbc389b99bae6a6241991"
+  },
+  "config_sha256": {
+    "benchmark.py": "6d685a86695cde3e8fd830a2ba071b6aa988e58d2e34e766082a0547dbd4d99c",
+    "jest.config.cjs": "7d5f829f561487a88067d947f20180c84510c70908b8ba32f6cb9657890dd37e",
+    "vitest.config.mjs": "4af9435703ed9fc519bf0e177cf836778a8b485381aa51de19664d066aafb42d",
+    "package.json": "6c57c24b5caf3538ad6bc36642ad5189b89387c817797e6382b7ae9bb852f1b1"
+  },
+  "files": {
+    "size-1000.csv": {
+      "bytes": 16238,
+      "sha256": "3e6c4f3e6337caed1784dc9720c13981acc554e55ef3ae1ed5ebadedd42a43de"
+    }
+  },
+  "lock_sha256": "ffa2f8fe3395ff0083dfa17d3908f05d6b500f24e2f218acaaebdf95da0ff800",
+  "cpu_method": "\u0421\u0443\u043c\u043c\u0430 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0445 \u043d\u0430\u0431\u043b\u044e\u0434\u0430\u0435\u043c\u044b\u0445 user+system \u043f\u043e \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430\u043c; \u043d\u0438\u0436\u043d\u044f\u044f \u043e\u0446\u0435\u043d\u043a\u0430",
+  "memory_method": "\u041c\u0430\u043a\u0441\u0438\u043c\u0443\u043c \u043d\u0430\u0431\u043b\u044e\u0434\u0430\u0435\u043c\u043e\u0439 \u0441\u0443\u043c\u043c\u044b RSS \u0436\u0438\u0432\u044b\u0445 \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0432 \u0434\u0435\u0440\u0435\u0432\u0430, MiB",
+  "cache_policy": "\u041e\u0434\u0438\u043d \u0438\u0441\u043a\u043b\u044e\u0447\u0451\u043d\u043d\u044b\u0439 \u043f\u0440\u043e\u0433\u0440\u0435\u0432 \u043d\u0430 \u0441\u043e\u0447\u0435\u0442\u0430\u043d\u0438\u0435; \u043d\u043e\u0432\u044b\u0439 \u043f\u0440\u043e\u0446\u0435\u0441\u0441 \u043d\u0430 \u0437\u0430\u043f\u0443\u0441\u043a; \u043a\u044d\u0448\u0438 \u041e\u0421 \u0441\u043e\u0445\u0440\u0430\u043d\u044f\u044e\u0442\u0441\u044f"
+}

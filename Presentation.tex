@@ -1,272 +1,195 @@
 \documentclass[aspectratio=169,11pt]{beamer}
-
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\setsansfont{Arial}
+\setmainfont{Times New Roman}
+\setmonofont{Consolas}
 \usepackage[russian]{babel}
-\usepackage{amsmath}
-\usepackage{booktabs}
-\usepackage{tikz}
-\usetikzlibrary{positioning,arrows.meta}
-
+\usepackage{fancyvrb}
+\usepackage{amsmath,booktabs,tabularx,algorithm,algpseudocode,pgfplots}
+\pgfplotsset{compat=1.18}
+\floatname{algorithm}{Алгоритм}
 \usetheme{Madrid}
-\usecolortheme{default}
-\setbeamertemplate{navigation symbols}{}
-
 \definecolor{spbblue}{RGB}{0,74,135}
-\definecolor{jestcolor}{RGB}{89,116,162}
-\definecolor{vitestcolor}{RGB}{88,166,92}
-\definecolor{mochacolor}{RGB}{146,104,64}
 \setbeamercolor{structure}{fg=spbblue}
-
-\title[Сравнение Jest, Vitest и Mocha]{Сравнительный анализ фреймворков модульного тестирования для JavaScript\\по дисциплине ``Методы тестирования программного обеспечения''}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+\title{Сравнительный анализ Jest, Mocha и Vitest по времени выполнения, CPU и ОЗУ}
 \author{Фёдорова Ирина Романовна}
 \institute{СПбПУ, ИКНК, ВШ ПИ}
 \date{2026}
-
-\newcommand{\barvalue}[5]{%
-  \fill[#5] (#1,0) rectangle ++(0.45,#2);
-  \node[rotate=45,anchor=east,font=\scriptsize] at (#1+0.23,-0.15) {#3};
-  \node[font=\scriptsize] at (#1+0.23,#2+0.25) {#4};
-}
-
 \begin{document}
-
 \begin{frame}[plain]
-  \begin{center}
-    \small
-    Минобрнауки России\\
-    Санкт-Петербургский политехнический университет Петра Великого\\
-    Институт компьютерных наук и кибербезопасности\\
-    Высшая школа программной инженерии
-  \end{center}
-
-  \vspace{0.45cm}
-  \maketitle
-
-  \vspace{-0.35cm}
-  \small
-  \begin{tabular}{@{}p{0.53\textwidth}p{0.42\textwidth}@{}}
-    Выполнил(-ла): студент группы з5130903/40002 & Руководитель:\\
-    Фёдорова Ирина Романовна & старший преподаватель В.\,А.\,Пархоменко
-  \end{tabular}
+\centering
+{\fontsize{9}{11}\selectfont Минобрнауки России\\
+Санкт-Петербургский политехнический университет Петра Великого\\
+Институт компьютерных наук и кибербезопасности\\Высшая школа программной инженерии\par}
+\vspace{5mm}
+{\color{spbblue}\Large\bfseries Презентация на тему:\\Сравнительный анализ Jest, Mocha и Vitest\\по времени выполнения, CPU и ОЗУ\par}
+\vspace{3mm}
+{\small по дисциплине «Методы тестирования программного обеспечения»\par}
+\vspace{5mm}
+\begin{tabularx}{.95\textwidth}{XX}
+\small Выполнила студентка группы & \small Руководитель:\\
+\small з5130903/40002 & \small старший преподаватель\\
+\small Фёдорова Ирина Романовна & \small В. А. Пархоменко
+\end{tabularx}
+\vfill{\small Санкт-Петербург, 2026}
+\end{frame}
+\begin{frame}{Проблема}
+Для одного приложения можно использовать разные средства тестирования.
+\vspace{4mm}
+\textbf{Задача:} сравнить Jest, Vitest и Mocha и выбрать подходящий инструмент.
+\begin{itemize}
+\item Все выполняют одинаковые 99 тестов.
+\item Сравниваются время выполнения, работа процессора и память.
+\item Результаты учитываются только при успешном прохождении всех тестов.
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Структура доклада}
-  \begin{enumerate}
-    \item Постановка проблемы и цель работы.
-    \item Тестируемый алгоритм: алгоритм Манакера.
-    \item Технология тестирования и псевдокод метода.
-    \item Иллюстративный пример и пошаговое выполнение.
-    \item Апробация: эксперимент с Jest, Vitest и Mocha.
-    \item Сравнение результатов и выводы.
-  \end{enumerate}
+\begin{frame}[fragile]{Что делает приложение}
+Программа находит самый длинный палиндром, его длину и число палиндромных вхождений.
+\begin{Verbatim}[fontsize=\small]
+npm run start -- "abba"
+npm run start -- --file data/example.json
+\end{Verbatim}
+Входной файл содержит строки в формате JSON:
+\begin{Verbatim}[fontsize=\small]
+{"strings": ["abba", "топот", ""]}
+\end{Verbatim}
+\textbf{Пример:} для abba ответ --- abba, длина 4, вхождений 6.
 \end{frame}
 
-\begin{frame}{Постановка проблемы}
-  \begin{block}{Проблема}
-    В JavaScript-проектах выбор фреймворка модульного тестирования влияет не только на синтаксис тестов, но и на время запуска, потребление ОЗУ и пиковую загрузку CPU.
-  \end{block}
-
-  \textbf{Цель:} сравнить Jest, Vitest и Mocha на одинаковых тестах алгоритма Манакера.
-
-  \vspace{0.25cm}
-  Для каждого фреймворка измеряются:
-  \[
-    \tau_f(D) \text{ --- время}, \quad
-    m_f(D) \text{ --- память}, \quad
-    c_f(D) \text{ --- CPU}.
-  \]
-
-  Итоговый показатель:
-  \[
-    Score(f)=\frac{1}{3}\left(
-    \frac{\overline{\tau}_f}{\max \overline{\tau}}+
-    \frac{\overline{m}_f}{\max \overline{m}}+
-    \frac{\overline{c}_f}{\max \overline{c}}
-    \right).
-  \]
+\begin{frame}{Алгоритм Манакера}
+Палиндром читается одинаково слева направо и справа налево.
+\begin{enumerate}
+\item Между символами добавляются разделители, чтобы одинаково обрабатывать чётные и нечётные палиндромы.
+\item Для каждой позиции определяется, насколько далеко палиндром продолжается в обе стороны.
+\item Уже найденная симметрия помогает избежать повторных сравнений.
+\end{enumerate}
+\textbf{Пример abba:} четыре отдельных символа, bb и abba. Всего 6 вхождений.
+\vspace{3mm}
+\par Время и дополнительная память растут линейно с длиной строки: $O(n)$.
 \end{frame}
 
-\begin{frame}{Сравниваемые фреймворки}
-  \begin{table}
-    \small
-    \begin{tabular}{p{2.6cm}p{3.1cm}p{3.1cm}p{3.1cm}}
-      \toprule
-      Признак & Jest & Vitest & Mocha \\
-      \midrule
-      Подход & Полный фреймворк & Vite-ориентированный раннер & Минималистичный раннер \\
-      Assertions & \texttt{expect} & \texttt{expect} & \texttt{assert} \\
-      Mocking & Встроен & Встроен & Обычно отдельно \\
-      Snapshot & Встроен & Поддерживается & Не ядро \\
-      Сильная сторона & Экосистема & Vite/ESM & Малые накладные расходы \\
-      \bottomrule
-    \end{tabular}
-  \end{table}
+\begin{frame}{Для чего нужны Jest, Vitest и Mocha}
+Все три инструмента запускают тесты и показывают найденные ошибки.
+\vspace{4mm}
+\par\textbf{Jest}\par
+Готовый набор средств для проверки функций, серверного кода и компонентов интерфейса JavaScript-приложений.
+\vspace{4mm}
+\par\textbf{Vitest}\par
+Подходит для JavaScript и TypeScript. Удобен в проектах с Vite, потому что может использовать настройки сборки приложения. Работает и с Node.js.
+\vspace{4mm}
+\par\textbf{Mocha}\par
+Запускает тесты JavaScript-программ. Средства сравнения правильных и полученных ответов выбираются отдельно.
 \end{frame}
 
-\begin{frame}{Тестируемый алгоритм: Манакер}
-  \begin{columns}[T]
-    \begin{column}{0.52\textwidth}
-      \begin{itemize}
-        \item Находит палиндромные подстроки за $O(n)$.
-        \item Использует преобразованную строку с разделителями.
-        \item Поддерживает текущий центр и правую границу.
-        \item Подходит для масштабируемых входных строк.
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.43\textwidth}
-      \begin{block}{Преобразование}
-        \[
-          abba \Rightarrow \texttt{\^{}\#a\#b\#b\#a\#\$}
-        \]
-      \end{block}
-      \begin{block}{Результат}
-        Самый длинный палиндром: \texttt{abba}.
-      \end{block}
-    \end{column}
-  \end{columns}
+\begin{frame}{Что проверяют тесты}
+\begin{itemize}
+\item Правильный ответ для обычных строк, пустой строки и повторяющихся символов.
+\item Работу с русскими буквами, пробелами и эмодзи.
+\item Чтение JSON и понятные сообщения при неверных данных.
+\item Запуск программы через консоль и правильный вывод результата.
+\item Работу на длинных строках.
+\end{itemize}
+\vspace{3mm}
+\textbf{В каждом фреймворке --- одни и те же 99 тестов.}\par
+Для 511 коротких строк ответ также сравнивается с независимым простым перебором.\par
+Запуск всех тестов: \texttt{npm run test}.
 \end{frame}
 
-\begin{frame}{Технология тестирования: псевдокод метода}
-  \small
-  \begin{block}{Метод сравнения}
-    \begin{enumerate}
-      \item Загрузить тестовые строки из JSON или CSV.
-      \item Проверить эталонный результат алгоритмом Манакера.
-      \item Для каждого $f \in \{\text{Jest},\text{Vitest},\text{Mocha}\}$ выполнить $R=5$ запусков.
-      \item Запустить тесты фреймворка как дочерний Node.js-процесс.
-      \item Пока процесс выполняется, сэмплировать RSS-память и CPU по PID.
-      \item Зафиксировать время, пиковую память, пиковый CPU и код завершения.
-      \item Сохранить результаты в CSV и JSON.
-    \end{enumerate}
-  \end{block}
+\begin{frame}[fragile]{Главные проверки: ответ и ошибка во входе}
+\begin{Verbatim}[fontsize=\small]
+test('Чётная длина', () => {
+  assert.deepEqual(manacher('abba'), {
+    longest: 'abba', length: 4, count: 6,
+  });
+});
+
+test('Число внутри пакета', () => {
+  assert.throws(
+    () => parseInput('{"strings":[1]}'), /Элемент 1/
+  );
+});
+\end{Verbatim}
+\texttt{deepEqual} сравнивает весь ответ с правильным.\par
+\texttt{throws} проверяет, что неверные данные вызывают ожидаемую ошибку.
 \end{frame}
 
-\begin{frame}{Иллюстративный пример}
-  \textbf{Эталонная строка:} \texttt{abacaba}
-
-  \vspace{0.2cm}
-  \begin{itemize}
-    \item Преобразованная строка:
-      \[
-        \texttt{\^{}\#a\#b\#a\#c\#a\#b\#a\#\$}
-      \]
-    \item Центральный символ \texttt{c} становится центром максимального палиндрома.
-    \item Самый длинный палиндром: \texttt{abacaba}.
-    \item Количество палиндромных подстрок: 12.
-  \end{itemize}
+\begin{frame}[fragile]{Проверка программы через консоль}
+\begin{Verbatim}[fontsize=\small]
+test('Консоль обрабатывает строку', () => {
+  const result = run(['abba']);
+  assert.equal(result.status, 0);
+  assert.match(result.stdout,
+    /Самый длинный палиндром: "abba"/);
+  assert.match(result.stdout, /вхождений: 6/);
+  assert.equal(result.stderr, '');
+});
+\end{Verbatim}
+\begin{itemize}
+\item \texttt{run} запускает настоящую консольную программу.
+\item Код 0 означает успешное завершение.
+\item Тест проверяет ответ и отсутствие сообщений об ошибке.
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Пошаговое выполнение на данных \texttt{abba}}
-  \begin{enumerate}
-    \item Вход: \texttt{abba}.
-    \item Преобразование: \texttt{\^{}\#a\#b\#b\#a\#\$}.
-    \item Алгоритм идет слева направо и считает радиусы.
-    \item На разделителе между \texttt{b} и \texttt{b} радиус расширяется до всей строки.
-    \item Обновляются $center$ и $right$.
-    \item Результат: \texttt{longest = abba}, \texttt{count = 6}.
-  \end{enumerate}
+\begin{frame}{Как проверялось качество тестов}
+Во временные копии приложения специально внесены три ошибки:
+\begin{enumerate}
+\item Выбор правого палиндрома вместо левого при равной длине.
+\item Неправильное количество палиндромных вхождений.
+\item Удаление пробелов из входных строк.
+\end{enumerate}
+\vspace{3mm}
+\textbf{Все три фреймворка обнаружили каждую ошибку.}\par
+Это подтверждает, что соответствующие тесты замечают неправильное поведение программы.
 \end{frame}
 
-\begin{frame}{Апробация технологии тестирования}
-  \begin{center}
-    \begin{tikzpicture}[
-      node distance=0.85cm,
-      box/.style={draw, rounded corners=2pt, align=center, minimum width=2.35cm, minimum height=0.72cm, font=\small},
-      arrow/.style={-{Stealth[length=2mm]}, thick}
-    ]
-      \node[box] (data) {JSON / CSV\\строки};
-      \node[box, right=of data] (loader) {data-loader};
-      \node[box, right=of loader] (algo) {manacher};
-      \node[box, below=of algo] (tests) {Jest\\Vitest\\Mocha};
-      \node[box, left=of tests] (bench) {benchmark\\pidusage};
-      \node[box, left=of bench] (reports) {CSV / JSON\\отчеты};
-
-      \draw[arrow] (data) -- (loader);
-      \draw[arrow] (loader) -- (algo);
-      \draw[arrow] (algo) -- (tests);
-      \draw[arrow] (tests) -- (bench);
-      \draw[arrow] (bench) -- (reports);
-    \end{tikzpicture}
-  \end{center}
-
-  \vspace{0.2cm}
-  \small
-  Проверка эталона: \texttt{npm run verify}. Полный эксперимент: \texttt{npm run benchmark}, \texttt{npm run benchmark:csv}.
+\begin{frame}{Как проводилось сравнение}
+\begin{itemize}
+\item На одном компьютере по очереди запускались все 99 тестов.
+\item Использовались строки длиной 100, 1000 и 10000 символов.
+\item Для каждого размера и фреймворка выполнено 7 измерений.
+\item Всего получено 63 успешных запуска. Первые пробные запуски не учитывались.
+\item Отдельная программа измеряла время, работу процессора и память всех обнаруженных процессов тестового запуска.
+\end{itemize}
+\vspace{3mm}
+Команды: \texttt{npm run benchmark} и \texttt{npm run results}.\par
+В таблицах и на графике показана медиана: среднее по позиции значение среди семи результатов, упорядоченных по величине.
+\end{frame}
+\begin{frame}{Сколько времени занимают тесты}
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=.89\textwidth,height=.66\textheight,xmode=log,xmin=85,xmax=12000,ymin=0,xtick={100,1000,10000},xticklabels={100,1000,10000},xlabel={Длина нагрузочной строки},ylabel={Медиана времени, мс},legend pos=north west,grid=major,legend style={font=\small},tick label style={font=\small}]
+\addplot[color=red!65!black,mark=*,thick] table[x=n,y=Jest]{report/time.dat};\addlegendentry{Jest}
+\addplot[color=brown,mark=square*,thick] table[x=n,y=Mocha]{report/time.dat};\addlegendentry{Mocha}
+\addplot[color=green!45!black,mark=triangle*,thick] table[x=n,y=Vitest]{report/time.dat};\addlegendentry{Vitest}
+\end{axis}
+\end{tikzpicture}\par
+\small Каждый результат -- медиана семи запусков всех 99 тестов.
+\end{frame}
+\begin{frame}{Время, процессор и память}
+Строки длиной 10000 символов. Медианы семи запусков.
+\begin{table}
+\input{report/slide-table.tex}
+\end{table}
+\begin{itemize}
+\item Время: сколько длится весь запуск тестов.
+\item CPU: время работы процессора над тестами.
+\item RSS: наибольшая замеченная сумма памяти процессов.
+\end{itemize}
+\small Короткие процессы и пики между опросами могут быть пропущены. CPU-время является нижней оценкой.
 \end{frame}
 
-\begin{frame}{Результаты: JSON-набор}
-  \begin{table}
-    \small
-    \begin{tabular}{lrrrr}
-      \toprule
-      Фреймворк & Avg Time, мс & Med RAM, МБ & Avg CPU, \% & Score \\
-      \midrule
-      Jest & 16114.415 & 94.652 & 37.840 & 0.359 \\
-      Vitest & 21326.206 & 375.496 & 498.780 & 1.000 \\
-      Mocha & 4626.802 & 61.984 & 11.260 & 0.132 \\
-      \bottomrule
-    \end{tabular}
-  \end{table}
-
-  \vspace{0.15cm}
-  JSON: 4 строки, суммарная длина 17017 символов, 5 запусков каждого фреймворка.
+\begin{frame}{Вывод}
+\textbf{Для этого приложения выбран Mocha.}
+\begin{itemize}
+\item Все три фреймворка успешно выполнили 99 тестов.
+\item Mocha показал лучшие результаты по времени, CPU и памяти на всех трёх размерах входа.
+\item Каждый параметр имел одинаковый вес при выборе.
+\end{itemize}
+\vspace{3mm}
+Вывод относится к этому приложению, компьютеру и настройкам. Для другого проекта измерения нужно повторить.
 \end{frame}
-
-\begin{frame}{График времени: JSON}
-  \begin{center}
-    \begin{tikzpicture}[x=1.7cm,y=0.00023cm]
-      \draw[->] (0,0) -- (5.8,0) node[right]{фреймворк};
-      \draw[->] (0,0) -- (0,23000) node[above]{мс};
-      \foreach \y in {5000,10000,15000,20000} {
-        \draw (-0.05,\y) -- (0.05,\y) node[left,font=\scriptsize]{\y};
-      }
-      \barvalue{1}{16114}{Jest}{16114}{jestcolor}
-      \barvalue{2.5}{21326}{Vitest}{21326}{vitestcolor}
-      \barvalue{4}{4627}{Mocha}{4627}{mochacolor}
-    \end{tikzpicture}
-  \end{center}
-\end{frame}
-
-\begin{frame}{Результаты: CSV-набор}
-  \begin{table}
-    \small
-    \begin{tabular}{lrrrr}
-      \toprule
-      Фреймворк & Avg Time, мс & Med RAM, МБ & Avg CPU, \% & Score \\
-      \midrule
-      Jest & 15235.721 & 91.262 & 72.520 & 0.384 \\
-      Vitest & 19338.502 & 373.449 & 597.500 & 1.000 \\
-      Mocha & 5599.576 & 57.422 & 13.740 & 0.156 \\
-      \bottomrule
-    \end{tabular}
-  \end{table}
-
-  \vspace{0.15cm}
-  CSV: 4 строки, суммарная длина 8507 символов, 5 запусков каждого фреймворка.
-\end{frame}
-
-\begin{frame}{Выводы}
-  \begin{enumerate}
-    \item Все обязательные проверки алгоритма Манакера прошли успешно.
-    \item В данной алгоритмической задаче Mocha оказался самым быстрым и легким.
-    \item Jest занял промежуточную позицию, но дает богатую встроенную экосистему.
-    \item Vitest показал высокие накладные расходы в этой конфигурации, но полезен для Vite/ESM-проектов.
-    \item Главный результат --- воспроизводимая методика сравнения фреймворков на конкретном проекте.
-  \end{enumerate}
-\end{frame}
-
-\begin{frame}{Источники}
-  \small
-  \begin{enumerate}
-    \item Manacher G. A New Linear-Time On-Line Algorithm for Finding the Smallest Initial Palindrome of a String. Journal of the ACM, 1975.
-    \item Jest Documentation: \texttt{https://jestjs.io/docs/getting-started}
-    \item Vitest Documentation: \texttt{https://vitest.dev/guide/}
-    \item Mocha Documentation: \texttt{https://mochajs.org/}
-    \item CP-Algorithms: Manacher's Algorithm.
-    \item Node.js Documentation: \texttt{child\_process}, \texttt{assert}.
-    \item pidusage package: process CPU and memory usage by PID.
-  \end{enumerate}
-\end{frame}
-
 \end{document}

@@ -1,52 +1,59 @@
-function transformString(input) {
-  return `^#${[...input].join('#')}#$`;
-}
+'use strict';
 
-function manacher(input) {
-  const source = String(input ?? '');
-  if (source.length === 0) {
-    return { radii: [], longest: '', count: 0, transformed: '^#$' };
+/** Находит левый максимальный палиндром и считает все палиндромные вхождения. */
+function manacher(text) {
+  if (typeof text !== 'string') {
+    throw new TypeError('Вход должен быть строкой');
   }
 
-  const transformed = transformString(source);
+  // Array.from считает эмодзи одной кодовой точкой, а не двумя частями UTF-16.
+  const characters = Array.from(text);
+  const separator = Symbol('Разделитель');
+  const transformed = [Symbol('Левая граница'), separator];
+  for (const character of characters) {
+    transformed.push(character, separator);
+  }
+  transformed.push(Symbol('Правая граница'));
+
+  // Границы и разделитель не совпадут ни с одним пользовательским символом.
   const radii = new Array(transformed.length).fill(0);
   let center = 0;
   let right = 0;
-
-  for (let i = 1; i < transformed.length - 1; i += 1) {
-    const mirror = 2 * center - i;
-    if (i < right) {
-      radii[i] = Math.min(right - i, radii[mirror]);
-    }
-
-    while (transformed[i + radii[i] + 1] === transformed[i - radii[i] - 1]) {
-      radii[i] += 1;
-    }
-
-    if (i + radii[i] > right) {
-      center = i;
-      right = i + radii[i];
-    }
-  }
-
-  let maxRadius = 0;
-  let maxCenter = 0;
+  let longestLength = 0;
+  let longestStart = 0;
   let count = 0;
-  for (let i = 1; i < radii.length - 1; i += 1) {
-    if (radii[i] > maxRadius) {
-      maxRadius = radii[i];
-      maxCenter = i;
+
+  for (let position = 1; position < transformed.length - 1; position++) {
+    // В известной области сначала используем симметричный радиус.
+    if (position < right) {
+      const mirror = 2 * center - position;
+      radii[position] = Math.min(right - position, radii[mirror]);
     }
-    count += Math.floor((radii[i] + 1) / 2);
+
+    // Затем проверяем символы, о которых ещё ничего не известно.
+    while (transformed[position - radii[position] - 1] ===
+           transformed[position + radii[position] + 1]) {
+      radii[position]++;
+    }
+
+    if (position + radii[position] > right) {
+      center = position;
+      right = position + radii[position];
+    }
+
+    // Строгое сравнение сохраняет самый левый ответ при равенстве длин.
+    if (radii[position] > longestLength) {
+      longestLength = radii[position];
+      longestStart = Math.floor((position - longestLength) / 2);
+    }
+    count += Math.floor((radii[position] + 1) / 2);
   }
 
-  const start = Math.floor((maxCenter - maxRadius) / 2);
   return {
-    radii,
-    longest: source.slice(start, start + maxRadius),
+    longest: characters.slice(longestStart, longestStart + longestLength).join(''),
+    length: longestLength,
     count,
-    transformed
   };
 }
 
-module.exports = { manacher, transformString };
+module.exports = { manacher };

@@ -1,0 +1,190 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{jest-cli}{online}{}{}
+      \list{organization}{1}{%
+        {Jest}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Jest CLI Options}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://jestjs.io/docs/30.0/cli
+      \endverb
+      \verb{url}
+      \verb https://jestjs.io/docs/30.0/cli
+      \endverb
+    \endentry
+    \entry{jest-config}{online}{}{}
+      \list{organization}{1}{%
+        {Jest}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Configuring Jest, version 30.0}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://jestjs.io/docs/30.0/configuration
+      \endverb
+      \verb{url}
+      \verb https://jestjs.io/docs/30.0/configuration
+      \endverb
+    \endentry
+    \entry{mocha-cli}{online}{}{}
+      \list{organization}{1}{%
+        {Mocha}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Mocha: Command-Line Usage}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://mochajs.org/running/cli/
+      \endverb
+      \verb{url}
+      \verb https://mochajs.org/running/cli/
+      \endverb
+    \endentry
+    \entry{vitest-config}{online}{}{}
+      \list{organization}{1}{%
+        {Vitest}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{Configuring Vitest, version 3}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://v3.vitest.dev/config/
+      \endverb
+      \verb{url}
+      \verb https://v3.vitest.dev/config/
+      \endverb
+    \endentry
+    \entry{psutil}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=57a2995ef6bf555390b5edb509705f3a}{%
+           family={Rodola},
+           familyi={R\bibinitperiod},
+           given={Giampaolo},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{57a2995ef6bf555390b5edb509705f3a}
+      \strng{fullhash}{57a2995ef6bf555390b5edb509705f3a}
+      \strng{fullhashraw}{57a2995ef6bf555390b5edb509705f3a}
+      \strng{bibnamehash}{57a2995ef6bf555390b5edb509705f3a}
+      \strng{authorbibnamehash}{57a2995ef6bf555390b5edb509705f3a}
+      \strng{authornamehash}{57a2995ef6bf555390b5edb509705f3a}
+      \strng{authorfullhash}{57a2995ef6bf555390b5edb509705f3a}
+      \strng{authorfullhashraw}{57a2995ef6bf555390b5edb509705f3a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{psutil documentation}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://psutil.readthedocs.io/stable/
+      \endverb
+      \verb{url}
+      \verb https://psutil.readthedocs.io/stable/
+      \endverb
+    \endentry
+    \entry{manacher}{online}{}{}
+      \list{organization}{1}{%
+        {CP-Algorithms}%
+      }
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Manacher's Algorithm: Finding all sub-palindromes in O(N)}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://cp-algorithms.com/string/manacher.html
+      \endverb
+      \verb{url}
+      \verb https://cp-algorithms.com/string/manacher.html
+      \endverb
+    \endentry
+    \entry{csv-parse}{online}{}{}
+      \list{organization}{1}{%
+        {Adaltas}%
+      }
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{CSV Parse: Sync API}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://csv.js.org/parse/api/sync/
+      \endverb
+      \verb{url}
+      \verb https://csv.js.org/parse/api/sync/
+      \endverb
+    \endentry
+    \entry{leetcode}{online}{}{}
+      \list{organization}{1}{%
+        {LeetCode}%
+      }
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{5. Longest Palindromic Substring}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://leetcode.com/problems/longest-palindromic-substring/description/
+      \endverb
+      \verb{url}
+      \verb https://leetcode.com/problems/longest-palindromic-substring/description/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,61 +1,12 @@
-\chapter{Входные файлы и результаты}\label{appendix-data}
+\chapter{Входы и файлы эксперимента}\label{appendix-data}
+\section*{Авторский JSON}
+\begin{Verbatim}[fontsize=\small,frame=single]
+{"strings": ["abba", "топот", ""]}
+\end{Verbatim}
+\section*{Отдельный эталон}
+\code{data/reference-input.json} содержит строки \code{babad} и \code{cbbd}. Файл \code{data/reference-output.json} содержит ожидаемые объекты результата. Максимальные подстроки взяты из LeetCode; длины и числа вхождений проверены автором. Происхождение описано в \code{data/SOURCES.md}.
+\section*{Сохранённая серия}
+Актуальные измерения находятся в каталоге \code{reports} приложения, в подкаталоге \code{npm-2026-09-17}. Файлы \code{raw.json}, \code{summary.json}, \code{tests.json} и \code{metadata.json} содержат исходные наблюдения, сводку, каталог тестов и параметры. Отдельные журналы находятся в \code{logs}.
+\section*{Контрольные дефекты}
+Результаты девяти контрольных запусков находятся в файле \code{results.json} подкаталога \code{reports/mutations}; рядом сохранены журналы. Ненулевые коды выхода в этих журналах являются ожидаемым подтверждением обнаружения намеренной ошибки.
 
-\section*{data/reference-palindromes.json}
-\lstinputlisting[
-  basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{9pt}{11pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/data/reference-palindromes.json}
-
-\section*{data/reference-output.json}
-\lstinputlisting[
-  basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{9pt}{11pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/data/reference-output.json}
-
-\section*{data/author-palindromes.json}
-\lstinputlisting[
-  basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{9pt}{11pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/data/author-palindromes.json}
-
-\section*{data/author-palindromes.csv}
-\lstinputlisting[
-  basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{9pt}{11pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/data/author-palindromes.csv}
-
-\section*{reports/benchmark-results-json.csv}
-\lstinputlisting[
-  basicstyle=\fontsize{8pt}{10pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/reports/benchmark-results-json.csv}
-
-\section*{reports/benchmark-results-csv.csv}
-\lstinputlisting[
-  basicstyle=\fontsize{8pt}{10pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/reports/benchmark-results-csv.csv}

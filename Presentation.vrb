@@ -1,0 +1,16 @@
+\frametitle{Проверка программы через консоль}
+\begin{Verbatim}[fontsize=\small]
+test('Консоль обрабатывает строку', () => {
+  const result = run(['abba']);
+  assert.equal(result.status, 0);
+  assert.match(result.stdout,
+    /Самый длинный палиндром: "abba"/);
+  assert.match(result.stdout, /вхождений: 6/);
+  assert.equal(result.stderr, '');
+});
+\end{Verbatim}
+\begin{itemize}
+\item \texttt{run} запускает настоящую консольную программу.
+\item Код 0 означает успешное завершение.
+\item Тест проверяет ответ и отсутствие сообщений об ошибке.
+\end{itemize}

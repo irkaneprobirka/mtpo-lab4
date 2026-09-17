@@ -1,0 +1,47 @@
+[
+  {
+    "dataset": "size-1000.csv",
+    "framework": "Jest",
+    "exit_code": 0,
+    "timed_out": false,
+    "valid": true,
+    "wall_ms": 795.3623000066727,
+    "cpu_ms": 921.875,
+    "cpu_percent": 115.90629829855726,
+    "rss_mib": 97.25,
+    "samples": 48,
+    "max_sample_gap_ms": 21.202600037213415,
+    "processes": 1,
+    "log": "reports\\csv\\logs\\size-1000-Jest-warmup.log"
+  },
+  {
+    "dataset": "size-1000.csv",
+    "framework": "Mocha",
+    "exit_code": 0,
+    "timed_out": false,
+    "valid": true,
+    "wall_ms": 256.02669996442273,
+    "cpu_ms": 250.0,
+    "cpu_percent": 97.6460658340477,
+    "rss_mib": 56.58984375,
+    "samples": 15,
+    "max_sample_gap_ms": 17.28730002650991,
+    "processes": 1,
+    "log": "reports\\csv\\logs\\size-1000-Mocha-warmup.log"
+  },
+  {
+    "dataset": "size-1000.csv",
+    "framework": "Vitest",
+    "exit_code": 0,
+    "timed_out": false,
+    "valid": true,
+    "wall_ms": 1013.6866999673657,
+    "cpu_ms": 1171.875,
+    "cpu_percent": 115.60524568761994,
+    "rss_mib": 129.8046875,
+    "samples": 58,
+    "max_sample_gap_ms": 25.29679995495826,
+    "processes": 6,
+    "log": "reports\\csv\\logs\\size-1000-Vitest-warmup.log"
+  }
+]

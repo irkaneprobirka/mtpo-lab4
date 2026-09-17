@@ -1,17 +1,2 @@
-Node.js >= 20
-npm >= 10
-
-Install JavaScript dependencies:
-npm install
-
-Run reference verification:
-npm run verify
-
-Run author illustrative example:
-npm run demo
-
-Run JSON benchmark:
-npm run benchmark
-
-Run CSV benchmark:
-npm run benchmark:csv
+# Внешний монитор ресурсов; зависимости JavaScript закреплены в package-lock.json.
+psutil==7.0.0

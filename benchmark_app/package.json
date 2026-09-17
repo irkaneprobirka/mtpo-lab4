@@ -1,22 +1,28 @@
 {
   "name": "js-test-framework-benchmark",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "private": true,
-  "scripts": {
-    "verify": "node src/benchmark.js --verify --input data/reference-palindromes.json --expected data/reference-output.json",
-    "demo": "node src/demo.js",
-    "benchmark": "node src/benchmark.js --input data/author-palindromes.json --runs 5",
-    "benchmark:csv": "node src/benchmark.js --input data/author-palindromes.csv --runs 5",
-    "test:jest": "jest tests/jest --runInBand",
-    "test:vitest": "vitest run tests/vitest --pool=threads",
-    "test:mocha": "mocha tests/mocha/**/*.test.js"
+  "engines": {
+    "node": ">=22"
   },
-  "dependencies": {
-    "pidusage": "^3.0.2"
+  "scripts": {
+    "start": "node src/cli.js",
+    "demo": "node src/cli.js --file data/example.json",
+    "verify": "node src/verify.js",
+    "generate": "node scripts/generate.js",
+    "test": "npm run test:jest && npm run test:mocha && npm run test:vitest",
+    "test:jest": "jest --runInBand",
+    "test:mocha": "mocha tests/mocha/*.test.js",
+    "test:vitest": "vitest run",
+    "benchmark": "node scripts/python.js benchmark",
+    "benchmark:quick": "node scripts/python.js benchmark --input data/size-100.json --runs 1",
+    "test:quality": "node scripts/python.js quality",
+    "results": "node scripts/results.js"
   },
   "devDependencies": {
-    "jest": "^30.0.0",
-    "mocha": "^11.0.0",
-    "vitest": "^3.0.0"
+    "chai": "6.2.2",
+    "jest": "30.0.5",
+    "mocha": "11.7.1",
+    "vitest": "3.2.4"
   }
 }

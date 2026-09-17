@@ -41,3 +41,15 @@ pdfstartview={FitBH}
 
 \theoremstyle{mydefinition}
 \newtheorem{m-new-env-second}{Название\_окружения}[chapter]
+
+
+% Дополнения для отчёта: оформление страниц и заголовков задаёт исходный шаблон.
+\providecommand{\code}[1]{\texttt{\detokenize{#1}}}
+\SetKwInput{KwInput}{Вход}
+\SetKwInput{KwOutput}{Выход}
+\SetKwFor{For}{для}{выполнить}{конец}
+\SetKwFor{ForEach}{для каждого}{выполнить}{конец}
+\SetKwFor{While}{пока}{выполнить}{конец}
+\SetKwIF{If}{ElseIf}{Else}{если}{то}{иначе если}{иначе}{конец}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible,keepspaces=true,numbers=none}
+\usepackage{float}

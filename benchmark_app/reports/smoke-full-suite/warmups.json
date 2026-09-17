@@ -1,0 +1,53 @@
+[
+  {
+    "dataset": "size-100.json",
+    "framework": "Jest",
+    "exit_code": 0,
+    "timed_out": false,
+    "valid": true,
+    "tests_passed": 99,
+    "tests_expected": 99,
+    "wall_ms": 1002.0087999291718,
+    "cpu_ms": 1109.375,
+    "cpu_percent": 110.71509552395324,
+    "rss_mib": 144.09765625,
+    "samples": 67,
+    "max_sample_gap_ms": 18.269199994392693,
+    "processes": 9,
+    "log": "reports\\smoke-full-suite\\logs\\size-100-Jest-warmup.log"
+  },
+  {
+    "dataset": "size-100.json",
+    "framework": "Mocha",
+    "exit_code": 0,
+    "timed_out": false,
+    "valid": true,
+    "tests_passed": 99,
+    "tests_expected": 99,
+    "wall_ms": 702.5476000271738,
+    "cpu_ms": 656.25,
+    "cpu_percent": 93.41004082493727,
+    "rss_mib": 100.10546875,
+    "samples": 45,
+    "max_sample_gap_ms": 20.003900048322976,
+    "processes": 9,
+    "log": "reports\\smoke-full-suite\\logs\\size-100-Mocha-warmup.log"
+  },
+  {
+    "dataset": "size-100.json",
+    "framework": "Vitest",
+    "exit_code": 0,
+    "timed_out": false,
+    "valid": true,
+    "tests_passed": 99,
+    "tests_expected": 99,
+    "wall_ms": 1241.3518999237567,
+    "cpu_ms": 1390.625,
+    "cpu_percent": 112.02504302651099,
+    "rss_mib": 176.0390625,
+    "samples": 81,
+    "max_sample_gap_ms": 19.71259992569685,
+    "processes": 14,
+    "log": "reports\\smoke-full-suite\\logs\\size-100-Vitest-warmup.log"
+  }
+]

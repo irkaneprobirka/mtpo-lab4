@@ -1,67 +1,70 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.18)  4 JUN 2026 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.7)  17 SEP 2026 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**My_practice.tex
-(./My_practice.tex
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-03-20>
-(./template_settings/ch_preamble.tex
-(d:/texlive/2026/texmf-dist/tex/latex/nag/nag.sty
+**./My_practice.tex
+(My_practice.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(template_settings/ch_preamble.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/nag\nag.sty
 Package: nag 2011/11/25 0.7 warning about old commands (ulmi)
-\c@nag@c=\count275
-\c@nag@sins=\count276
+\c@nag@c=\count276
+\c@nag@sins=\count277
 Package nag Info: Loaded nag-l2tabu.cfg  on input line 552.
 
-(d:/texlive/2026/texmf-dist/tex/latex/nag/nag-l2tabu.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/nag\nag-l2tabu.cfg
 File: nag-l2tabu.cfg 2010/05/17 v2.11 l2tabu rules for nag.sty (ulmi)
 )
 Package nag Info: Loaded nag-orthodox.cfg  on input line 552.
 
-(d:/texlive/2026/texmf-dist/tex/latex/nag/nag-orthodox.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/nag\nag-orthodox.c
+fg
 File: nag-orthodox.cfg 2006/04/19 v1.8 strict rules for nag.sty (ulmi)
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/memoir/memoir.cls
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memoir.cls
 Document Class: memoir 2025/11/04 v3.8.4b configurable book, report, article do
 cument class
-(d:/texlive/2026/texmf-dist/tex/latex/xpatch/xpatch.sty
-(d:/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2026-03-20 L3 programming layer (loader) 
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2026-08-10 L3 programming layer (loader) 
 
-(d:/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count277
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\l3backend
+-pdftex.def
+File: l3backend-pdftex.def 2026-08-10 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count278
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
-(d:/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\
+xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
-(d:/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.
+sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count278
+\etb@tempcnta=\count279
 ))
 \onelineskip=\skip49
 \lxvchars=\skip50
 \xlvchars=\skip51
-\@memcnta=\count279
-\c@@memmarkcntra=\count280
+\@memcnta=\count280
+\c@@memmarkcntra=\count281
 
-(d:/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
 \trimtop=\skip52
 \trimedge=\skip53
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 67
 1.
-
-(d:/texlive/2026/texmf-dist/tex/latex/lm/t1lmr.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-(./template_settings/bpfont14.clo
+(template_settings/bpfont14.clo
 File: bpfont14.clo 2008/01/30 v0.4 memoir class 14pt size option
 )
-(d:/texlive/2026/texmf-dist/tex/latex/lm/lmodern.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -96,7 +99,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(d:/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 \binding=\skip54
@@ -109,20 +112,20 @@ Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 \mem@maxheadheight=\skip61
 \mem@maxfootheight=\skip62
 \headwidth=\skip63
-\c@storedpagenumber=\count281
+\c@storedpagenumber=\count282
 \memPD=\dimen150
 \m@mabparskip=\skip64
 \thanksmarkwidth=\skip65
 \thanksmarksep=\skip66
 \droptitle=\skip67
-\c@book=\count282
-\c@part=\count283
-\c@chapter=\count284
-\c@section=\count285
-\c@subsection=\count286
-\c@subsubsection=\count287
-\c@paragraph=\count288
-\c@subparagraph=\count289
+\c@book=\count283
+\c@part=\count284
+\c@chapter=\count285
+\c@section=\count286
+\c@subsection=\count287
+\c@subsubsection=\count288
+\c@paragraph=\count289
+\c@subparagraph=\count290
 \beforechapskip=\skip68
 \midchapskip=\skip69
 \afterchapskip=\skip70
@@ -144,8 +147,8 @@ Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 \beforesubparaskip=\skip86
 \aftersubparaskip=\skip87
 \pfbreakskip=\skip88
-\c@@ppsavesec=\count290
-\c@@ppsaveapp=\count291
+\c@@ppsavesec=\count291
+\c@@ppsaveapp=\count292
 \ragrparindent=\dimen151
 \everylistparindent=\dimen152
 \parsepi=\skip89
@@ -167,10 +170,10 @@ Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 \absrightindent=\skip103
 \absparindent=\skip104
 \absparsep=\skip105
-\c@vslineno=\count292
-\c@poemline=\count293
-\c@modulo@vs=\count294
-\c@memfvsline=\count295
+\c@vslineno=\count293
+\c@poemline=\count294
+\c@modulo@vs=\count295
+\c@memfvsline=\count296
 \vleftskip=\skip106
 \vrightskip=\skip107
 \stanzaskip=\skip108
@@ -178,17 +181,17 @@ Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 \vgap=\skip110
 \vindent=\skip111
 \vleftmargin=\dimen154
-\c@verse=\count296
-\c@chrsinstr=\count297
+\c@verse=\count297
+\c@chrsinstr=\count298
 \beforepoemtitleskip=\skip112
 \afterpoemtitleskip=\skip113
-\c@poem=\count298
+\c@poem=\count299
 \beforePoemTitleskip=\skip114
 \midPoemTitleskip=\skip115
 \afterPoemTitleskip=\skip116
 
-(d:/texlive/2026/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2026/02/24 v2.7b Tabular extension package (FMi)
 \col@sep=\dimen155
 \ar@mcellbox=\box53
 \extrarowheight=\dimen156
@@ -197,23 +200,24 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \backup@length=\skip118
 \ar@cellbox=\box54
 )
-(d:/texlive/2026/texmf-dist/tex/latex/tools/dcolumn.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
 Package: dcolumn 2025/10/21 v1.06 decimal alignment package (DPC)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/tools/delarray.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\delarray.sty
 Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/tools/tabularx.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen157
 \TX@old@table=\dimen158
 \TX@old@col=\dimen159
 \TX@target=\dimen160
 \TX@delta=\dimen161
-\TX@cols=\count299
+\TX@cols=\count300
 \TX@ftn=\toks19
 )
-(d:/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.
+sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen162
 \lightrulewidth=\dimen163
@@ -225,23 +229,23 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen169
 \cmidrulekern=\dimen170
 \defaultaddspace=\dimen171
-\@cmidla=\count300
-\@cmidlb=\count301
+\@cmidla=\count301
+\@cmidlb=\count302
 \@aboverulesep=\dimen172
 \@belowrulesep=\dimen173
-\@thisruleclass=\count302
-\@lastruleclass=\count303
+\@thisruleclass=\count303
+\@lastruleclass=\count304
 \@thisrulewidth=\dimen174
 )
 \ctableftskip=\skip119
 \ctabrightskip=\skip120
-\abovecolumnspenalty=\count304
-\@linestogo=\count305
-\@cellstogo=\count306
-\@cellsincolumn=\count307
+\abovecolumnspenalty=\count305
+\@linestogo=\count306
+\@cellstogo=\count307
+\@cellsincolumn=\count308
 \crtok=\toks20
 \@mincolumnwidth=\dimen175
-\c@newflo@tctr=\count308
+\c@newflo@tctr=\count309
 \mem@margin@floatbox=\box55
 \@contcwidth=\skip121
 \@contindw=\skip122
@@ -253,7 +257,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \subfloatbottomskip=\skip128
 \subfloatlabelskip=\skip129
 \subfloatcapmargin=\dimen176
-\c@@contsubnum=\count309
+\c@@contsubnum=\count310
 \m@mscap@capbox=\box56
 \m@mscap@fbox=\box57
 \sidecapsep=\dimen177
@@ -268,32 +272,40 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \epigraphwidth=\skip132
 \epigraphrule=\skip133
 
-(d:/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.s
+ty
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 
-(d:/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.
+sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 
-(d:/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.
+sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwar
+err.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ))
-(d:/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\g
+ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(d:/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoption
+s.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.st
+y
+Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-(d:/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkey
+s.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )))
-\c@section@level=\count310
+\c@section@level=\count311
 )
 \tocentryskip=\skip134
 \tocbaseline=\skip135
@@ -323,7 +335,7 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 \cftsubparagraphindent=\skip157
 \cftsubparagraphnumwidth=\skip158
 \prechapterprecisshift=\dimen186
-\c@maxsecnumdepth=\count311
+\c@maxsecnumdepth=\count312
 \bibindent=\dimen187
 \bibitemsep=\skip159
 \indexcolsep=\skip160
@@ -346,7 +358,7 @@ LaTeX Info: Redefining \flushbottom on input line 8099.
 \footinsdim=\skip170
 \footinsv@r=\insert250
 \@mpfootinsv@r=\insert249
-\m@m@k=\count312
+\m@m@k=\count313
 \m@m@h=\dimen190
 \m@mipn@skip=\skip171
 \sidefootins=\insert248
@@ -356,15 +368,15 @@ LaTeX Info: Redefining \flushbottom on input line 8099.
 \sidefootvsep=\skip175
 \sidefootwidth=\skip176
 \m@mdownsf=\skip177
-\c@sidefootnote=\count313
+\c@sidefootnote=\count314
 \sidefootmarkwidth=\skip178
 \sidefootmarksep=\skip179
 \sidefootparindent=\skip180
-\c@pagenote=\count314
-\c@pagenoteshadow=\count315
+\c@pagenote=\count315
+\c@pagenoteshadow=\count316
 \mem@pn@lastkern=\skip181
 
-(d:/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks23
 \verbatim@line=\toks24
@@ -373,40 +385,40 @@ Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \verbatimindent=\skip182
 \verbatim@out=\write3
 
-(d:/texlive/2026/texmf-dist/tex/latex/base/shortvrb.sty
-Package: shortvrb 2024/12/25 v3.0q Standard LaTeX documentation package V3 (FMi
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\shortvrb.sty
+Package: shortvrb 2026-03-13 v3.0r Standard LaTeX documentation package V3 (FMi
 )
 )
 \bvboxsep=\skip183
-\c@memfbvline=\count316
-\c@bvlinectr=\count317
+\c@memfbvline=\count317
+\c@bvlinectr=\count318
 \bvnumlength=\skip184
 \fb@frw=\dimen191
 \fb@frh=\dimen192
 \FrameRule=\dimen193
 \FrameSep=\dimen194
-\c@cp@cntr=\count318
-\c@ism@mctr=\count319
-\c@xsm@mctr=\count320
-\c@csm@mctr=\count321
-\c@ksm@mctr=\count322
-\c@xksm@mctr=\count323
-\c@cksm@mctr=\count324
-\c@msm@mctr=\count325
-\c@xmsm@mctr=\count326
-\c@cmsm@mctr=\count327
-\c@bsm@mctr=\count328
-\c@workm@mctr=\count329
-\c@sheetsequence=\count330
-\c@lastsheet=\count331
-\c@lastpage=\count332
-\c@figure=\count333
-\c@lofdepth=\count334
+\c@cp@cntr=\count319
+\c@ism@mctr=\count320
+\c@xsm@mctr=\count321
+\c@csm@mctr=\count322
+\c@ksm@mctr=\count323
+\c@xksm@mctr=\count324
+\c@cksm@mctr=\count325
+\c@msm@mctr=\count326
+\c@xmsm@mctr=\count327
+\c@cmsm@mctr=\count328
+\c@bsm@mctr=\count329
+\c@workm@mctr=\count330
+\c@sheetsequence=\count331
+\c@lastsheet=\count332
+\c@lastpage=\count333
+\c@figure=\count334
+\c@lofdepth=\count335
 \cftbeforefigureskip=\skip185
 \cftfigureindent=\skip186
 \cftfigurenumwidth=\skip187
-\c@table=\count335
-\c@lotdepth=\count336
+\c@table=\count336
+\c@lotdepth=\count337
 \cftbeforetableskip=\skip188
 \cfttableindent=\skip189
 \cfttablenumwidth=\skip190
@@ -437,46 +449,52 @@ Package tocbibind [2008/07/23] emulated by memoir.
 Package tocloft [2008/07/23] emulated by memoir.
 Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
-)
-(./template_settings/common/setup.tex
-\c@draft=\count337
-\c@bibliosel=\count338
-) (./template_settings/common/packages.tex (d:/texlive/2026/texmf-dist/tex/late
-x/pdflscape/pdflscape.sty
-Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+) (template_settings/common/setup.tex
+\c@draft=\count338
+\c@bibliosel=\count339
+) (template_settings/common/packages.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscap
+e.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 
-(d:/texlive/2026/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PD
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscap
+e-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
 F (HO)
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/lscape.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.st
+y
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.
+sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graph
+ics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdfte
+x.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 )))
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.
+sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
 
-(d:/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count339
-\Gm@cntv=\count340
-\c@Gm@tempcnt=\count341
+\Gm@cnth=\count340
+\Gm@cntv=\count341
+\c@Gm@tempcnt=\count342
 \Gm@bindingoffset=\dimen195
 \Gm@wd@mp=\dimen196
 \Gm@odd@mp=\dimen197
@@ -486,8 +504,11 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen257
 \Gm@layoutvoffset=\dimen258
 \Gm@dimlist=\toks25
-)
-(d:/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.
+cfg))
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.
+sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks26
 \symAMSa=\mathgroup4
@@ -496,34 +517,37 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/07/09 v2.17z AMS math features
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.st
+y
+Package: amsmath 2026/05/19 v2.18d AMS math features
 \@mathmargin=\skip191
 
 For additional information on amsmath, use the `?' option.
-(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.st
+y
 Package: amstext 2024/11/17 v2.01 AMS text
 
-(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
 \ex@=\dimen259
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen260
 )
-(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count342
+\inf@bad=\count343
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count343
-\leftroot@=\count344
+\uproot@=\count344
+\leftroot@=\count345
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count345
-\DOTSCASE@=\count346
+\classnum@=\count346
+\DOTSCASE@=\count347
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -536,20 +560,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen261
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count347
+\macc@depth=\count348
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count348
+\c@MaxMatrixCols=\count349
 \dotsspace@=\muskip17
-\c@parentequation=\count349
-\dspbrk@lvl=\count350
+\c@parentequation=\count350
+\dspbrk@lvl=\count351
 \tag@help=\toks28
-\row@=\count351
-\column@=\count352
-\maxfields@=\count353
+\row@=\count352
+\column@=\count353
+\maxfields@=\count354
 \andhelp@=\toks29
 \eqnshift@=\dimen262
 \alignsep@=\dimen263
@@ -561,20 +585,21 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \multlinegap=\skip192
 \multlinetaggap=\skip193
 \mathdisplay@stack=\toks31
-LaTeX Info: Redefining \[ on input line 2950.
-LaTeX Info: Redefining \] on input line 2951.
+LaTeX Info: Redefining \[ on input line 2965.
+LaTeX Info: Redefining \] on input line 2966.
 )
-(d:/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.s
+ty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amscd.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amscd.sty
 Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
 \athelp@=\toks32
 \minaw@=\dimen268
 \bigaw@=\dimen269
 \minCDarrowwidth=\dimen270
-)
-(d:/texlive/2026/texmf-dist/tex/latex/amscls/amsthm.sty
+) (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.st
+y
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks33
 \thm@bodyfont=\toks34
@@ -586,26 +611,28 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip196
 \dth@everypar=\toks38
 )
-(d:/texlive/2026/texmf-dist/tex/latex/mathtools/mathtools.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtool
+s.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 
-(d:/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count354
-\calc@Bcount=\count355
+\calc@Acount=\count355
+\calc@Bcount=\count356
 \calc@Adimen=\dimen271
 \calc@Bdimen=\dimen272
 \calc@Askip=\skip197
 \calc@Bskip=\skip198
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count356
+\calc@Ccount=\count357
 \calc@Cskip=\skip199
 )
-(d:/texlive/2026/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.
+sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count357
+\g_MT_multlinerow_int=\count358
 \l_MT_multwidth_dim=\dimen273
 \origjot=\skip256
 \l_MT_shortvdotswithinadjustabove_dim=\dimen274
@@ -620,21 +647,21 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \curtextsize=\skip257
 \bigtextsize=\skip258
 
-(d:/texlive/2026/texmf-dist/tex/latex/cmap/cmap.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cmap\cmap.sty
 Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
 
 
 Package cmap Warning: fontenc already loaded - some fonts may be unprocessed.
 
-) (d:/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+) (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 
-(d:/texlive/2026/texmf-dist/tex/latex/cyrillic/t2aenc.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2aenc.de
+f
 File: t2aenc.def 2023/11/07 v1.0k Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
-
-(d:/texlive/2026/texmf-dist/tex/latex/base/t2aenc.dfu
+ (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\t2aenc.dfu
 File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -835,71 +862,86 @@ File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
 )))
-(d:/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks39
 \inpenc@posthook=\toks40
-)
-(d:/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2026/04/15 v26.6 The multilingual framework for LuaLaTeX, pdfLaT
-eX and XeLaTeX
-\babel@savecnt=\count358
+) (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.st
+y
+Package: babel 2026/08/21 v26.11 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+\babel@savecnt=\count359
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2078.
+ne 2105.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2080.
+ne 2107.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2082.
+e 2109.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2083.
+e 2110.
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2084.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2086.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
 on input line 2111.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2113.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2138.
 \U@D=\dimen281
-\l@unhyphenated=\language91
+\l@unhyphenated=\language79
 
-(d:/texlive/2026/texmf-dist/tex/generic/babel/txtbabel.def)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.d
+ef)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count359
+\bbl@dirlevel=\count360
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4332.
 
-(d:/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
-(d:/texlive/2026/texmf-dist/tex/generic/babel/locale/ru/babel-russian.tex)
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 4330.
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\
+babel-english.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/ru\
+babel-russian.tex)
+Package babel Info: Importing font and identification data for 'english'
+(babel)             from babel-en.ini. Reported on input line 4460.
 
-(d:/texlive/2026/texmf-dist/tex/generic/babel-english/english.ldf
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\engl
+ish.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language22). Reported on input line 105.
+(babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language22). Reported on input line 108.
+(babel)             (\language73). Reported on input line 108.
 )
-Package babel Info: Importing font and identification data for russian
-(babel)             from babel-ru.ini. Reported on input line 4330.
+Package babel Info: Importing font and identification data for 'russian'
+(babel)             from babel-ru.ini. Reported on input line 4460.
 
-(d:/texlive/2026/texmf-dist/tex/generic/babel-russian/russianb.ldf
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/babel-russian\russ
+ianb.ldf
 File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
 Language: russian 2020/09/09 1.3k Russian support for the Babel system
 Package babel Info: Making " an active character on input line 124.
 Package babel Info: Default for \cyrdash is provided on input line 163.
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/tempora/tempora.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tempora\tempora.st
+y
 Package: tempora 2016/02/02 (msharpe) Style file for Tempora.
-
-(d:/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+ (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 
-(d:/texlive/2026/texmf-dist/tex/latex/cyrillic/ot2enc.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\ot2enc.de
+f
 File: ot2enc.def 2022/06/11 v3.3b Cyrillic encoding definition file
 Now handling font encoding OT2 ...
 ... processing UTF-8 mapping file for font encoding OT2
-
-(d:/texlive/2026/texmf-dist/tex/latex/base/ot2enc.dfu
+ (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\ot2enc.dfu
 File: ot2enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -1041,12 +1083,12 @@ File: ot2enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+201D (decimal 8221)
    defining Unicode char U+2116 (decimal 8470)
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/cyrillic/t2cenc.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2cenc.de
+f
 File: t2cenc.def 2023/11/07 v1.0k Cyrillic encoding definition file
 Now handling font encoding T2C ...
 ... processing UTF-8 mapping file for font encoding T2C
-
-(d:/texlive/2026/texmf-dist/tex/latex/base/t2cenc.dfu
+ (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\t2cenc.dfu
 File: t2cenc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -1237,12 +1279,12 @@ File: t2cenc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/cyrillic/t2benc.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2benc.de
+f
 File: t2benc.def 2023/11/07 v1.0k Cyrillic encoding definition file
 Now handling font encoding T2B ...
 ... processing UTF-8 mapping file for font encoding T2B
-
-(d:/texlive/2026/texmf-dist/tex/latex/base/t2benc.dfu
+ (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\t2benc.dfu
 File: t2benc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -1437,12 +1479,14 @@ File: t2benc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\lgre
+nc.def
 File: lgrenc.def 2023-09-12 2.5 LGR Greek font encoding definitions
 Now handling font encoding LGR ...
 ... processing UTF-8 mapping file for font encoding LGR
 
-(d:/texlive/2026/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/greek-inputenc\lgr
+enc.dfu
 File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+00A8 (decimal 168)
    defining Unicode char U+00AB (decimal 171)
@@ -1794,7 +1838,8 @@ File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+10146 (decimal 65862)
    defining Unicode char U+10147 (decimal 65863)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\gree
+k-fontenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 LaTeX Encoding Info:    Ignoring declaration for text command \accACUTE (encodi
 ng LGR) on input line 251.
@@ -1803,47 +1848,54 @@ ng LGR) on input line 259.
 LaTeX Encoding Info:    Ignoring declaration for text command \accTILDE (encodi
 ng LGR) on input line 267.
 )))
-(d:/texlive/2026/texmf-dist/tex/latex/base/textcomp.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
-(d:/texlive/2026/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.
+sty
 Package: fontaxes 2026-01-02 v2.0.2 Font selection axes (deprecated)
 Applying: [2024-11-01] Use figureversions if present on input line 74.
 
-(d:/texlive/2026/texmf-dist/tex/latex/figureversions/figureversions.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/figureversions\fig
+ureversions.sty
 Package: figureversions 2025-04-29 v1.0.1 Figure versions
 )
 Already applied: [0000-00-00] Fall back to v1 on input line 76.
 )
-(d:/texlive/2026/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.st
+y
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(d:/texlive/2026/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(d:/texlive/2026/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.
+tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils
+.tex
 \XKV@toks=\toks41
 \XKV@tempa@toks=\toks42
-\XKV@tempb@toks=\toks43
 )
-\XKV@depth=\count360
+\XKV@depth=\count361
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
-(d:/texlive/2026/texmf-dist/tex/latex/newtx/newtxmath.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/newtx\newtxmath.st
+y
 Package: newtxmath 2024/09/22 v1.754
 
 `newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
-) (d:/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+) (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/oberdiek/centernot.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\centernot
+.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\tx@cntz=\count361
+\tx@cntz=\count362
 
-(d:/texlive/2026/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count362
-\tx@IsAlNum=\count363
-\tx@tA=\toks44
-\tx@tB=\toks45
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/binhex\binhex.te
+x)
+\tx@Isdigit=\count363
+\tx@IsAlNum=\count364
+\tx@tA=\toks43
+\tx@tB=\toks44
 \tx@su=\read4
 
 amsthm NOT loaded
@@ -1936,7 +1988,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
 
 (Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 679.
-\tx@sbptoks=\toks46
+\tx@sbptoks=\toks45
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 902.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 903.
 LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 904.
@@ -1954,10 +2006,11 @@ LaTeX Info: Redefining \Bbbk on input line 2847.
 LaTeX Info: Redefining \not on input line 2995.
 LaTeX Info: Redefining \textsquare on input line 3025.
 LaTeX Info: Redefining \openbox on input line 3027.
-) (d:/texlive/2026/texmf-dist/tex/latex/printlen/printlen.sty
-Package: printlen 2009/09/03 v1.1a print lengths with units
 )
-(d:/texlive/2026/texmf-dist/tex/latex/tools/bm.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/printlen\printlen.
+sty
+Package: printlen 2009/09/03 v1.1a print lengths with units
+) (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
 Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup10
 \symboldletters=\mathgroup11
@@ -1967,48 +2020,56 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-(d:/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count364
-\csq@gtype=\count365
-\csq@glevel=\count366
-\csq@qlevel=\count367
-\csq@maxlvl=\count368
-\csq@tshold=\count369
-\csq@ltx@everypar=\toks47
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.
+sty
+Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
+\csq@reset=\count365
+\csq@gtype=\count366
+\csq@glevel=\count367
+\csq@qlevel=\count368
+\csq@maxlvl=\count369
+\csq@tshold=\count370
+\csq@ltx@everypar=\toks46
 
-(d:/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.
+def
+File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(d:/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.
+cfg
 File: csquotes.cfg 
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/tools/indentfirst.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.
+sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.
+sty
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2026-05-17 v1.3f Standard LaTeX Color (DPC)
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color
+.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-\everycr=\toks48
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor
+.ltx))
+new hooks used!!
 \minrowclearance=\skip259
-\rownum=\count370
+\rownum=\count371
 )
-(d:/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(d:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color
+.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 
@@ -2017,7 +2078,9 @@ put line 265.
 
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 LaTeX Info: Redefining \color on input line 762.
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor
+.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -2028,42 +2091,47 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.
+def
+File: dvipsnam.def 2026-05-17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.st
+y
+Package: longtable 2026-01-28 v4.27 Multi-page Table package (DPC)
 \LTleft=\skip260
 \LTright=\skip261
 \LTpre=\skip262
 \LTpost=\skip263
-\LTchunksize=\count371
+\LTchunksize=\count372
 \LTcapwidth=\dimen282
 \LT@head=\box61
 \LT@firsthead=\box62
 \LT@foot=\box63
 \LT@lastfoot=\box64
 \LT@gbox=\box65
-\LT@cols=\count372
-\LT@rows=\count373
-\c@LT@tables=\count374
-\c@LT@chunks=\count375
-\LT@p@ftn=\toks49
+\LT@cols=\count373
+\LT@rows=\count374
+\c@LT@tables=\count375
+\c@LT@chunks=\count376
+\LT@p@ftn=\toks47
 )
-(d:/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.
+sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip264
-\multirow@cntb=\count376
+\multirow@cntb=\count377
 \multirow@dima=\skip265
 \bigstrutjot=\dimen283
 )
-(d:/texlive/2026/texmf-dist/tex/latex/makecell/makecell.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.
+sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen284
-\c@nlinenum=\count377
-\TeXr@lab=\toks50
+\c@nlinenum=\count378
+\TeXr@lab=\toks48
 )
-(d:/texlive/2026/texmf-dist/tex/generic/soul/soulutf8.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/soul\soulutf8.st
+y
 Package: soulutf8 2026-03-06 v3.2 Permit use of UTF-8 characters in soul (HO)
 
 
@@ -2071,58 +2139,63 @@ Package soulutf8 Warning: This package is obsolete,
 (soulutf8)                use the soul package directly. 
 (soulutf8)                 on input line 29.
 
-) (d:/texlive/2026/texmf-dist/tex/generic/soul/soul.sty
+) (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
 Package: soul 2026-03-06 v3.2 Permit use of UTF-8 characters in soul (HO)
 
-(d:/texlive/2026/texmf-dist/tex/generic/soul/soul-ori.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.st
+y
 Package: soul-ori 2026-03-06 v3.2 letterspacing/underlining (mf)
-\SOUL@word=\toks51
-\SOUL@lasttoken=\toks52
-\SOUL@syllable=\toks53
-\SOUL@cmds=\toks54
-\SOUL@buffer=\toks55
-\SOUL@token=\toks56
+\SOUL@word=\toks49
+\SOUL@lasttoken=\toks50
+\SOUL@syllable=\toks51
+\SOUL@cmds=\toks52
+\SOUL@buffer=\toks53
+\SOUL@token=\toks54
 \SOUL@syllgoal=\dimen285
 \SOUL@syllwidth=\dimen286
 \SOUL@charkern=\dimen287
 \SOUL@hyphkern=\dimen288
 \SOUL@dimen=\dimen289
 \SOUL@dimeni=\dimen290
-\SOUL@minus=\count378
-\SOUL@comma=\count379
-\SOUL@apo=\count380
-\SOUL@grave=\count381
+\SOUL@minus=\count379
+\SOUL@comma=\count380
+\SOUL@apo=\count381
+\SOUL@grave=\count382
 \SOUL@spaceskip=\skip266
 \SOUL@ttwidth=\dimen291
 \SOUL@uldp=\dimen292
 \SOUL@ulht=\dimen293
 )
-(d:/texlive/2026/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmd
+s.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/was/icomma.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/was\icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/imakeidx\imakeidx.
+sty
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
 nous mode
 
-(d:/texlive/2026/texmf-dist/tex/generic/iftex/ifxetex.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.st
+y
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-(d:/texlive/2026/texmf-dist/tex/generic/iftex/ifluatex.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.s
+ty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-(d:/texlive/2026/texmf-dist/tex/latex/tools/multicol.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
-\c@tracingmulticols=\count382
+\c@tracingmulticols=\count383
 \mult@box=\box66
 \multicol@leftmargin=\dimen294
-\c@unbalance=\count383
-\c@collectmore=\count384
-\doublecol@number=\count385
-\multicoltolerance=\count386
-\multicolpretolerance=\count387
+\c@unbalance=\count384
+\c@collectmore=\count385
+\doublecol@number=\count386
+\multicoltolerance=\count387
+\multicolpretolerance=\count388
 \full@width=\dimen295
 \page@free=\dimen296
 \premulticols=\dimen297
@@ -2173,16 +2246,16 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \@tempa=\box107
 \@tempa=\box108
 \@tempa=\box109
-\c@minrows=\count388
-\c@columnbadness=\count389
-\c@finalcolumnbadness=\count390
+\c@minrows=\count389
+\c@columnbadness=\count390
+\c@finalcolumnbadness=\count391
 \last@try=\dimen300
 \multicolovershoot=\dimen301
 \multicolundershoot=\dimen302
 \mult@nat@firstbox=\box110
 \colbreak@box=\box111
-\mc@col@check@num=\count391
-\g__mc_curr_col_int=\count392
+\mc@col@check@num=\count392
+\g__mc_curr_col_int=\count393
 ))
 \ru@idxfile=\write4
 \openout4 = `ru.idx'.
@@ -2193,52 +2266,63 @@ Writing index file ru.idx
 \openout5 = `en.idx'.
 
 Writing index file en.idx
-(d:/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
-(d:/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.
+sty
+Package: hyperref 2026-06-17 v7.01r Hypertext links for LaTeX
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvd
+efinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfesc
+ape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(d:/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdfte
+xcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.st
+y
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\string
+enc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen303
-\Hy@linkcounter=\count393
-\Hy@pagecounter=\count394
+\Hy@linkcounter=\count394
+\Hy@pagecounter=\count395
 
-(d:/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.de
+f
+File: pd1enc.def 2026-06-17 v7.01r Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(d:/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.
+sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count395
+\Hy@SavedSpaceFactor=\count396
 
-(d:/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2026-06-17 v7.01r Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 
-(d:/texlive/2026/texmf-dist/tex/latex/greek-fontenc/puenc-greek.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\puen
+c-greek.def
 File: puenc-greek.def 2023-09-12 2.5 Greek LICRs for PDF strings
 
-(d:/texlive/2026/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\gree
+k-fontenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 )
 LaTeX Encoding Info:    Redeclaring text command \textmu (encoding PU) on input
@@ -2247,55 +2331,60 @@ LaTeX Encoding Info:    Redeclaring text command \textmu (encoding PU) on input
 LaTeX Encoding Info:    Redeclaring text command \textohm (encoding PU) on inpu
 t line 1176.
 )
-Package hyperref Info: Option `unicode' set `true' on input line 3166.
-Package hyperref Info: Hyper figures OFF on input line 4201.
-Package hyperref Info: Link nesting OFF on input line 4206.
-Package hyperref Info: Hyper index ON on input line 4209.
-Package hyperref Info: Plain pages OFF on input line 4216.
-Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Option `unicode' set `true' on input line 3164.
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count396
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count397
 
-(d:/texlive/2026/texmf-dist/tex/latex/url/url.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4807.
+LaTeX Info: Redefining \url on input line 4805.
 \XeTeXLinkMargin=\dimen304
 
-(d:/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.st
+y
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(d:/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigin
+tcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count397
+\Fld@menulength=\count398
 \Field@Width=\dimen305
 \Fld@charsize=\dimen306
-Package hyperref Info: Hyper figures OFF on input line 6084.
-Package hyperref Info: Link nesting OFF on input line 6089.
-Package hyperref Info: Hyper index ON on input line 6092.
-Package hyperref Info: backreferencing OFF on input line 6099.
-Package hyperref Info: Link coloring OFF on input line 6104.
-Package hyperref Info: Link coloring with OCG OFF on input line 6109.
-Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count398
-\c@Item=\count399
-\c@Hfootnote=\count400
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count399
+\c@Item=\count400
+\c@Hfootnote=\count401
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(d:/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count401
-\c@bookmark@seq@number=\count402
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.d
+ef
+File: hpdftex.def 2026-06-17 v7.01r Hyperref driver for pdfTeX
+\Fld@listcount=\count402
+\c@bookmark@seq@number=\count403
 
-(d:/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rer
+unfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(d:/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\un
+iquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -2303,29 +2392,34 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip269
 )
-(d:/texlive/2026/texmf-dist/tex/latex/memoir/memhfixc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memhfixc.st
+y
 Package: memhfixc 2025/09/16 v1.24 hyperref package fixes for memoir class
-\c@memhycontfloat=\count403
-\c@mem@Hpagenote=\count404
+\c@memhycontfloat=\count404
+\c@mem@Hpagenote=\count405
 )
-(d:/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.
+sty
+Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen307
 \Gin@req@width=\dimen308
 )
-(d:/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.
+sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip270
 \enit@outerparindent=\dimen309
-\enit@toks=\toks57
+\enit@toks=\toks55
 \enit@inbox=\box112
-\enit@count@id=\count405
-\enitdp@description=\count406
+\enit@count@id=\count406
+\enitdp@description=\count407
 )
-(d:/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.st
+y
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(d:/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.s
+ty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen310
 \captionmargin=\dimen311
@@ -2337,54 +2431,63 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen317
 Package caption Info: memoir document class detected.
 
-(d:/texlive/2026/texmf-dist/tex/latex/caption/caption-memoir.sto
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-me
+moir.sto
 File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to th
 e memoir document class (AR)
 ))
-\c@caption@flags=\count407
-\c@continuedfloat=\count408
+\c@caption@flags=\count408
+\c@continuedfloat=\count409
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen318
 \caption@adjustwidth@linewidth=\dimen319
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(d:/texlive/2026/texmf-dist/tex/latex/caption/ltcaption.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.
+sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/caption/subcaption.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption
+.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count409
+\c@subfigure=\count410
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count410
+\c@subtable=\count411
 )
-(d:/texlive/2026/texmf-dist/tex/latex/totcount/totcount.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/totcount\totcount.
+sty
 Package: totcount 2011/01/25 v1.2 package for gettingthe total value of LaTeX c
 ounters
 )
-(d:/texlive/2026/texmf-dist/tex/latex/totpages/totpages.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/totpages\totpages.
+sty
 Package: totpages 2005/09/19 v2.00 Totpages Package (muewi)
 
-(d:/texlive/2026/texmf-dist/tex/latex/everyshi/everyshi.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/everyshi\everyshi.
+sty
 Package: everyshi 2020/11/18 v4.00 EveryShipout Package
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/xassoccnt/xassoccnt.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/xassoccnt\xassoccn
+t.sty
 Package: xassoccnt 2021/11/21 - v2.0
 
-(d:/texlive/2026/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltx
+macro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2
+e\l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
-\g__xassoccnt_tmpa_int=\count411
-\l__xassoccnt_tmpa_int=\count412
-\l__xassoccnt_initialcountervalue_int=\count413
-\g__xassoccnt_lastcountervalue_int=\count414
-\g__xassoccnt_backupcalls_int=\count415
-\l__xassoccnt_backuptmpa_int=\count416
-\l_xassoccnt_resetlist_counter=\count417
+\g__xassoccnt_tmpa_int=\count412
+\l__xassoccnt_tmpa_int=\count413
+\l__xassoccnt_initialcountervalue_int=\count414
+\g__xassoccnt_lastcountervalue_int=\count415
+\g__xassoccnt_backupcalls_int=\count416
+\l__xassoccnt_backuptmpa_int=\count417
+\l_xassoccnt_resetlist_counter=\count418
 )
 Package xassoccnt Info: 2021/11/21-v2.0--steppingcounterssimultaneouslyandother
 features on input line 248.
@@ -2394,7 +2497,9 @@ Package xassoccnt Warning: Warning: Package "calc" is loaded -- this is not
 (xassoccnt)                recommended for xassoccnt
 (xassoccnt)                
 
-(d:/texlive/2026/texmf-dist/tex/latex/cleveref/cleveref.sty
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.
+sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -2410,24 +2515,27 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
 )
 ==> First Aid for cleveref.sty applied!
-) (./template_settings/Dissertation/dispackages.tex
-(d:/texlive/2026/texmf-dist/tex/latex/tools/afterpage.sty
+) (template_settings/Dissertation/dispackages.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.st
+y
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks58
+\AP@output=\toks56
 \AP@partial=\box113
 \AP@footins=\box114
-))
-(./template_settings/Dissertation/userpackages.tex
-(d:/texlive/2026/texmf-dist/tex/latex/datatool/datatool-base.sty
-Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
+)) (template_settings/Dissertation/userpackages.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-
+base.sty
+Package: datatool-base 2026/07/31 v3.4.4 (NLCT)
 
-(d:/texlive/2026/texmf-dist/tex/latex/xfor/xfor.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/tracklang/tracklang.sty
-Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklan
+g.sty
+Package: tracklang 2026/05/24 v1.6.8 (NLCT) Track Languages
 
-(d:/texlive/2026/texmf-dist/tex/generic/tracklang/tracklang.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\trackl
+ang.tex)
 Package tracklang Info: Tracking dialect `english' (language `english') on inpu
 t line 264.
 Package tracklang Info: Tracking dialect `russian' (language `russian') on inpu
@@ -2437,62 +2545,64 @@ t line 264.
 Package tracklang Info: Tracking dialect `english' (language `english') on inpu
 t line 264.
 )
-\l__datatool_tmpa_int=\count418
-\l__datatool_tmpb_int=\count419
-\l__datatool_tmpc_int=\count420
-\l__datatool_tmpd_int=\count421
-\l__datatool_count_int=\count422
-\l__datatool_tmp_datatype_int=\count423
+\l__datatool_tmpa_int=\count419
+\l__datatool_tmpb_int=\count420
+\l__datatool_tmpc_int=\count421
+\l__datatool_tmpd_int=\count422
+\l__datatool_count_int=\count423
+\l__datatool_tmp_datatype_int=\count424
 \l__datatool_tmpa_dim=\dimen320
 \l__datatool_tmpb_dim=\dimen321
 
-(d:/texlive/2026/texmf-dist/tex/latex/datatool/datatool-l3fp.def
-File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-
+l3fp.def
+File: datatool-l3fp.def 2026/07/31 v3.4.4 (NLCT)
 )
-\@dtl@toks=\toks59
-\@dtl@tmpcount=\count424
+\@dtl@toks=\toks57
+\@dtl@tmpcount=\count425
 \dtl@tmplength=\skip271
 \l__datatool_measure_box=\box115
-\dtl@sortresult=\count425
+\dtl@sortresult=\count426
 
-(d:/texlive/2026/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
-File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-
+utf8.ldf
+File: datatool-utf8.ldf 2026/07/31 v3.4.4 (NLCT)
 )
-\@dtl@datatype=\count426
-\c_datatool_unknown_int=\count427
-\l__datatool_year_int=\count428
-\l__datatool_month_int=\count429
-\l__datatool_day_int=\count430
-\l__datatool_hour_int=\count431
-\l__datatool_minute_int=\count432
-\l__datatool_second_int=\count433
-\l__datatool_tzhour_int=\count434
-\l__datatool_tzminute_int=\count435
-\l__datatool_julian_int=\count436
-\l__datatool_local_julian_int=\count437
-\l__datatool_prefix_int=\count438
-\l__datatool_suffix_int=\count439
-\@dtl@foreach@level=\count440
+\@dtl@datatype=\count427
+\c_datatool_unknown_int=\count428
+\l__datatool_year_int=\count429
+\l__datatool_month_int=\count430
+\l__datatool_day_int=\count431
+\l__datatool_hour_int=\count432
+\l__datatool_minute_int=\count433
+\l__datatool_second_int=\count434
+\l__datatool_tzhour_int=\count435
+\l__datatool_tzminute_int=\count436
+\l__datatool_julian_int=\count437
+\l__datatool_local_julian_int=\count438
+\l__datatool_prefix_int=\count439
+\l__datatool_suffix_int=\count440
+\@dtl@foreach@level=\count441
 
-(d:/texlive/2026/texmf-dist/tex/latex/datatool-english/datatool-english.ldf
-File: datatool-english.ldf 2025/03/12 v1.1 (NLCT)
 
-(d:/texlive/2026/texmf-dist/tex/latex/datatool-english/datatool-english-utf8.ld
-f
-File: datatool-english-utf8.ldf 2025/03/12 v1.1 (NLCT)
-))
+Package tracklang Warning: No `datatool' support for dialect `english'  on inpu
+t line 9924.
+
 
 Package tracklang Warning: No `datatool' support for dialect `russian'  on inpu
 t line 9924.
 
-\dtl@codeA=\count441
-\dtl@codeB=\count442
-) (d:/texlive/2026/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
-Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks60
-\@glsmrest=\toks61
+\dtl@codeA=\count442
+\dtl@codeB=\count443
 )
-(d:/texlive/2026/texmf-dist/tex/latex/layouts/layouts.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.
+sty
+Package: mfirstuc 2025/04/03 v2.09 (NLCT)
+\@glsmfirst=\toks58
+\@glsmrest=\toks59
+)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/layouts\layouts.st
+y
 Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@ylen=\skip272
 \layoutsbox=\box116
@@ -2514,98 +2624,100 @@ Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@yptsep=\skip288
 \l@ypsep=\skip289
 \l@yitmsep=\skip290
-\l@ytok=\toks62
-\l@youtpw=\count443
-\l@youtph=\count444
-\l@youthpi=\count445
-\l@youthpii=\count446
-\l@youthpiii=\count447
-\l@youthpiv=\count448
-\l@youthpv=\count449
-\l@youthpvi=\count450
-\l@youthpvii=\count451
-\l@youtparskip=\count452
-\l@youtvpi=\count453
-\l@youtvpii=\count454
-\l@youtvpiii=\count455
-\l@youtvpiv=\count456
-\l@youtvpv=\count457
-\l@youtvpvi=\count458
-\l@youtvpvii=\count459
-\l@youthdo=\count460
-\l@youthdi=\count461
-\l@youthdii=\count462
-\l@youthdiii=\count463
-\l@youthdiv=\count464
-\l@youthdv=\count465
-\l@youthdvi=\count466
-\l@youthdvii=\count467
-\l@youtvdo=\count468
-\l@youtvdi=\count469
-\l@youtvdii=\count470
-\l@youtvdiii=\count471
-\l@youtvdiv=\count472
-\l@youtvdv=\count473
-\l@youtvdvi=\count474
-\l@youtvdvii=\count475
-\l@youtvdviii=\count476
-\l@youtxci=\count477
-\l@youtxcii=\count478
-\l@youtxciii=\count479
-\l@youtxciv=\count480
-\l@youtxcv=\count481
-\l@youtxcvi=\count482
-\l@youtyci=\count483
-\l@youtycii=\count484
-\l@youtyciii=\count485
-\l@youtyciv=\count486
-\l@youtycv=\count487
-\l@youtycvi=\count488
-\l@youtycvii=\count489
-\l@youtycviii=\count490
-\l@youtxco=\count491
-\l@youtyco=\count492
+\l@ytok=\toks60
+\l@youtpw=\count444
+\l@youtph=\count445
+\l@youthpi=\count446
+\l@youthpii=\count447
+\l@youthpiii=\count448
+\l@youthpiv=\count449
+\l@youthpv=\count450
+\l@youthpvi=\count451
+\l@youthpvii=\count452
+\l@youtparskip=\count453
+\l@youtvpi=\count454
+\l@youtvpii=\count455
+\l@youtvpiii=\count456
+\l@youtvpiv=\count457
+\l@youtvpv=\count458
+\l@youtvpvi=\count459
+\l@youtvpvii=\count460
+\l@youthdo=\count461
+\l@youthdi=\count462
+\l@youthdii=\count463
+\l@youthdiii=\count464
+\l@youthdiv=\count465
+\l@youthdv=\count466
+\l@youthdvi=\count467
+\l@youthdvii=\count468
+\l@youtvdo=\count469
+\l@youtvdi=\count470
+\l@youtvdii=\count471
+\l@youtvdiii=\count472
+\l@youtvdiv=\count473
+\l@youtvdv=\count474
+\l@youtvdvi=\count475
+\l@youtvdvii=\count476
+\l@youtvdviii=\count477
+\l@youtxci=\count478
+\l@youtxcii=\count479
+\l@youtxciii=\count480
+\l@youtxciv=\count481
+\l@youtxcv=\count482
+\l@youtxcvi=\count483
+\l@youtyci=\count484
+\l@youtycii=\count485
+\l@youtyciii=\count486
+\l@youtyciv=\count487
+\l@youtycv=\count488
+\l@youtycvi=\count489
+\l@youtycvii=\count490
+\l@youtycviii=\count491
+\l@youtxco=\count492
+\l@youtyco=\count493
 \l@ytempdima=\skip291
-)
-(d:/texlive/2026/texmf-dist/tex/generic/ulem/ulem.sty
+) (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
 \UL@box=\box117
 \UL@hyphenbox=\box118
 \UL@skip=\skip292
-\UL@hook=\toks63
+\UL@hook=\toks61
 \UL@height=\dimen322
-\UL@pe=\count493
+\UL@pe=\count494
 \UL@pixel=\dimen323
 \ULC@box=\box119
 Package: ulem 2019/11/18
 \ULdepth=\dimen324
 )
-(d:/texlive/2026/texmf-dist/tex/latex/environ/environ.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.st
+y
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(d:/texlive/2026/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspa
+ces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-(d:/texlive/2026/texmf-dist/tex/latex/textcase/textcase.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.
+sty
 Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
 Package textcase Info: Defining Legacy names on input line 20.
-)
-(d:/texlive/2026/texmf-dist/tex/latex/tabu/tabu.sty
+) (C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tabu\tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 
-(d:/texlive/2026/texmf-dist/tex/latex/varwidth/varwidth.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.
+sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box120
-\sift@deathcycles=\count494
+\sift@deathcycles=\count495
 \@vwid@loff=\dimen325
 \@vwid@roff=\dimen326
 )
 ==> First Aid for varwidth.sty applied!
-\c@taburow=\count495
-\tabu@nbcols=\count496
-\tabu@cnt=\count497
-\tabu@Xcol=\count498
-\tabu@alloc=\count499
-\tabu@nested=\count500
+\c@taburow=\count496
+\tabu@nbcols=\count497
+\tabu@cnt=\count498
+\tabu@Xcol=\count499
+\tabu@alloc=\count500
+\tabu@nested=\count501
 \tabu@target=\dimen327
 \tabu@spreadtarget=\dimen328
 \tabu@naturalX=\dimen329
@@ -2615,72 +2727,74 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \abovetabulinesep=\dimen333
 \belowtabulinesep=\dimen334
 \tabustrutrule=\dimen335
-\tabu@thebody=\toks64
-\tabu@footnotes=\toks65
+\tabu@thebody=\toks62
+\tabu@footnotes=\toks63
 \tabu@box=\box121
 \tabu@arstrutbox=\box122
 \tabu@hleads=\box123
 \tabu@vleads=\box124
 \tabu@cellskip=\skip293
-) (d:/texlive/2026/texmf-dist/tex/latex/tabulary/tabulary.sty
+)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tabulary\tabulary.
+sty
 Package: tabulary 2024/06/04 v0.11 tabulary package (DPC)
-\TY@count=\count501
+\TY@count=\count502
 \TY@linewidth=\dimen336
 \tymin=\dimen337
 \tymax=\dimen338
 \TY@tablewidth=\dimen339
 )
-(d:/texlive/2026/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/floatrow\fr-longta
+ble.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 
 \flrow@LT@lasthead=\box125
 \flrow@LT@prelastfoot=\box126
-\c@FBLTpage=\count502
+\c@FBLTpage=\count503
 )
-(d:/texlive/2026/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2026/04/16 4.6a verbatim text (tvz,hv)
-\FV@CodeLineNo=\count503
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.
+sty
+Package: fancyvrb 2026/08/13 4.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count504
 \FV@InFile=\read5
 \FV@TabBox=\box127
-\c@FancyVerbLine=\count504
-\FV@StepNumber=\count505
+\c@FancyVerbLine=\count505
+\FV@StepNumber=\count506
 \FV@OutFile=\write6
 )
-(d:/texlive/2026/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count506
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.
+sty
+\lst@mode=\count507
 \lst@gtempboxa=\box128
-\lst@token=\toks66
-\lst@length=\count507
+\lst@token=\toks64
+\lst@length=\count508
 \lst@currlwidth=\dimen340
-\lst@column=\count508
-\lst@pos=\count509
+\lst@column=\count509
+\lst@pos=\count510
 \lst@lostspace=\dimen341
 \lst@width=\dimen342
-\lst@newlines=\count510
-\lst@lineno=\count511
+\lst@newlines=\count511
+\lst@lineno=\count512
 \lst@maxwidth=\dimen343
 
-(d:/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.
+sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.s
+ty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count512
-\lst@skipnumbers=\count513
+\c@lstnumber=\count513
+\lst@skipnumbers=\count514
 \lst@framebox=\box129
 )
-(d:/texlive/2026/texmf-dist/tex/latex/listings/listings.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.
+cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
 
-==> First Aid for listings.sty no longer applied!
-    Expected:
-        2024/09/23 1.10c (Carsten Heinz)
-    but found:
-        2025/11/14 1.11b (Carsten Heinz)
-    so I'm assuming it got fixed.
-(d:/texlive/2026/texmf-dist/tex/latex/was/upgreek.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/was\upgreek.sty
 Package: upgreek 2003/02/12 v2.0 (WaS)
 Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
 \symugrf@m=\mathgroup14
@@ -2713,22 +2827,24 @@ LaTeX Font Info:    Redeclaring math symbol \upvartheta on input line 64.
 LaTeX Font Info:    Redeclaring math symbol \upvarpi on input line 65.
 LaTeX Font Info:    Redeclaring math symbol \upvarphi on input line 68.
 )
-(d:/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtyp
+e.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
-\MT@toks=\toks67
+\MT@toks=\toks65
 \MT@tempbox=\box130
-\MT@count=\count514
+\MT@count=\count515
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
 LaTeX Info: Redefining \leftprotrusion on input line 1085.
-\MT@prot@toks=\toks68
+\MT@prot@toks=\toks66
 LaTeX Info: Redefining \rightprotrusion on input line 1104.
 LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen344
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count515
+\MT@listname@count=\count516
 
-(d:/texlive/2026/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtyp
+e-pdftex.def
 File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 944.
@@ -2737,51 +2853,55 @@ LaTeX Info: Redefining \lslig on input line 944.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(d:/texlive/2026/texmf-dist/tex/latex/microtype/microtype.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtyp
+e.cfg
 File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
-))
-(./template_settings/Dissertation/setup.tex
-\c@intvl=\count516
-\c@otstup=\count517
-\c@contnumeq=\count518
-\c@contnumfig=\count519
-\c@contnumtab=\count520
-\c@pgnum=\count521
-\c@chapstyle=\count522
-\c@headingdelim=\count523
-\c@headingalign=\count524
-\c@headingsize=\count525
-\c@tabcap=\count526
-\c@tablaba=\count527
-\c@tabtita=\count528
-\c@docType=\count529
-\c@tskPrint=\count530
-\c@tskPages=\count531
-\c@tskPageFirst=\count532
-\c@tskPageLast=\count533
-\c@sumPrint=\count534
-\c@sumPages=\count535
-\c@sumPageFirst=\count536
-\c@sumPageLast=\count537
+)) (template_settings/Dissertation/setup.tex
+\c@intvl=\count517
+\c@otstup=\count518
+\c@contnumeq=\count519
+\c@contnumfig=\count520
+\c@contnumtab=\count521
+\c@pgnum=\count522
+\c@chapstyle=\count523
+\c@headingdelim=\count524
+\c@headingalign=\count525
+\c@headingsize=\count526
+\c@tabcap=\count527
+\c@tablaba=\count528
+\c@tabtita=\count529
+\c@docType=\count530
+\c@tskPrint=\count531
+\c@tskPages=\count532
+\c@tskPageFirst=\count533
+\c@tskPageLast=\count534
+\c@sumPrint=\count535
+\c@sumPages=\count536
+\c@sumPageFirst=\count537
+\c@sumPageLast=\count538
 )
-(./template_settings/Dissertation/preamblenames.tex)
-(./template_settings/common/styles.tex
+(template_settings/Dissertation/preamblenames.tex)
+(template_settings/common/styles.tex
 \mfloatsep=\skip295
 \ltskip=\skip296
 
-(d:/texlive/2026/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbo
+x.sty
 Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
 
-(d:/texlive/2026/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.
+sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip
+.sty
 Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
 
-(d:/texlive/2026/texmf-dist/tex/latex/collectbox/collectbox.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collect
+box.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box131
 )
@@ -2791,7 +2911,8 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \tc@ury=\dimen348
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(d:/texlive/2026/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdfte
+x.def
 File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen349
@@ -2803,9 +2924,10 @@ File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 \adjbox@pdepth=\dimen355
 \adjbox@ptotalheight=\dimen356
 
-(d:/texlive/2026/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpag
+e.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count538
+\c@checkoddpage=\count539
 LaTeX Info: Redefining \checkoddpage on input line 45.
 ))
 Package hyperref Info: Option `linktocpage' set `true' on input line 188.
@@ -2818,53 +2940,56 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 188.
 
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 188.
-\c@m-theorem=\count539
-\c@m-corollary=\count540
-\c@m-proposition=\count541
-\c@m-lemma=\count542
-\c@m-axiom=\count543
-\c@m-example=\count544
-\c@m-definition=\count545
-\c@m-condition=\count546
-\c@m-problem=\count547
-\c@m-exercise=\count548
-\c@m-question=\count549
-\c@m-hypothesis=\count550
-\c@m-task=\count551
-) (./template_settings/Dissertation/disstyles.tex
+\c@m-theorem=\count540
+\c@m-corollary=\count541
+\c@m-proposition=\count542
+\c@m-lemma=\count543
+\c@m-axiom=\count544
+\c@m-example=\count545
+\c@m-definition=\count546
+\c@m-condition=\count547
+\c@m-problem=\count548
+\c@m-exercise=\count549
+\c@m-question=\count550
+\c@m-hypothesis=\count551
+\c@m-task=\count552
+) (template_settings/Dissertation/disstyles.tex
 \otstuplen=\skip297
 
-(d:/texlive/2026/texmf-dist/tex/latex/placeins/placeins.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.
+sty
 Package: placeins 2005/04/18  v 2.2
 )
-\c@mychapternumber=\count552
-\c@chapterDOI=\count553
-\c@mytotalfigures=\count554
-\c@xassoccnt@total@mytotalfigures=\count555
-\c@mytotalfiguresInApp=\count556
-\c@xassoccnt@total@mytotalfiguresInApp=\count557
-\c@mytotaltables=\count558
-\c@xassoccnt@total@mytotaltables=\count559
-\c@mytotaltablesInApp=\count560
-\c@xassoccnt@total@mytotaltablesInApp=\count561
-\c@myappendices=\count562
-\c@xassoccnt@total@myappendices=\count563
-\c@mypages=\count564
-\c@mytotalpagesInApp=\count565
-\c@myfigures=\count566
-\c@mytables=\count567
-\c@citenum=\count568
-\c@citenum@totc=\count569
+\c@mychapternumber=\count553
+\c@chapterDOI=\count554
+\c@mytotalfigures=\count555
+\c@xassoccnt@total@mytotalfigures=\count556
+\c@mytotalfiguresInApp=\count557
+\c@xassoccnt@total@mytotalfiguresInApp=\count558
+\c@mytotaltables=\count559
+\c@xassoccnt@total@mytotaltables=\count560
+\c@mytotaltablesInApp=\count561
+\c@xassoccnt@total@mytotaltablesInApp=\count562
+\c@myappendices=\count563
+\c@xassoccnt@total@myappendices=\count564
+\c@mypages=\count565
+\c@mytotalpagesInApp=\count566
+\c@myfigures=\count567
+\c@mytables=\count568
+\c@citenum=\count569
+\c@citenum@totc=\count570
 
-(d:/texlive/2026/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algori
+thm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count570
+\c@AlgoLine=\count571
 \algocf@hangindent=\skip298
 
-(d:/texlive/2026/texmf-dist/tex/latex/tools/xspace.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/relsize/relsize.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.st
+y
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip299
@@ -2897,74 +3022,74 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip314
 \algotitleheightruledefault=\skip315
 \algotitleheightrule=\skip316
-\c@algocfline=\count571
-\c@algocfproc=\count572
-\c@algocf=\count573
+\c@algocfline=\count572
+\c@algocfproc=\count573
+\c@algocf=\count574
 \algocf@algoframe=\box138
 \algocf@algobox=\box139
-))
-(./template_settings/Dissertation/userstyles.tex
+)) (template_settings/Dissertation/userstyles.tex
 \twless=\skip317
 \lmarg=\skip318
-\c@ListingEnv=\count574
-\c@loldepth=\count575
-\c@rowcnt=\count576
+\c@ListingEnv=\count575
+\c@loldepth=\count576
+\c@rowcnt=\count577
 )
-(./template_settings/biblio/bibliopreamble.tex
-(./template_settings/biblio/biblatex.tex
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
+(template_settings/biblio/bibliopreamble.tex
+(template_settings/biblio/biblatex.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.
+sty
+Package: biblatex 2026/08/13 v3.22 programmable bibliographies (PK/MW)
 
-(d:/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count577
+\lrq@indent=\count578
 
-(d:/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count578
-\c@listtotal=\count579
-\c@listcount=\count580
-\c@liststart=\count581
-\c@liststop=\count582
-\c@citecount=\count583
-\c@citetotal=\count584
-\c@multicitecount=\count585
-\c@multicitetotal=\count586
-\c@instcount=\count587
-\c@maxnames=\count588
-\c@minnames=\count589
-\c@maxitems=\count590
-\c@minitems=\count591
-\c@citecounter=\count592
-\c@maxcitecounter=\count593
-\c@savedcitecounter=\count594
-\c@uniquelist=\count595
-\c@uniquename=\count596
-\c@refsection=\count597
-\c@refsegment=\count598
-\c@maxextratitle=\count599
-\c@maxextratitleyear=\count600
-\c@maxextraname=\count601
-\c@maxextradate=\count602
-\c@maxextraalpha=\count603
-\c@abbrvpenalty=\count604
-\c@highnamepenalty=\count605
-\c@lownamepenalty=\count606
-\c@maxparens=\count607
-\c@parenlevel=\count608
-\blx@tempcnta=\count609
-\blx@tempcntb=\count610
-\blx@tempcntc=\count611
-\c@blx@maxsection=\count612
-\blx@maxsegment@0=\count613
-\blx@notetype=\count614
-\blx@parenlevel@text=\count615
-\blx@parenlevel@foot=\count616
-\blx@sectionciteorder@0=\count617
-\blx@sectionciteorderinternal@0=\count618
-\blx@entrysetcounter=\count619
-\blx@biblioinstance=\count620
+\c@tabx@nest=\count579
+\c@listtotal=\count580
+\c@listcount=\count581
+\c@liststart=\count582
+\c@liststop=\count583
+\c@citecount=\count584
+\c@citetotal=\count585
+\c@multicitecount=\count586
+\c@multicitetotal=\count587
+\c@instcount=\count588
+\c@maxnames=\count589
+\c@minnames=\count590
+\c@maxitems=\count591
+\c@minitems=\count592
+\c@citecounter=\count593
+\c@maxcitecounter=\count594
+\c@savedcitecounter=\count595
+\c@uniquelist=\count596
+\c@uniquename=\count597
+\c@refsection=\count598
+\c@refsegment=\count599
+\c@maxextratitle=\count600
+\c@maxextratitleyear=\count601
+\c@maxextraname=\count602
+\c@maxextradate=\count603
+\c@maxextraalpha=\count604
+\c@abbrvpenalty=\count605
+\c@highnamepenalty=\count606
+\c@lownamepenalty=\count607
+\c@maxparens=\count608
+\c@parenlevel=\count609
+\blx@tempcnta=\count610
+\blx@tempcntb=\count611
+\blx@tempcntc=\count612
+\c@blx@maxsection=\count613
+\blx@maxsegment@0=\count614
+\blx@notetype=\count615
+\blx@parenlevel@text=\count616
+\blx@parenlevel@foot=\count617
+\blx@sectionciteorder@0=\count618
+\blx@sectionciteorderinternal@0=\count619
+\blx@entrysetcounter=\count620
+\blx@biblioinstance=\count621
 \labelnumberwidth=\skip319
 \labelalphawidth=\skip320
 \biblabelsep=\skip321
@@ -2974,119 +3099,122 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip325
 \blx@bcfin=\read6
 \blx@bcfout=\write7
-\blx@langwohyphens=\language92
-\c@mincomprange=\count621
-\c@maxcomprange=\count622
-\c@mincompwidth=\count623
+\blx@langwohyphens=\language80
+\c@mincomprange=\count622
+\c@maxcomprange=\count623
+\c@mincompwidth=\count624
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.de
+f
+File: blx-dm.def 2026/08/13 v3.22 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'gost-numeric.dbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex-gost/gost-numeric.dbx
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-gost/dbx\
+gost-numeric.dbx
 File: gost-numeric.dbx 2023/04/25 v1.24 biblatex-gost data model
 Package biblatex Info: Trying to load biblatex-gost data model...
 Package biblatex Info: ... file 'biblatex-gost.dbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.dbx
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-gost/dbx\
+biblatex-gost.dbx
 File: biblatex-gost.dbx 2023/04/25 v1.24 biblatex-gost data model
 ))
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count624
-\c@savedafterword=\count625
-\c@annotator=\count626
-\c@savedannotator=\count627
-\c@author=\count628
-\c@savedauthor=\count629
-\c@bookauthor=\count630
-\c@savedbookauthor=\count631
-\c@commentator=\count632
-\c@savedcommentator=\count633
-\c@editor=\count634
-\c@savededitor=\count635
-\c@editora=\count636
-\c@savededitora=\count637
-\c@editorb=\count638
-\c@savededitorb=\count639
-\c@editorc=\count640
-\c@savededitorc=\count641
-\c@foreword=\count642
-\c@savedforeword=\count643
-\c@holder=\count644
-\c@savedholder=\count645
-\c@introduction=\count646
-\c@savedintroduction=\count647
-\c@namea=\count648
-\c@savednamea=\count649
-\c@nameb=\count650
-\c@savednameb=\count651
-\c@namec=\count652
-\c@savednamec=\count653
-\c@translator=\count654
-\c@savedtranslator=\count655
-\c@shortauthor=\count656
-\c@savedshortauthor=\count657
-\c@shorteditor=\count658
-\c@savedshorteditor=\count659
-\c@booktranslator=\count660
-\c@savedbooktranslator=\count661
-\c@bookcommentator=\count662
-\c@savedbookcommentator=\count663
-\c@bookannotator=\count664
-\c@savedbookannotator=\count665
-\c@bookintroduction=\count666
-\c@savedbookintroduction=\count667
-\c@bookforeword=\count668
-\c@savedbookforeword=\count669
-\c@bookafterword=\count670
-\c@savedbookafterword=\count671
-\c@labelname=\count672
-\c@savedlabelname=\count673
-\c@institution=\count674
-\c@savedinstitution=\count675
-\c@lista=\count676
-\c@savedlista=\count677
-\c@listb=\count678
-\c@savedlistb=\count679
-\c@listc=\count680
-\c@savedlistc=\count681
-\c@listd=\count682
-\c@savedlistd=\count683
-\c@liste=\count684
-\c@savedliste=\count685
-\c@listf=\count686
-\c@savedlistf=\count687
-\c@location=\count688
-\c@savedlocation=\count689
-\c@organization=\count690
-\c@savedorganization=\count691
-\c@origlocation=\count692
-\c@savedoriglocation=\count693
-\c@origpublisher=\count694
-\c@savedorigpublisher=\count695
-\c@publisher=\count696
-\c@savedpublisher=\count697
-\c@language=\count698
-\c@savedlanguage=\count699
-\c@origlanguage=\count700
-\c@savedoriglanguage=\count701
-\c@bookoriglanguage=\count702
-\c@savedbookoriglanguage=\count703
-\c@specdata=\count704
-\c@savedspecdata=\count705
-\c@credits=\count706
-\c@savedcredits=\count707
-\c@bookcredits=\count708
-\c@savedbookcredits=\count709
-\c@editioncredits=\count710
-\c@savededitioncredits=\count711
-\c@pageref=\count712
-\c@savedpageref=\count713
+\c@afterword=\count625
+\c@savedafterword=\count626
+\c@annotator=\count627
+\c@savedannotator=\count628
+\c@author=\count629
+\c@savedauthor=\count630
+\c@bookauthor=\count631
+\c@savedbookauthor=\count632
+\c@commentator=\count633
+\c@savedcommentator=\count634
+\c@editor=\count635
+\c@savededitor=\count636
+\c@editora=\count637
+\c@savededitora=\count638
+\c@editorb=\count639
+\c@savededitorb=\count640
+\c@editorc=\count641
+\c@savededitorc=\count642
+\c@foreword=\count643
+\c@savedforeword=\count644
+\c@holder=\count645
+\c@savedholder=\count646
+\c@introduction=\count647
+\c@savedintroduction=\count648
+\c@namea=\count649
+\c@savednamea=\count650
+\c@nameb=\count651
+\c@savednameb=\count652
+\c@namec=\count653
+\c@savednamec=\count654
+\c@translator=\count655
+\c@savedtranslator=\count656
+\c@shortauthor=\count657
+\c@savedshortauthor=\count658
+\c@shorteditor=\count659
+\c@savedshorteditor=\count660
+\c@booktranslator=\count661
+\c@savedbooktranslator=\count662
+\c@bookcommentator=\count663
+\c@savedbookcommentator=\count664
+\c@bookannotator=\count665
+\c@savedbookannotator=\count666
+\c@bookintroduction=\count667
+\c@savedbookintroduction=\count668
+\c@bookforeword=\count669
+\c@savedbookforeword=\count670
+\c@bookafterword=\count671
+\c@savedbookafterword=\count672
+\c@labelname=\count673
+\c@savedlabelname=\count674
+\c@institution=\count675
+\c@savedinstitution=\count676
+\c@lista=\count677
+\c@savedlista=\count678
+\c@listb=\count679
+\c@savedlistb=\count680
+\c@listc=\count681
+\c@savedlistc=\count682
+\c@listd=\count683
+\c@savedlistd=\count684
+\c@liste=\count685
+\c@savedliste=\count686
+\c@listf=\count687
+\c@savedlistf=\count688
+\c@location=\count689
+\c@savedlocation=\count690
+\c@organization=\count691
+\c@savedorganization=\count692
+\c@origlocation=\count693
+\c@savedoriglocation=\count694
+\c@origpublisher=\count695
+\c@savedorigpublisher=\count696
+\c@publisher=\count697
+\c@savedpublisher=\count698
+\c@language=\count699
+\c@savedlanguage=\count700
+\c@origlanguage=\count701
+\c@savedoriglanguage=\count702
+\c@bookoriglanguage=\count703
+\c@savedbookoriglanguage=\count704
+\c@specdata=\count705
+\c@savedspecdata=\count706
+\c@credits=\count707
+\c@savedcredits=\count708
+\c@bookcredits=\count709
+\c@savedbookcredits=\count710
+\c@editioncredits=\count711
+\c@savededitioncredits=\count712
+\c@pageref=\count713
+\c@savedpageref=\count714
 \shorthandwidth=\skip326
 \shortjournalwidth=\skip327
 \shortserieswidth=\skip328
@@ -3104,64 +3232,71 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compa
+t.def
+File: blx-compat.def 2026/08/13 v3.22 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count714
-\c@textcitetotal=\count715
-\c@textcitemaxnames=\count716
-\c@biburlbigbreakpenalty=\count717
-\c@biburlbreakpenalty=\count718
-\c@biburlnumpenalty=\count719
-\c@biburlucpenalty=\count720
-\c@biburllcpenalty=\count721
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.
+def
+File: biblatex.def 2026/08/13 v3.22 biblatex compatibility (PK/MW)
+\c@textcitecount=\count715
+\c@textcitetotal=\count716
+\c@textcitemaxnames=\count717
+\c@biburlbigbreakpenalty=\count718
+\c@biburlbreakpenalty=\count719
+\c@biburlnumpenalty=\count720
+\c@biburlucpenalty=\count721
+\c@biburllcpenalty=\count722
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count722
+\c@smartand=\count723
 )
 Package biblatex Info: Trying to load bibliography style 'gost-numeric'...
 Package biblatex Info: ... file 'gost-numeric.bbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex-gost/gost-numeric.bbx
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-gost/bbx\
+gost-numeric.bbx
 File: gost-numeric.bbx 2023/04/25 v1.24 biblatex-gost styles
 Package biblatex Info: Trying to load bibliography style 'gost-standard'...
 Package biblatex Info: ... file 'gost-standard.bbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex-gost/gost-standard.bbx
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-gost/bbx\
+gost-standard.bbx
 File: gost-standard.bbx 2023/04/25 v1.24 biblatex-gost styles
 Package biblatex Info: Trying to load biblatex-gost generic definitions...
 Package biblatex Info: ... file 'biblatex-gost.def' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-gost\bibl
+atex-gost.def
 File: biblatex-gost.def 2023/04/25 v1.24 biblatex-gost styles
 )
-\c@blx@gost@pointer=\count723
-\c@bbx:relatedcount=\count724
-\c@bbx:relatedtotal=\count725
+\c@blx@gost@pointer=\count724
+\c@bbx:relatedcount=\count725
+\c@bbx:relatedtotal=\count726
 Package biblatex Info: Redefining autocite command 'footnote'.
 Package biblatex Info: Redefining autocite command 'superscript'.
 ))
 Package biblatex Info: Trying to load citation style 'gost-numeric'...
 Package biblatex Info: ... file 'gost-numeric.cbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex-gost/gost-numeric.cbx
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-gost/cbx\
+gost-numeric.cbx
 File: gost-numeric.cbx 2023/04/25 v1.24 biblatex-gost styles
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
-File: numeric-comp.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count726
-\c@cbx@tempcntb=\count727
-\c@cbx@tempcntc=\count728
-\c@cbx@tempcntd=\count729
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numer
+ic-comp.cbx
+File: numeric-comp.cbx 2026/08/13 v3.22 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count727
+\c@cbx@tempcntb=\count728
+\c@cbx@tempcntc=\count729
+\c@cbx@tempcntd=\count730
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -3177,7 +3312,8 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.
+cfg
 File: biblatex.cfg 
 )
 
@@ -3187,104 +3323,124 @@ Package biblatex Warning: 'babel' option is deprecated.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2026-03-20 L3 programming layer (loader) 
+(biblatex)             2026-08-10 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-
+expl3.sty
+Package: blx-case-expl3 2026/08/13 v3.22 expl3 case changing code for biblatex
 ))
 
 Package biblatex Warning: Macro 'chapter+pages' already defined.
 (biblatex)                Using \renewbibmacro on input line 435.
 
-)) (./template_settings/Dissertation/inclusioncontrol.tex)
-(./template_settings/common/TO-DO-list.tex)) (./my_folder/my_settings.tex
-(d:/texlive/2026/texmf-dist/tex/latex/datetime/datetime.sty
+)) (template_settings/Dissertation/inclusioncontrol.tex)
+(template_settings/common/TO-DO-list.tex)) (my_folder/my_settings.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.
+sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-(d:/texlive/2026/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.
+sty
 Package: fmtcount 2025/12/02 v3.12 Displaying the values of LaTeX counters (NT,
 VB,NE)
 
-(d:/texlive/2026/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.
+sty
 Package: fcprefix 2012/09/28
 
-(d:/texlive/2026/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumpars
+er.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count730
+\fc@digit@counter=\count731
 ))
-\c@padzeroesN=\count731
-\fc@tmpcatcode=\count732
+\c@padzeroesN=\count732
+\fc@tmpcatcode=\count733
 
-(d:/texlive/2026/texmf-dist/tex/latex/fmtcount/fc-english.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fc-englis
+h.def
 File: fc-english.def 2016/01/12
 )
-\@DT@modctr=\count733
-\@ordinalctr=\count734
-\@orgargctr=\count735
-\@strctr=\count736
-\@tmpstrctr=\count737
-\@DT@loopN=\count738
-\@DT@X=\count739
+\@DT@modctr=\count734
+\@ordinalctr=\count735
+\@orgargctr=\count736
+\@strctr=\count737
+\@tmpstrctr=\count738
+\@DT@loopN=\count739
+\@DT@X=\count740
 )
-(d:/texlive/2026/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-
+defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count740
-\@month=\count741
-\@year=\count742
-\c@HOUR=\count743
-\c@HOURXII=\count744
-\c@MINUTE=\count745
-\c@TOHOUR=\count746
-\c@TOMINUTE=\count747
-\c@SECOND=\count748
-\currenthour=\count749
-\currentminute=\count750
-\currentsecond=\count751
+\@day=\count741
+\@month=\count742
+\@year=\count743
+\c@HOUR=\count744
+\c@HOURXII=\count745
+\c@MINUTE=\count746
+\c@TOHOUR=\count747
+\c@TOMINUTE=\count748
+\c@SECOND=\count749
+\currenthour=\count750
+\currentminute=\count751
+\currentsecond=\count752
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count752
-\dayofyear=\count753
-\dayofweek=\count754
+\@dtctr=\count753
+\dayofyear=\count754
+\dayofweek=\count755
 LaTeX Info: Redefining \today on input line 736.
 
-(d:/texlive/2026/texmf-dist/tex/latex/datetime/dt-russian.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/datetime\dt-russia
+n.def
 File: dt-russian.def 2013/09/10
 LaTeX Info: Redefining \daterussian on input line 64.
 )
-\dt@a=\toks69
-\dt@b=\toks70
+\dt@a=\toks67
+\dt@b=\toks68
 )
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks71
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\
+tikz.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf
+.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfr
+cs.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+futil-common.tex
+\pgfutil@everybye=\toks69
 \pgfutil@tempdima=\dimen363
 \pgfutil@tempdimb=\dimen364
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+futil-latex.def
 \pgfutil@abb=\box140
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+frcs.code.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision
+.tex)
+Package: pgfrcs 2026-08-01 v3.1.12 (3.1.12)
 ))
-Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+Package: pgf 2026-08-01 v3.1.12 (3.1.12)
 
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf
+core.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pg
+fsys.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsys.code.tex
+Package: pgfsys 2026-08-01 v3.1.12 (3.1.12)
 
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks72
-\pgfkeys@temptoks=\toks73
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+fkeys.code.tex
+\pgfkeys@pathtoks=\toks70
+\pgfkeys@temptoks=\toks71
 
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
-de.tex
-\pgfkeys@tmptoks=\toks74
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+fkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks72
 ))
 \pgf@x=\dimen365
 \pgf@y=\dimen366
@@ -3298,69 +3454,85 @@ de.tex
 \pgf@yd=\dimen374
 \w@pgf@writea=\write8
 \r@pgf@reada=\read7
-\c@pgf@counta=\count755
-\c@pgf@countb=\count756
-\c@pgf@countc=\count757
-\c@pgf@countd=\count758
-\t@pgf@toka=\toks75
-\t@pgf@tokb=\toks76
-\t@pgf@tokc=\toks77
-\pgf@sys@id@count=\count759
- (d:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+\c@pgf@counta=\count756
+\c@pgf@countb=\count757
+\c@pgf@countc=\count758
+\c@pgf@countd=\count759
+\t@pgf@toka=\toks73
+\t@pgf@tokb=\toks74
+\t@pgf@tokc=\toks75
+\pgf@sys@id@count=\count760
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgf.cfg
+File: pgf.cfg 2026-08-01 v3.1.12 (3.1.12)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2026-08-01 v3.1.12 (3.1.12)
 
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2026-08-01 v3.1.12 (3.1.12)
 )))
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count760
-\pgfsyssoftpath@bigbuffer@items=\count761
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfsyssoftpath@smallbuffer@items=\count761
+\pgfsyssoftpath@bigbuffer@items=\count762
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
-
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen375
-\pgfmath@count=\count762
-\pgfmath@box=\box141
-\pgfmath@toks=\toks78
-\pgfmath@stack@operand=\toks79
-\pgfmath@stack@operation=\toks80
-)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
-x)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
-.code.tex)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
-ex)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
-de.tex)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
-x)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
-)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count763
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2026-08-01 v3.1.12 (3.1.12)
 ))
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcore.code.tex
+Package: pgfcore 2026-08-01 v3.1.12 (3.1.12)
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+.code.tex
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+util.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+parser.code.tex
+\pgfmath@dimen=\dimen375
+\pgfmath@count=\count763
+\pgfmath@box=\box141
+\pgfmath@toks=\toks76
+\pgfmath@stack@operand=\toks77
+\pgfmath@stack@operation=\toks78
+)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.basic.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.trigonometric.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.random.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.comparison.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.base.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.round.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.misc.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.integerarithmetics.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+calc.code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+float.code.tex
+\c@pgfmathroundto@lastzeros=\count764
+))
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.
+code.tex)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@picminx=\dimen376
 \pgf@picmaxx=\dimen377
 \pgf@picminy=\dimen378
@@ -3376,110 +3548,132 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@zx=\dimen388
 \pgf@zy=\dimen389
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
-e.tex
-File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@path@lastx=\dimen390
 \pgf@path@lasty=\dimen391
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
-x
-File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@shorten@end@additional=\dimen392
 \pgf@shorten@start@additional=\dimen393
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfpic=\box142
 \pgf@hbox=\box143
 \pgf@layerbox@main=\box144
-\pgf@picture@serial@count=\count764
+\pgf@picture@serial@count=\count765
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
-.tex
-File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgflinewidth=\dimen394
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
-ode.tex
-File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@pt@x=\dimen395
 \pgf@pt@y=\dimen396
 \pgf@pt@temp=\dimen397
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorequick.code.tex
+File: pgfcorequick.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
-de.tex
-File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfarrowsep=\dimen398
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@max=\dimen399
-\pgf@sys@shading@range@num=\count765
-\pgf@shadingcount=\count766
+\pgf@sys@shading@range@num=\count766
+\pgf@shadingcount=\count767
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfexternal@startupbox=\box145
-) (d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
-.tex
-File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (d:/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (d:/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
-x
-File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)))
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfm
+oduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfnodeparttextbox=\box146
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfm
+oduleplot.code.tex
+File: pgfmoduleplot.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
-y
-Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\
+pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2026-08-01 v3.1.12 (3.1.12)
 \pgf@nodesepstart=\dimen400
 \pgf@nodesepend=\dimen401
 )
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
-y
-Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (d:/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(d:/texlive/2026/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\
+pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2026-08-01 v3.1.12 (3.1.12)
+))
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgff
+or.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfk
+eys.sty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+fkeys.code.tex))
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.s
+ty
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+.code.tex))
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+ffor.code.tex
+Package: pgffor 2026-08-01 v3.1.12 (3.1.12)
 \pgffor@iter=\dimen402
 \pgffor@skip=\dimen403
-\pgffor@stack=\toks81
-\pgffor@toks=\toks82
+\pgffor@stack=\toks79
+\pgffor@toks=\toks80
 ))
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlaye
+r/tikz\tikz.code.tex
+Package: tikz 2026-08-01 v3.1.12 (3.1.12)
 
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
-de.tex
-File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count767
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pg
+flibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@plot@mark@count=\count768
 \pgfplotmarksize=\dimen404
 )
 \tikz@lastx=\dimen405
@@ -3494,45 +3688,54 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@figbox@bg=\box148
 \tikz@tempbox=\box149
 \tikz@tempbox@bg=\box150
-\tikztreelevel=\count768
-\tikznumberofchildren=\count769
-\tikznumberofcurrentchild=\count770
-\tikz@fig@count=\count771
+\tikztreelevel=\count769
+\tikznumberofchildren=\count770
+\tikznumberofcurrentchild=\count771
+\tikz@fig@count=\count772
 
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count772
-\pgfmatrixcurrentcolumn=\count773
-\pgf@matrix@numberofcolumns=\count774
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfm
+odulematrix.code.tex
+File: pgfmodulematrix.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfmatrixcurrentrow=\count773
+\pgfmatrixcurrentcolumn=\count774
+\pgf@matrix@numberofcolumns=\count775
 )
-\tikz@expandcount=\count775
+\tikz@expandcount=\count776
 
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )))
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.cod
-e.tex
-File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pg
+flibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfarrowinset=\dimen413
 \pgfarrowlength=\dimen414
 \pgfarrowwidth=\dimen415
 \pgfarrowlinewidth=\dimen416
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-braryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
 
-(d:/texlive/2026/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
-eometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/sh
+apes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
 ))
-\c@m-new-env-first=\count776
-\c@m-new-env-second=\count777
+\c@m-new-env-first=\count777
+\c@m-new-env-second=\count778
+)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count779
+\float@exts=\toks81
+\float@box=\box151
+\@float@everytoks=\toks82
+\@floatcapt=\box152
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -3541,18 +3744,19 @@ Package csquotes Info: Redefining alias 'default' -> 'russian'.
 LaTeX Font Info:    Trying to load font information for T1+Tempora-TLF on input
  line 35.
 
-(d:/texlive/2026/texmf-dist/tex/latex/tempora/T1Tempora-TLF.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tempora\t1tempora-
+tlf.fd
 File: T1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for T1/Tempora-TL
 F.
 )
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
 (Font)              scaled to size 14.05249pt on input line 35.
-<<t1.cmap>>
-(./My_practice.aux
+<<t1.cmap>> (My_practice.aux
 LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on inpu
 t line 12.
 
-(d:/texlive/2026/texmf-dist/tex/latex/tempora/t2atempora-tlf.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tempora\t2atempora
+-tlf.fd
 File: t2atempora-tlf.fd 2015/09/13 Font definitions for T2A/Tempora-TLF.
 )
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
@@ -3560,13 +3764,13 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 <<t2a.cmap>>
 Package babel Info: 'russian' activates 'russian' shorthands.
 (babel)             Reported on input line 12.
-\c@mypages@totc=\count778
-\c@TotPages@totc=\count779
-\c@myfigures@totc=\count780
-\c@mytotalfigures@totc=\count781
-\c@mytables@totc=\count782
-\c@mytotaltables@totc=\count783
-\c@myappendices@totc=\count784
+\c@mypages@totc=\count780
+\c@TotPages@totc=\count781
+\c@myfigures@totc=\count782
+\c@mytotalfigures@totc=\count783
+\c@mytables@totc=\count784
+\c@mytotaltables@totc=\count785
+\c@myappendices@totc=\count786
 )
 \openout1 = `My_practice.aux'.
 
@@ -3574,7 +3778,7 @@ LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 35.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  35.
 
-(d:/texlive/2026/texmf-dist/tex/latex/newtx/omlntxmi.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3591,8 +3795,7 @@ LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
 35.
-
-(d:/texlive/2026/texmf-dist/tex/latex/newtx/untxexa.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3600,7 +3803,7 @@ LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 3
 5.
 
-(d:/texlive/2026/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3608,7 +3811,7 @@ LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 3
 5.
 
-(d:/texlive/2026/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\ot2cmr.fd
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3616,7 +3819,7 @@ LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 3
 5.
 
-(d:/texlive/2026/texmf-dist/tex/latex/cyrillic/t2ccmr.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2ccmr.fd
 File: t2ccmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3624,7 +3827,7 @@ LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 3
 5.
 
-(d:/texlive/2026/texmf-dist/tex/latex/cyrillic/t2bcmr.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2bcmr.fd
 File: t2bcmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3632,7 +3835,8 @@ LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 3
 5.
 
-(d:/texlive/2026/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.
+fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3640,7 +3844,7 @@ LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
  35.
 
-(d:/texlive/2026/texmf-dist/tex/latex/newtx/lmsntxsy.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3648,7 +3852,7 @@ LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
 e 35.
 
-(d:/texlive/2026/texmf-dist/tex/latex/newtx/lmxntxexx.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -3662,27 +3866,30 @@ line 35.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
  line 35.
 
-(d:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-p
+df.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count785
+\scratchcounter=\count787
 \scratchdimen=\dimen417
-\scratchbox=\box151
-\nofMPsegments=\count786
-\nofMParguments=\count787
+\scratchbox=\box153
+\nofMPsegments=\count788
+\nofMParguments=\count789
 \everyMPshowfont=\toks83
-\MPscratchCnt=\count788
+\MPscratchCnt=\count790
 \MPscratchDim=\dimen418
-\MPnumerator=\count789
-\makeMPintoPDFobject=\count790
+\MPnumerator=\count791
+\makeMPintoPDFobject=\count792
 \everyMPtoPDFconversion=\toks84
-) (d:/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(d:/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-
+sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -3721,21 +3928,22 @@ e
 LaTeX Info: Command `\dddot' is already robust on input line 35.
 LaTeX Info: Command `\ddddot' is already robust on input line 35.
 LaTeX Info: Redefining \th on input line 35.
-\c@mv@tabular=\count791
-\c@mv@boldtabular=\count792
+\c@mv@tabular=\count793
+\c@mv@boldtabular=\count794
 Package hyperref Info: Link coloring OFF on input line 35.
-(./My_practice.out) (./My_practice.out)
+(My_practice.out) (My_practice.out)
 \@outlinefile=\write9
 \openout9 = `My_practice.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 
 Package layouts Warning: Layout scale set to 0.5 on input line 35.
 
-\c@lstlisting=\count793
+\c@lstlisting=\count795
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen419
 \MT@vwid@rightmargin=\dimen420
@@ -3756,7 +3964,9 @@ Package microtype Info: Patching command `\showhyphens'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(d:/texlive/2026/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.c
+fg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -3766,36 +3976,42 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package biblatex Info: Trying to load language 'russian' -> 'russian-gost'...
 Package biblatex Info: ... file 'russian-gost.lbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex-gost/russian-gost.lbx
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-gost/lbx\
+russian-gost.lbx
 File: russian-gost.lbx 2023/04/25 v1.24 biblatex-gost styles
 Package biblatex Info: Trying to load language 'russian'...
 Package biblatex Info: ... file 'russian.lbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/russian.lbx
-File: russian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\russi
+an.lbx
+File: russian.lbx 2026/08/13 v3.22 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'russian'...
 Package biblatex Info: ... file 'russian.lbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/russian.lbx
-File: russian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\russi
+an.lbx
+File: russian.lbx 2026/08/13 v3.22 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Trying to load language 'english' -> 'english-gost'...
 Package biblatex Info: ... file 'english-gost.lbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex-gost/english-gost.lbx
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-gost/lbx\
+english-gost.lbx
 File: english-gost.lbx 2023/04/25 v1.24 biblatex-gost styles
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\engli
+sh.lbx
+File: english.lbx 2026/08/13 v3.22 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-(d:/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\engli
+sh.lbx
+File: english.lbx 2026/08/13 v3.22 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'utf8' specified.
@@ -3804,8 +4020,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'My_practice.bbl' found.
-
-(./My_practice.bbl)
+ (My_practice.bbl)
 Package biblatex Info: Reference section=0 on input line 35.
 Package biblatex Info: Reference segment=0 on input line 35.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
@@ -3816,8 +4031,9 @@ Package nag Info: Command \hc@caption not defined, skipping amendment on input
 line 35.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 35.
- (./template_settings/common/renames.tex)
-(./my_folder/practice.tex
+Package babel Info: Main language set to 'russian'.
+ (template_settings/common/renames.tex)
+(my_folder/practice.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -3858,7 +4074,8 @@ LaTeX Font Info:    Calculating math sizes for size <16> on input line 24.
 LaTeX Font Info:    Trying to load font information for OT1+Tempora-TLF on inpu
 t line 24.
 
-(d:/texlive/2026/texmf-dist/tex/latex/tempora/OT1Tempora-TLF.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/tempora\ot1tempora
+-tlf.fd
 File: OT1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for OT1/Tempora-
 TLF.
 )
@@ -3890,25 +4107,28 @@ LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
 (Font)              scaled to size 8.80005pt on input line 24.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
 
- (d:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(d:/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.c
+fg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 
 
-(d:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(d:/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.c
+fg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
 24.
 
-(d:/texlive/2026/texmf-dist/tex/latex/newtx/untxmia.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
@@ -3920,7 +4140,7 @@ LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
 24.
 
-(d:/texlive/2026/texmf-dist/tex/latex/newtx/untxsym.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
@@ -3932,7 +4152,7 @@ LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
 24.
 
-(d:/texlive/2026/texmf-dist/tex/latex/newtx/untxsyc.fd
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
@@ -3972,7 +4192,8 @@ LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
 (Font)              scaled to size 8.80005pt on input line 24.
 
-(d:/texlive/2026/texmf-dist/tex/latex/microtype/mt-eur.cfg
+(C:\Users\Ирина\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-eur.c
+fg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -3987,22 +4208,10 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 [1.1
 
 
-{d:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2026/
-texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}])
-(./my_folder/contents.tex (./My_practice.toc
+{C:/Users/Ирина/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users
+/Ирина/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tempora/t2a-tempora.e
+nc}]) (my_folder/contents.tex (My_practice.toc
 Package cleveref Info: loaded `russian' language definitions on input line 2.
-Package cleveref Info: loaded `russian' language definitions on input line 25.
-Package cleveref Info: loaded `russian' language definitions on input line 27.
-Package cleveref Info: loaded `russian' language definitions on input line 29.
-Package cleveref Info: loaded `russian' language definitions on input line 31.
-Package cleveref Info: loaded `russian' language definitions on input line 33.
-Package cleveref Info: loaded `russian' language definitions on input line 35.
-Package cleveref Info: loaded `russian' language definitions on input line 37.
-Package cleveref Info: loaded `russian' language definitions on input line 39.
-Package cleveref Info: loaded `russian' language definitions on input line 40.
-Package cleveref Info: loaded `russian' language definitions on input line 41.
-Package cleveref Info: loaded `russian' language definitions on input line 43.
-Package cleveref Info: loaded `russian' language definitions on input line 45.
 )
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -4024,13 +4233,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 
 
-]) (./my_folder/introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-[]\T2A/Tempora-TLF/m/n/14.05249 (+20) ������������� ���^^?��^^?���^^?�� ��^^?��
-� ��^^?���^^?��^^?��^^?��� (Behaviour-^^?Driven
- []
-
-) (./my_folder/chapter1.tex
+]) (my_folder/introduction.tex) (my_folder/chapter1.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4042,10 +4245,21 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
 
 [3.3
 
-{d:/texlive/2026/texmf-dist/fonts/enc/dvips/tempora/tmp_q3dzgc.enc}]
+]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[4.4
+
+]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T2A).
 (microtype)             For optimal results, create family-specific settings.
@@ -4060,41 +4274,12 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[4.4
-
-{d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 98--98
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ���������� �
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[5.5]
-Overfull \hbox (9.26181pt too wide) in paragraph at lines 119--126
-[]\T2A/Tempora-TLF/b/n/14.05249 (-20) Feature: ���^^?��� ��^^?���^^?����^^?��� 
-���^^?����� \T2A/Tempora-TLF/m/n/14.05249 (-20) (\T2A/cmtt/m/n/14.05249 palindr
-ome_analysis.feature\T2A/Tempora-TLF/m/n/14.05249 (-20) ).
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 152--152
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ����� ��^^?���^^?��� ��^^?���^^?���
- []
-
-
-Underfull \hbox (badness 4726) in paragraph at lines 157--163
-[]\T2A/Tempora-TLF/b/n/14.05249 (+20) Feature: ��^^?����^^?�� ��^^?���^^?��� ��
-��^^?�� � ��^^?���^^?��^^?��� ��^^?����^^?��^^?��
- []
-
+[5.5{C:/Users/Ирина/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super
+/cm-super-t2a.enc}]
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 10.25826pt on input line 41.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 7.72891pt on input line 41.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -4105,28 +4290,86 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[6.6]
-Overfull \hbox (100.93344pt too wide) in paragraph at lines 170--180
-[]\T2A/Tempora-TLF/b/n/14.05249 (-20) Feature: ����^^?��^^?��� ���^^?��^^?��^^?
-��^^?����^^?��^^?��� ��^^?��^^?���^^?��� \T2A/Tempora-TLF/m/n/14.05249 (-20) (\
-T2A/cmtt/m/n/14.05249 performance_comparison.feature\T2A/Tempora-TLF/m/n/14.052
-49 (-20) ).
- []
-
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/it' will be
-(Font)              scaled to size 14.05249pt on input line 181.
-
-Overfull \hbox (18.73006pt too wide) in paragraph at lines 201--201
-[]|\T2A/cmtt/m/n/12 palindrome_analysis.feature| 
- []
-
-
-Overfull \hbox (37.25053pt too wide) in paragraph at lines 203--203
-[]|\T2A/cmtt/m/n/12 performance_comparison.feature| 
- []
-
-) (./my_folder/chapter2.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+[6.6{C:/Users/Ирина/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tempora/
+tmp_q3dzgc.enc}]
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 50.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `OT1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 8.8pt on input line 52.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 6.6pt on input line 52.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 62.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -4138,7 +4381,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [7.7]
-ignored: Infinite glue shrinkage found in box being split
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4149,15 +4391,6 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [8.8]
-LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <14.05249> not available
-
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 75.
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ���������������
- []
-
-
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4167,23 +4400,9 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[9.9]
-Overfull \hbox (20.73941pt too wide) in alignment at lines 144--150
- [] [] [] [] [] [] 
- []
+[9.9]) (my_folder/chapter2.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
 
-
-Overfull \hbox (20.73941pt too wide) in alignment at lines 150--153
- [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (20.73941pt too wide) in alignment at lines 153--162
- [] [] [] [] [] [] 
- []
-
-
-ignored: Infinite glue shrinkage found in box being split
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4204,41 +4423,56 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
 
 [11.11]
-Underfull \hbox (badness 2922) in paragraph at lines 265--269
-[]\T2A/Tempora-TLF/m/n/14.05249 (+20) �������������� � ���^^?��� BDD-^^?�����^^
-?��^^?��^^?��� ����^^?����^^?��^^?�� ��^^?���
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 265--269
-\T2A/Tempora-TLF/m/n/14.05249 (+20) ���� � ���^^?��� ���^^?���^^?��� ���^^?��� 
-����^^?����^^?�����^^?�� �� ���^^?�� ��^^?���^^?��^^?
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[12.12]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
  []
 
 
-Overfull \hbox (213.85155pt too wide) in paragraph at lines 277--281
-[]\T2A/Tempora-TLF/m/n/14.05249 (-20) ����� ��^^?���^^?�� ��^^?���^^?�� \T2A/cm
-tt/m/n/14.05249 npm run perf \T2A/Tempora-TLF/m/n/14.05249 (-20) ���^^?��^^?��^
-^?��^^?�� ���^^?�� \T2A/cmtt/m/n/14.05249 reports/performance/performance-resul
-ts.json
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[13.13]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
  []
 
 
-Overfull \hbox (17.8944pt too wide) in alignment at lines 286--292
- [] [] [] [] [] [] 
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[14.14]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
  []
 
 
-Overfull \hbox (17.8944pt too wide) in alignment at lines 292--295
- [] [] [] [] [] [] 
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[15.15]
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
  []
 
 
-Overfull \hbox (17.8944pt too wide) in alignment at lines 295--304
- [] [] [] [] [] [] 
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
  []
 
-) (./my_folder/chapter3.tex
+[16.16]) (my_folder/chapter3.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
@@ -4250,24 +4484,22 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[12.12]
-Overfull \hbox (15.04892pt too wide) in alignment at lines 13--19
- [] [] [] [] [] [] 
+[17.17] (report/environment.tex) (report/generated-results.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
  []
 
 
-Overfull \hbox (15.04892pt too wide) in alignment at lines 19--22
- [] [] [] [] [] [] 
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
  []
 
-
-Overfull \hbox (15.04892pt too wide) in alignment at lines 22--31
- [] [] [] [] [] [] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+[18.18]
+<report/time.pdf, id=261, 578.16pt x 310.761pt>
+File: report/time.pdf Graphic file (type pdf)
+<use report/time.pdf>
+Package pdftex.def Info: report/time.pdf  used on input line 46.
+(pdftex.def)             Requested size: 454.67622pt x 244.3889pt.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -4278,82 +4510,17 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[13.13]
-Underfull \hbox (badness 3861) in paragraph at lines 105--105
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ���������� ��
- []
-
-
-Underfull \hbox (badness 3861) in paragraph at lines 108--108
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ���������� ��
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 111--111
-\T2A/Tempora-TLF/m/n/12 (+20) ��^^?���^^?��^^?��� ��� ���^^?���^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ������������ ��^^?��^^?���;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ������ ��^^?��^^?�����^^?��
- []
-
-
-Overfull \hbox (1.68922pt too wide) in paragraph at lines 115--115
-[]|\T2A/Tempora-TLF/m/n/12 (-20) ���������������| 
- []
-
-
-Underfull \hbox (badness 1694) in paragraph at lines 116--116
-[]|\T2A/Tempora-TLF/m/n/12 (+20) �������������� ���^^?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ���������� �� ���^^?���
- []
-
-
-ignored: Infinite glue shrinkage found in box being split
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[14.14]) (./my_folder/conclusion.tex
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-
-Overfull \hbox (2.10788pt too wide) has occurred while \output is active
- []
- []
-
-[15.15]
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]|\T2A/Tempora-TLF/m/n/12 (+20) �������� �
- []
-
-
-Overfull \hbox (28.71463pt too wide) in paragraph at lines 61--61
-\T2A/cmtt/m/n/12 performance_comparison.feature| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
-[]|\T2A/Tempora-TLF/m/n/12 (+20) ����� helper-^^?����^^?��� �
- []
-
+[19.19]
+<report/cpu.pdf, id=269, 578.16pt x 310.761pt>
+File: report/cpu.pdf Graphic file (type pdf)
+<use report/cpu.pdf>
+Package pdftex.def Info: report/cpu.pdf  used on input line 48.
+(pdftex.def)             Requested size: 454.67622pt x 244.3889pt.
+<report/memory.pdf, id=270, 578.16pt x 310.761pt>
+File: report/memory.pdf Graphic file (type pdf)
+<use report/memory.pdf>
+Package pdftex.def Info: report/memory.pdf  used on input line 50.
+(pdftex.def)             Requested size: 454.67622pt x 244.3889pt.
 
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
@@ -4364,7 +4531,7 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[16.16]) (./my_folder/references.tex
+[20.20 <./report/time.pdf> <./report/cpu.pdf>])
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4374,23 +4541,51 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[17.17]
-LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.05249pt on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
+[21.21 <./report/memory.pdf>]) (my_folder/chapter4.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+(report/ranking.tex) (report/result-conclusion.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[22.22])
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[23.23]) (my_folder/conclusion.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[24.24] (report/result-conclusion.tex)) (my_folder/references.tex
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+
+Overfull \hbox (2.10788pt too wide) has occurred while \output is active
+ []
+ []
+
+[25.25]
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 (Font)              scaled to size 14.05249pt on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
-Package cleveref Info: loaded `russian' language definitions on input line 17.
 )
 
 Package xassoccnt Warning: Warning: An accidental(?) addition of associated
@@ -4410,42 +4605,10 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[18.18{d:/texlive/2026/texmf-dist/fonts/enc/dvips/tempora/tmp_aq2g6w.enc}{d:/te
-xlive/2026/texmf-dist/fonts/enc/dvips/tempora/tmp_jglahm.enc}]
-(./my_folder/appendix1.tex
-
-! Package Listings Error: File `palindrome_app/scripts/stringDataset(.js)' not 
-found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: js)
-
-Enter file name: 
-
-! Package Listings Error: File `palindrome_app/scripts/performanceCore(.js)' no
-t found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: js)
-
-Enter file name: 
-
-! Package Listings Error: File `palindrome_app/scripts/generateDatasets(.js)' n
-ot found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: js)
-
-Enter file name: 
-
-! Package Listings Error: File `palindrome_app/scripts/runPerformanceExperiment
-(.js)' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: js)
-
-Enter file name: 
-) (./my_folder/appendix2.tex
+[26.26] (my_folder/appendix1.tex
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 4.
+) (my_folder/appendix2.tex
 Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
@@ -4455,53 +4618,20 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[19.19]
+[27.27]
+Underfull \hbox (badness 1762) in paragraph at lines 7--8
+[]\T2A/cmtt/m/n/14.05249 data/reference-input.json \T2A/Tempora-TLF/m/n/14.0524
+9 (+20) ��^^?���^^?��� ����^^?�� \T2A/cmtt/m/n/14.05249 babad \T2A/Tempora-TLF/
+m/n/14.05249 (+20) � \T2A/cmtt/m/n/14.05249 cbbd\T2A/Tempora-TLF/m/n/14.05249 (
++20) . ����
+ []
 
-! Package Listings Error: File `palindrome_app/features/palindrome_analysis(.fe
-ature)' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: feature)
-
-Enter file name: 
-
-! Package Listings Error: File `palindrome_app/features/json_io(.feature)' not 
-found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: feature)
-
-Enter file name: 
-
-! Package Listings Error: File `palindrome_app/features/performance_comparison(
-.feature)' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: feature)
-
-Enter file name: 
-
-! Package Listings Error: File `palindrome_app/features/support/world(.js)' not
- found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: js)
-
-Enter file name: 
-
-! Package Listings Error: File `palindrome_app/features/step_definitions/palind
-romeSteps(.js)' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: js)
-
-Enter file name: 
 )
 
 Class memoir Warning: The material used in the footer is too large
 (12.64719pt) for the given foot skip (0.0pt), it is recommended to
 either increase the foot skip or redesign the footer
-(in both cases you will find help in the memoir manual). on input line 76.
+(in both cases you will find help in the memoir manual). on input line 78.
 
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 138.
@@ -4522,71 +4652,45 @@ Overfull \hbox (2.10788pt too wide) has occurred while \output is active
  []
  []
 
-[20.20]
+[28.28]
 \tf@toc=\write10
 \openout10 = `My_practice.toc'.
 
- (./My_practice.aux
+ (My_practice.aux
 Package cleveref Info: loaded `russian' language definitions on input line 12.
-Package cleveref Info: loaded `russian' language definitions on input line 224.
-
-Package cleveref Info: loaded `russian' language definitions on input line 226.
-
-Package cleveref Info: loaded `russian' language definitions on input line 228.
-
-Package cleveref Info: loaded `russian' language definitions on input line 230.
-
-Package cleveref Info: loaded `russian' language definitions on input line 232.
-
-Package cleveref Info: loaded `russian' language definitions on input line 234.
-
-Package cleveref Info: loaded `russian' language definitions on input line 236.
-
-Package cleveref Info: loaded `russian' language definitions on input line 238.
-
-Package cleveref Info: loaded `russian' language definitions on input line 239.
-
-Package cleveref Info: loaded `russian' language definitions on input line 240.
-
-Package cleveref Info: loaded `russian' language definitions on input line 242.
-
-Package cleveref Info: loaded `russian' language definitions on input line 244.
-
 )
  ***********
-LaTeX2e <2025-11-01>
+LaTeX2e <2026-06-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `My_practice.out' has not changed.
-(rerunfilecheck)             Checksum: 1F6790CE822865DA1D4CDD5F66A6CF62;2719.
+(rerunfilecheck)             Checksum: E548224AF88F25E94FA22287446AD23A;3212.
 Package logreq Info: Writing requests to 'My_practice.run.xml'.
 \openout1 = `My_practice.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62245 strings out of 467351
- 1176873 string characters out of 5419913
- 2550464 words of memory out of 5000000
- 89919 multiletter control sequences out of 15000+600000
- 735050 words of font info for 267 fonts, out of 8000000 for 9000
+ 62644 strings out of 467441
+ 1206133 string characters out of 5405162
+ 2385644 words of memory out of 5000000
+ 90441 multiletter control sequences out of 15000+600000
+ 766923 words of font info for 330 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,12n,123p,1238b,4353s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2026/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/texlive/
-2026/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb><d:/texlive/2026/te
-xmf-dist/fonts/type1/public/tempora/Tempora-BoldItalic.pfb><d:/texlive/2026/tex
-mf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb><d:/texlive/2026/texmf-di
-st/fonts/type1/public/tempora/Tempora-Regular.pfb><d:/texlive/2026/texmf-dist/f
-onts/type1/public/cm-super/sftt1200.pfb><d:/texlive/2026/texmf-dist/fonts/type1
-/public/cm-super/sftt1440.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/ne
-wtx/txsys.pfb>
-Output written on My_practice.pdf (20 pages, 266246 bytes).
+ 99i,18n,123p,1240b,3221s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Ирина/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/N
+ewTXMI.pfb><C:/Users/Ирина/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/tempora/Tempora-Bold.pfb><C:/Users/Ирина/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/tempora/Tempora-Italic.pfb><C:/Users/Ирина/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/tempora/Tempora-Regular.pfb><C:/Users/Ир�
+�на/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C
+:/Users/Ирина/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sf
+tt1200.pfb><C:/Users/Ирина/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/cm-super/sftt1440.pfb><C:/Users/Ирина/AppData/Local/Programs/MiKTeX/font
+s/type1/public/newtx/txmiaX.pfb><C:/Users/Ирина/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/newtx/txsys.pfb>
+Output written on My_practice.pdf (28 pages, 405199 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 306 compressed objects within 4 object streams
- 114 named destinations out of 1000 (max. 500000)
- 50277 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 72316 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -1,0 +1,53 @@
+[
+  {
+    "dataset": "size-100.json",
+    "framework": "Jest",
+    "runs": 1,
+    "wall_ms": 957.7311999164522,
+    "wall_ms_q1": 957.7311999164522,
+    "wall_ms_q3": 957.7311999164522,
+    "cpu_ms": 1093.75,
+    "cpu_ms_q1": 1093.75,
+    "cpu_ms_q3": 1093.75,
+    "cpu_percent": 114.20218951783271,
+    "cpu_percent_q1": 114.20218951783271,
+    "cpu_percent_q3": 114.20218951783271,
+    "rss_mib": 146.28125,
+    "rss_mib_q1": 146.28125,
+    "rss_mib_q3": 146.28125
+  },
+  {
+    "dataset": "size-100.json",
+    "framework": "Mocha",
+    "runs": 1,
+    "wall_ms": 597.5920999189839,
+    "wall_ms_q1": 597.5920999189839,
+    "wall_ms_q3": 597.5920999189839,
+    "cpu_ms": 578.125,
+    "cpu_ms_q1": 578.125,
+    "cpu_ms_q3": 578.125,
+    "cpu_percent": 96.74241009517645,
+    "cpu_percent_q1": 96.74241009517645,
+    "cpu_percent_q3": 96.74241009517645,
+    "rss_mib": 102.53125,
+    "rss_mib_q1": 102.53125,
+    "rss_mib_q3": 102.53125
+  },
+  {
+    "dataset": "size-100.json",
+    "framework": "Vitest",
+    "runs": 1,
+    "wall_ms": 1139.7253000177443,
+    "wall_ms_q1": 1139.7253000177443,
+    "wall_ms_q3": 1139.7253000177443,
+    "cpu_ms": 1140.625,
+    "cpu_ms_q1": 1140.625,
+    "cpu_ms_q3": 1140.625,
+    "cpu_percent": 100.07894007286157,
+    "cpu_percent_q1": 100.07894007286157,
+    "cpu_percent_q3": 100.07894007286157,
+    "rss_mib": 177.24609375,
+    "rss_mib_q1": 177.24609375,
+    "rss_mib_q3": 177.24609375
+  }
+]

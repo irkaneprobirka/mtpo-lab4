@@ -1,0 +1,65 @@
+[
+  {
+    "mutation": "Правый максимум вместо левого",
+    "framework": "Jest",
+    "detected": true,
+    "exit_code": 1,
+    "expected_test": "Левый максимум из эталона"
+  },
+  {
+    "mutation": "Правый максимум вместо левого",
+    "framework": "Mocha",
+    "detected": true,
+    "exit_code": 17,
+    "expected_test": "Левый максимум из эталона"
+  },
+  {
+    "mutation": "Правый максимум вместо левого",
+    "framework": "Vitest",
+    "detected": true,
+    "exit_code": 1,
+    "expected_test": "Левый максимум из эталона"
+  },
+  {
+    "mutation": "Лишнее вхождение на каждом центре",
+    "framework": "Jest",
+    "detected": true,
+    "exit_code": 1,
+    "expected_test": "Чётная длина"
+  },
+  {
+    "mutation": "Лишнее вхождение на каждом центре",
+    "framework": "Mocha",
+    "detected": true,
+    "exit_code": 48,
+    "expected_test": "Чётная длина"
+  },
+  {
+    "mutation": "Лишнее вхождение на каждом центре",
+    "framework": "Vitest",
+    "detected": true,
+    "exit_code": 1,
+    "expected_test": "Чётная длина"
+  },
+  {
+    "mutation": "Потеря пробелов при чтении JSON",
+    "framework": "Jest",
+    "detected": true,
+    "exit_code": 1,
+    "expected_test": "Пробелы сохраняются"
+  },
+  {
+    "mutation": "Потеря пробелов при чтении JSON",
+    "framework": "Mocha",
+    "detected": true,
+    "exit_code": 1,
+    "expected_test": "Пробелы сохраняются"
+  },
+  {
+    "mutation": "Потеря пробелов при чтении JSON",
+    "framework": "Vitest",
+    "detected": true,
+    "exit_code": 1,
+    "expected_test": "Пробелы сохраняются"
+  }
+]

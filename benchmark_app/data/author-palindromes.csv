@@ -1,5 +1,0 @@
-name,pattern,length,expectedLongest
-uniform-2000,a,2000,
-alternating-3000,ab,3000,
-mixed-3500,abacabad,3500,
-short-known,racecar,7,racecar

@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-09-08T20:02:35.946620+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "logical_cpus": 12,
+  "physical_cpus": 8,
+  "ram_gib": 15.652839660644531,
+  "python": "3.12.14",
+  "psutil": "7.0.0",
+  "node": "v24.19.0",
+  "versions": {
+    "jest": "30.0.5",
+    "mocha": "11.7.1",
+    "vitest": "3.2.4",
+    "csv-parse": "6.1.0"
+  },
+  "options": {
+    "input": [
+      "data/size-100.json",
+      "data/size-1000.json",
+      "data/size-10000.json"
+    ],
+    "runs": 7,
+    "repeats": 10,
+    "interval_ms": 10,
+    "timeout": 120,
+    "seed": 2026,
+    "node": "C:/Users/\u0418\u0440\u0438\u043d\u0430/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+    "output": "reports/current"
+  },
+  "commands": {
+    "Jest": [
+      "node_modules/jest/bin/jest.js",
+      "--runInBand",
+      "--ci"
+    ],
+    "Mocha": [
+      "node_modules/mocha/bin/mocha.js",
+      "tests/mocha/*.test.js"
+    ],
+    "Vitest": [
+      "node_modules/vitest/vitest.mjs",
+      "run"
+    ]
+  },
+  "files": {
+    "size-100.json": {
+      "bytes": 2570,
+      "sha256": "0300a10944c3de07f17e32c334dc04410bc225668b1cbb950b69726ecbd69db5"
+    },
+    "size-1000.json": {
+      "bytes": 16986,
+      "sha256": "f33a6b2dd92e83884997ccae2bfc774bc77c3de7de0d71c54967ad6b1a9070da"
+    },
+    "size-10000.json": {
+      "bytes": 161002,
+      "sha256": "e38d0139c5dc6eb4a7bb898e10cb0e69943dfa3546e3b1ffa496c8e87b2f1572"
+    }
+  },
+  "lock_sha256": "ffa2f8fe3395ff0083dfa17d3908f05d6b500f24e2f218acaaebdf95da0ff800",
+  "cpu_method": "sum of last sampled user+system counters per observed PID; lower-bound estimate",
+  "memory_method": "max sampled sum RSS of living observed tree processes, MiB",
+  "cache_policy": "one excluded warmup per dataset/framework; fresh process per run; OS caches retained"
+}

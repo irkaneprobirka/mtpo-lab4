@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.11" bltxversion="3.21" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.11" bltxversion="3.22" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -3580,10 +3580,14 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">my_folder/my_biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">north-bdd</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">cucumber-js</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">node-perf-hooks</bcf:citekey>
-    <bcf:citekey order="4" intorder="1" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">psutil</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">node-assert</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">jest-cli</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">jest-config</bcf:citekey>
+    <bcf:citekey order="3" intorder="3">mocha-cli</bcf:citekey>
+    <bcf:citekey order="3" intorder="4">vitest-config</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">manacher</bcf:citekey>
+    <bcf:citekey order="5" intorder="1" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

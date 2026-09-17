@@ -1,98 +1,28 @@
-\chapter{Листинги приложения}\label{appendix-app-code}
-
-\section*{package.json}
-\lstinputlisting[
-  basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{9pt}{11pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/package.json}
-
-\section*{requirements.txt}
-\lstinputlisting[
-  basicstyle=\fontsize{10pt}{12pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{9pt}{11pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/requirements.txt}
-
-\section*{src/manacher.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{9pt}{11pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/src/manacher.js}
-
-\section*{src/data-loader.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{9pt}{11pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/src/data-loader.js}
-
-\section*{src/run-suite.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{9pt}{11pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/src/run-suite.js}
-
-\section*{src/benchmark.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{8pt}{10pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/src/benchmark.js}
-
-\section*{tests/jest/manacher.test.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{9pt}{11pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/tests/jest/manacher.test.js}
-
-\section*{tests/vitest/manacher.test.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{9pt}{11pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/tests/vitest/manacher.test.js}
-
-\section*{tests/mocha/manacher.test.js}
-\lstinputlisting[
-  language=JavaScript,
-  basicstyle=\fontsize{9pt}{11pt}\selectfont\ttfamily,
-  numberstyle=\fontsize{8pt}{10pt}\selectfont,
-  firstnumber=1,
-  stepnumber=1,
-  breaklines=true,
-  breakatwhitespace=false
-]{benchmark_app/tests/mocha/manacher.test.js}
+\chapter{Регистрация тестов и пример проверки}\label{appendix-app-code}
+Полный код находится в каталоге \code{benchmark_app}. Все три адаптера регистрируют общий каталог, сохраняя собственное исполнение каждого фреймворка.
+\section*{Регистрация в Jest}
+\begin{Verbatim}[fontsize=\footnotesize,frame=single]
+const { registerTests } = require('../shared.cjs');
+registerTests(describe,
+  (name, check) => test(name, check, 30000));
+\end{Verbatim}
+\section*{Регистрация в Mocha}
+\begin{Verbatim}[fontsize=\footnotesize,frame=single]
+const { registerTests } = require('../shared.cjs');
+registerTests(describe,
+  (name, check) => it(name, function () {
+    this.timeout(30000);
+    return check();
+  }));
+\end{Verbatim}
+\section*{Регистрация в Vitest}
+\begin{Verbatim}[fontsize=\footnotesize,frame=single]
+import { describe, test } from 'vitest';
+import { createRequire } from 'node:module';
+const { registerTests } =
+  createRequire(import.meta.url)('../shared.cjs');
+registerTests(describe,
+  (name, check) => test(name, check, 30000));
+\end{Verbatim}
+\section*{Содержательная проверка}
+Для \code{abba} используется явно заданный объект ожидания: \code{longest: 'abba'}, \code{length: 4}, \code{count: 6}. Сравнение выполняется через \code{assert.deepEqual} из строгого режима \code{node:assert/strict}. Логика сценария одна, поэтому изменения ожидания одновременно применяются ко всем трём раннерам.

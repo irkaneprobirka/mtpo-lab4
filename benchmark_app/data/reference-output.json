@@ -1,17 +1,12 @@
 [
   {
-    "name": "cp-algorithms-example",
-    "longest": "abacaba",
-    "count": 12
+    "longest": "bab",
+    "length": 3,
+    "count": 7
   },
   {
-    "name": "even-palindrome",
-    "longest": "abba",
-    "count": 6
-  },
-  {
-    "name": "no-long-palindrome",
-    "longest": "a",
-    "count": 6
+    "longest": "bb",
+    "length": 2,
+    "count": 5
   }
 ]
