@@ -1,6 +1,7 @@
-const assert = require('node:assert/strict');
-const { manacher } = require('../src/manacher');
-const { bruteForce } = require('./helpers.cjs');
+import { describe, test } from 'vitest';
+import assert from 'node:assert/strict';
+import { manacher } from '../../src/manacher.js';
+import { bruteForce } from '../helpers.cjs';
 
 // Ожидания простых примеров заданы явно: тест не вычисляет их через Манакера.
 const examples = [
@@ -32,7 +33,7 @@ const examples = [
   ['Палиндром у правого края', 'xabba', 'abba', 7],
 ];
 
-module.exports = function registerAlgorithmTests(test) {
+describe('Алгоритм Манакера', () => {
   for (const [name, input, longest, count] of examples) {
     test(name, () => {
       assert.deepEqual(manacher(input), { longest, length: Array.from(longest).length, count });
@@ -70,4 +71,4 @@ module.exports = function registerAlgorithmTests(test) {
     manacher('a'.repeat(100));
     assert.deepEqual(manacher('abba'), before);
   });
-};
+});

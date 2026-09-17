@@ -16,11 +16,11 @@ files += [ROOT / "my_folder" / name for name in [
     "conclusion.tex", "references.tex", "my_biblio.bib", "appendix1.tex", "appendix2.tex",
 ]]
 app = ROOT / "benchmark_app"
-for name in ["src", "tests", "data", "scripts"]:
-    files += [p for p in (app / name).rglob("*") if p.is_file()]
+for name in ["src", "tests", "data", "scripts", "measurement", "mutations"]:
+    files += [p for p in (app / name).rglob("*") if p.is_file() and "__pycache__" not in p.parts]
 files += [p for p in app.iterdir() if p.is_file() and p.suffix in {".py", ".json", ".txt", ".cjs", ".mjs"}]
-for name in ["npm-2026-09-17", "mutations"]:
-    files += [p for p in (app / "reports" / name).rglob("*") if p.is_file()]
+for name in ["readable-2026-09-17", "mutations"]:
+    files += [p for p in (app / "reports" / name).rglob("*") if p.is_file() and "__pycache__" not in p.parts]
 output = ROOT / "submission.zip"
 with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     for p in sorted(set(files)):

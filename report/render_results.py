@@ -14,10 +14,10 @@ ROOT = Path(__file__).resolve().parents[1]
 APP = ROOT / "benchmark_app"
 OUT = ROOT / "report"
 sys.path.insert(0, str(APP))
-from benchmark import summarize
+from measurement.summary import summarize
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("--series", default="npm-2026-09-17")
+parser.add_argument("--series", default="readable-2026-09-17")
 args = parser.parse_args()
 directory = APP / "reports" / args.series
 

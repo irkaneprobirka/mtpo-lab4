@@ -1,28 +1,23 @@
-\chapter{Регистрация тестов и пример проверки}\label{appendix-app-code}
-Полный код находится в каталоге \code{benchmark_app}. Все три адаптера регистрируют общий каталог, сохраняя собственное исполнение каждого фреймворка.
-\section*{Регистрация в Jest}
-\begin{Verbatim}[fontsize=\footnotesize,frame=single]
-const { registerTests } = require('../shared.cjs');
-registerTests(describe,
-  (name, check) => test(name, check, 30000));
+\chapter{Структура тестов и пример проверки}\label{appendix-app-code}
+Полный код находится в каталоге \code{benchmark_app}. Начать чтение удобно с \code{tests/jest/algorithm.test.js}. У каждого фреймворка четыре файла с одинаковыми сценариями:
+\begin{Verbatim}[fontsize=\small,frame=single]
+tests/
+  jest/      algorithm.test.js  json.test.js
+             cli.test.js        workload.test.js
+  mocha/     algorithm.test.js  json.test.js
+             cli.test.js        workload.test.js
+  vitest/    algorithm.test.js  json.test.js
+             cli.test.js        workload.test.js
+  helpers.cjs
 \end{Verbatim}
-\section*{Регистрация в Mocha}
-\begin{Verbatim}[fontsize=\footnotesize,frame=single]
-const { registerTests } = require('../shared.cjs');
-registerTests(describe,
-  (name, check) => it(name, function () {
-    this.timeout(30000);
-    return check();
-  }));
+\section*{Обычная проверка}
+Этот пример показывает проверку одного входа. В файле алгоритма аналогичные примеры перечислены в таблице, а цикл создаёт отдельный тест для каждой строки таблицы.
+\begin{Verbatim}[fontsize=\small,frame=single]
+test('abba', () => {
+  assert.deepEqual(manacher('abba'), {
+    longest: 'abba', length: 4, count: 6,
+  });
+});
 \end{Verbatim}
-\section*{Регистрация в Vitest}
-\begin{Verbatim}[fontsize=\footnotesize,frame=single]
-import { describe, test } from 'vitest';
-import { createRequire } from 'node:module';
-const { registerTests } =
-  createRequire(import.meta.url)('../shared.cjs');
-registerTests(describe,
-  (name, check) => test(name, check, 30000));
-\end{Verbatim}
-\section*{Содержательная проверка}
-Для \code{abba} используется явно заданный объект ожидания: \code{longest: 'abba'}, \code{length: 4}, \code{count: 6}. Сравнение выполняется через \code{assert.deepEqual} из строгого режима \code{node:assert/strict}. Логика сценария одна, поэтому изменения ожидания одновременно применяются ко всем трём раннерам.
+\section*{Различия запуска}
+Jest предоставляет \code{describe} и \code{test}. Mocha импортирует \code{describe} и \code{it} под именем \code{test}. Vitest явно импортирует \code{describe} и \code{test} из своего пакета. Проверки используют одинаковый \code{node:assert/strict}. Тайм-ауты заданы в настройках фреймворков.

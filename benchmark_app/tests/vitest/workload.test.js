@@ -1,8 +1,12 @@
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
-const { manacher } = require('../src/manacher');
-const { readInput } = require('../src/json-input');
+import { fileURLToPath } from 'node:url';
+import { describe, test } from 'vitest';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { manacher } from '../../src/manacher.js';
+import { readInput } from '../../src/json-input.js';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Формулы верны только для двух семейств, создаваемых генератором.
 function expectedResult(text) {
@@ -17,8 +21,8 @@ function expectedResult(text) {
   throw new Error('Нагрузочный вход должен состоять из повторов a или чередования ab');
 }
 
-module.exports = function registerWorkloadTests(test) {
-  const referenceDirectory = path.join(__dirname, '../data');
+describe('Эталон и нагрузка', () => {
+  const referenceDirectory = path.join(__dirname, '../../data');
   const reference = readInput(path.join(referenceDirectory, 'reference-input.json'));
   const expected = JSON.parse(fs.readFileSync(path.join(referenceDirectory, 'reference-output.json'), 'utf8'));
   test('Ответ совпадает с отдельным эталонным файлом', () => {
@@ -39,4 +43,4 @@ module.exports = function registerWorkloadTests(test) {
       }
     });
   }
-};
+});

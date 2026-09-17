@@ -5,15 +5,12 @@ from pathlib import Path
 import shutil
 import subprocess
 import tempfile
-from benchmark import ROOT, COMMANDS
+from measurement.config import ROOT, COMMANDS
 
 MUTATIONS = [
-    ("Правый максимум вместо левого", "src/manacher.js",
-     "radii[position] > longestLength", "radii[position] >= longestLength", "Левый максимум из эталона"),
-    ("Лишнее вхождение на каждом центре", "src/manacher.js",
-     "count += Math.floor", "count += 1 + Math.floor", "Чётная длина"),
-    ("Потеря пробелов при чтении JSON", "src/json-input.js",
-     "return data.strings;", "return data.strings.map(text => text.trim());", "Пробелы сохраняются"),
+    ("Правый максимум вместо левого", "src/manacher.js", "rightmost.js", "Левый максимум из эталона"),
+    ("Лишнее вхождение на каждом центре", "src/manacher.js", "extra-count.js", "Чётная длина"),
+    ("Потеря пробелов при чтении JSON", "src/json-input.js", "trim-input.js", "Пробелы сохраняются"),
 ]
 
 def main():
@@ -25,18 +22,14 @@ def main():
     records = []
     # Копии внутри проекта находят установленные пакеты в родительском node_modules.
     # Исходные модули проекта не изменяются.
-    for index, (name, source, before, after, expected_test) in enumerate(MUTATIONS):
+    for index, (name, source, example, expected_test) in enumerate(MUTATIONS):
         with tempfile.TemporaryDirectory(prefix=".mutation-", dir=ROOT) as directory:
             work = Path(directory)
             for folder in ("src", "tests", "data"):
                 shutil.copytree(ROOT / folder, work / folder)
-            for file in ("package.json", "jest.config.cjs", "vitest.config.mjs"):
+            for file in ("package.json", "jest.config.cjs", "vitest.config.mjs", ".mocharc.json"):
                 shutil.copy2(ROOT / file, work / file)
-            file = work / source
-            text = file.read_text(encoding="utf-8")
-            if text.count(before) != 1:
-                raise RuntimeError("Место внесения дефекта должно встречаться один раз")
-            file.write_text(text.replace(before, after), encoding="utf-8")
+            shutil.copy2(ROOT / "mutations" / example, work / source)
             for framework, command in COMMANDS.items():
                 env = dict(os.environ, CI="1", NO_COLOR="1", FORCE_COLOR="0", TEST_REPEAT_COUNT="1")
                 env.pop("TEST_INPUT_FILE", None)

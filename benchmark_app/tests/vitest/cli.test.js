@@ -1,18 +1,22 @@
-const assert = require('node:assert/strict');
-const path = require('node:path');
-const { spawnSync } = require('node:child_process');
-const { parseArguments, formatResult } = require('../src/cli');
-const { withFile } = require('./helpers.cjs');
+import { fileURLToPath } from 'node:url';
+import { describe, test } from 'vitest';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+import { spawnSync } from 'node:child_process';
+import { parseArguments, formatResult } from '../../src/cli.js';
+import { withFile } from '../helpers.cjs';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function run(args, input) {
-  const result = spawnSync(process.execPath, [path.join(__dirname, '../src/cli.js'), ...args], {
+  const result = spawnSync(process.execPath, [path.join(__dirname, '../../src/cli.js'), ...args], {
     input, encoding: 'utf8', timeout: 10000,
   });
   assert.equal(result.error, undefined, 'Дочерний процесс должен завершиться без тайм-аута');
   return result;
 }
 
-module.exports = function registerCliTests(test) {
+describe('Консольное приложение', () => {
   test('Без аргументов выбирается интерактивный ввод', () => {
     assert.deepEqual(parseArguments([]), { mode: 'interactive' });
   });
@@ -86,4 +90,4 @@ module.exports = function registerCliTests(test) {
     assert.equal(result.status, 1);
     assert.match(result.stderr, /Не удалось прочитать/);
   });
-};
+});

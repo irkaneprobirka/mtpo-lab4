@@ -1,0 +1,104 @@
+{
+  "created_local": "2026-09-17T13:40:08.672037+03:00",
+  "created_utc": "2026-09-17T10:40:08.672037+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpus": 20,
+  "physical_cpus": 14,
+  "ram_gib": 31.779190063476562,
+  "python": "3.12.14",
+  "psutil": "7.0.0",
+  "node": "v24.13.0",
+  "versions": {
+    "jest": "30.0.5",
+    "mocha": "11.7.1",
+    "vitest": "3.2.4"
+  },
+  "options": {
+    "input": [
+      "data/size-100.json",
+      "data/size-1000.json",
+      "data/size-10000.json"
+    ],
+    "runs": 7,
+    "repeats": 10,
+    "interval_ms": 10,
+    "timeout": 120,
+    "seed": 2026,
+    "node": "C:\\Program Files\\nodejs\\node.EXE",
+    "output": "reports/readable-2026-09-17"
+  },
+  "commands": {
+    "Jest": [
+      "node_modules/jest/bin/jest.js",
+      "--runInBand",
+      "--ci"
+    ],
+    "Mocha": [
+      "node_modules/mocha/bin/mocha.js",
+      "tests/mocha/*.test.js"
+    ],
+    "Vitest": [
+      "node_modules/vitest/vitest.mjs",
+      "run"
+    ]
+  },
+  "workload": "\u041f\u043e\u043b\u043d\u044b\u0439 \u043d\u0430\u0431\u043e\u0440 \u0442\u0435\u0441\u0442\u043e\u0432, \u0432\u043a\u043b\u044e\u0447\u0430\u044f \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0438\u0435 \u0437\u0430\u043f\u0443\u0441\u043a\u0438 \u043a\u043e\u043d\u0441\u043e\u043b\u0438; \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u0438\u0441\u043a\u043b\u044e\u0447\u0435\u043d\u043e",
+  "test_counts": {
+    "size-100.json": 99,
+    "size-1000.json": 99,
+    "size-10000.json": 99
+  },
+  "source_sha256": {
+    "src\\cli.js": "e6706d8dd64a298c9e27b425bc22ea44b8f6dfd16f4be581beff0caaf659db64",
+    "src\\json-input.js": "7b3b11be820063bab53e1af952198a67c72c004172f2123c9cd2c53dca45c1b9",
+    "src\\manacher.js": "a6e5d835afaafcd283fd856e944c5988f3c8eaa669b07fb639e86aee5bed2343",
+    "src\\verify.js": "4808413aef503c3062f710028d173bb162053715e5e7e7625536826ec2f3a054",
+    "tests\\helpers.cjs": "1335e7e976bad2605ef25672a56f1040444531a00e0e0a2ff44ea64d6189c1b3",
+    "tests\\jest\\algorithm.test.js": "c68aa91b7769daa958d23209f8e56a58fb5bacdc51815cba7888703cfd0e5155",
+    "tests\\jest\\cli.test.js": "078d679fb5bac835f1934f3f96600ce5c33f9f3a78a15806c7d6c42a09325bb4",
+    "tests\\jest\\json.test.js": "77e2a7ffebb9ee742db1c39fc66d22ba0fdc53161a2fb5fb05d6254dd6b022d0",
+    "tests\\jest\\workload.test.js": "b70b3fb755147edb3b2aef51a1b550ad1535fcd2a89216ce938b4097424ba810",
+    "tests\\mocha\\algorithm.test.js": "d7e4b3d674a9baa4ffb4001c2d1021c2d5431f1aeeee6fce4b4c17ff6acd6aa5",
+    "tests\\mocha\\cli.test.js": "0e59b86389e93c1c03234d250883dbb58adc694c9243f29ad214664a460ec270",
+    "tests\\mocha\\json.test.js": "2685a4e6c45e7f90197b06f074d09d899694ed447858746cef7ec2cb1e75114d",
+    "tests\\mocha\\workload.test.js": "d2b3afe880c0179d5a9017bfc72abdbf4fe0055a2232aca5158312265a52018e",
+    "tests\\vitest\\algorithm.test.js": "1e6f38293d8627b703b771c90d6a5fd6ef8c57d87b419c1ca248a66a3f8d3189",
+    "tests\\vitest\\cli.test.js": "d0a855e14ebb8c12dfd0ce8d70e447211ee811f7001db8680e06c23bb0e9a8cb",
+    "tests\\vitest\\json.test.js": "6af8dfaa88af32ff5b9726d2872e6477643ea20840df434f0cadbd944c4bb4b1",
+    "tests\\vitest\\workload.test.js": "e182a62f9b7965949398debd94b402d14cd45b4f4c1e59dedb9f10cb3202193b",
+    "scripts\\generate.js": "b795c15996489029d185a6579245ba39d5d9f65a29c4e049b77b95ba76cbd873",
+    "scripts\\python.js": "a781e4a818827ccc9ae60341df389916c3ca57a12729e538fffb3710bc8f3989",
+    "scripts\\results.js": "0c7ff48c7a73e068f5976cd87fa1d467877ea087526df2f353dcc1628b3cf87d",
+    "scripts\\test-manifest.js": "9d8ca32de10e0103334076730ff302560600a8f9b6b140e6f3aff67ad4ad86bb",
+    "measurement\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "measurement\\config.py": "739d378c66ba9589bee1ee7778aa06817a7bba1df6766ebed0b24a5928b24b4c",
+    "measurement\\process.py": "09de4516f99e1c62c24b76efca783099d49e273720d63e4235a7612245969bcc",
+    "measurement\\summary.py": "4b15222dfb0ca77f2dc475eb94c84c8300898720b3738788598b6c0996a86a21"
+  },
+  "config_sha256": {
+    "benchmark.py": "1404b21ac43fbe2556b24a11ea11d6e3c599d2c9d5ec75cff528c1b4e6b6a1fa",
+    "jest.config.cjs": "4a8a6bff60eda20227ccd5714fd824fe7cae11d73abb7def0c4124865efc5778",
+    "vitest.config.mjs": "84d8f893955c9b53de3f2ab0eb9c69202e60053c440a1fd2141043e88d604c7d",
+    ".mocharc.json": "fb707b51e38fb82de455a0c40bb0da0646e304cb8d2e2dacb2d35e149880afc5",
+    "package.json": "982ae380476f31670ac71de83c7dc77c37bf9e523e0569dc905134f00be3fe18"
+  },
+  "files": {
+    "size-100.json": {
+      "bytes": 896,
+      "sha256": "f4fb43f1b97fe9ad1a812e0c64b3c4f0534e67ade1051a1bbadd943ddf6c014d"
+    },
+    "size-1000.json": {
+      "bytes": 8096,
+      "sha256": "fbaf5eea0572e7d0cbdd09135ab68b87b72c8ef15122786bd1ddbb1d2c5aa619"
+    },
+    "size-10000.json": {
+      "bytes": 80096,
+      "sha256": "bbab6ade54f0c18b9ddbe2ec21a0f6c53027f52e0e5bf3f544f3f1490cfbe929"
+    }
+  },
+  "lock_sha256": "4a599d74c4d51c03d24e38bf12443379994c02c6778af07943cad1751d4605cb",
+  "cpu_method": "\u0421\u0443\u043c\u043c\u0430 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0445 \u043d\u0430\u0431\u043b\u044e\u0434\u0430\u0435\u043c\u044b\u0445 user+system \u043f\u043e \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430\u043c; \u043d\u0438\u0436\u043d\u044f\u044f \u043e\u0446\u0435\u043d\u043a\u0430",
+  "memory_method": "\u041c\u0430\u043a\u0441\u0438\u043c\u0443\u043c \u043d\u0430\u0431\u043b\u044e\u0434\u0430\u0435\u043c\u043e\u0439 \u0441\u0443\u043c\u043c\u044b RSS \u0436\u0438\u0432\u044b\u0445 \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0432 \u0434\u0435\u0440\u0435\u0432\u0430, MiB",
+  "cache_policy": "\u041e\u0434\u0438\u043d \u0438\u0441\u043a\u043b\u044e\u0447\u0451\u043d\u043d\u044b\u0439 \u043f\u0440\u043e\u0433\u0440\u0435\u0432 \u043d\u0430 \u0441\u043e\u0447\u0435\u0442\u0430\u043d\u0438\u0435; \u043d\u043e\u0432\u044b\u0439 \u043f\u0440\u043e\u0446\u0435\u0441\u0441 \u043d\u0430 \u0437\u0430\u043f\u0443\u0441\u043a; \u043a\u044d\u0448\u0438 \u041e\u0421 \u0441\u043e\u0445\u0440\u0430\u043d\u044f\u044e\u0442\u0441\u044f"
+}

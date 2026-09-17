@@ -1,9 +1,10 @@
-const assert = require('node:assert/strict');
-const { parseInput, readInput } = require('../src/json-input');
-const { manacher } = require('../src/manacher');
-const { withFile } = require('./helpers.cjs');
+import { describe, test } from 'vitest';
+import assert from 'node:assert/strict';
+import { parseInput, readInput } from '../../src/json-input.js';
+import { manacher } from '../../src/manacher.js';
+import { withFile } from '../helpers.cjs';
 
-module.exports = function registerJsonTests(test) {
+describe('Импорт JSON', () => {
   const valid = [
     ['Одна строка', ['abba']], ['Пакет строк', ['abba', 'топот']],
     ['Пустая строка внутри пакета', ['']], ['Пробелы сохраняются', [' a ']],
@@ -51,4 +52,4 @@ module.exports = function registerJsonTests(test) {
   test('Повреждённый файл не доходит до вычислений', () => {
     withFile('{', file => assert.throws(() => readInput(file), /Некорректный JSON/));
   });
-};
+});
